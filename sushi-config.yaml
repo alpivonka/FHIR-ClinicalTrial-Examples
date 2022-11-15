@@ -7,10 +7,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: ClinicalTrialExample
+canonical: https://github.com/alpivonka/FHIR-Base-Clinical-Examples
+name: ClinicalTrialExampleIG
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
@@ -21,7 +20,7 @@ version: 1.0.0
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
 # supports 4.0.1 anyway).
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0-ballot #4.0.1
 
 # The following two lines correspond to items that used to be in
 # ig.ini but were moved to IG.definition.parameter. For
@@ -37,23 +36,23 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: ClinicalTrialExample
+  #url: http://example.com/committees
+  #email: my-group@example.com
 
 # ContactDetail is required by the template.
-contact:
-  - name: Bob Smith
-    telecom:
-      - system: email
-        value: bobsmith@example.com
-        use: work
+#contact:
+#  - name: Bob Smith
+#    telecom:
+ #     - system: email
+ #       value: bobsmith@example.com
+ #       use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
