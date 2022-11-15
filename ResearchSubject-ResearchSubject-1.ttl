@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ResearchSubject/ResearchSubject-1> a fhir:ResearchSubject;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ResearchSubject-1"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/firstCreated" ];
+       fhir:Extension.valueInstant [ fhir:value "2022-01-01T10:08:10Z"^^xsd:dateTime ]
+     ];
+     fhir:Meta.lastUpdated [ fhir:value "2022-01-01T10:08:10Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject";
+       fhir:index 0;
+       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchSubject</b><a name=\"ResearchSubject-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchSubject \"ResearchSubject-1\" Updated \"2022-01-01 10:08:10+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-the-research-subject.html\">ResearchSubject</a></p></div><blockquote><p><b>Group References</b></p><p><b>value</b>: ARM</p></blockquote><blockquote><p><b>Group References</b></p><p><b>value</b>: COHORT</p></blockquote><p><b>status</b>: active</p><p><b>study</b>: <a href=\"ResearchStudy-ResearchStudy-1-002.html\">ResearchStudy/ResearchStudy-1-002</a></p><p><b>subject</b>: <a href=\"Patient-Patient-1-001.html\">Patient/Patient-1-001</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueString [ fhir:value "ARM" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "reference" ];
+         fhir:Extension.valueReference [
+           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/ARMMonkeyFeet-internal-uuid2s>;
+           fhir:Reference.reference [ fhir:value "Group/ARMMonkeyFeet-internal-uuid2s" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "active" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "referencedGroup" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "reference" ];
+         fhir:Extension.valueReference [
+           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/ARMGroupMonkeyLegs-uuid22s>;
+           fhir:Reference.reference [ fhir:value "Group/ARMGroupMonkeyLegs-uuid22s" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "active" ];
+         fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "referencedGroup" ]
+     ];
+     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueString [ fhir:value "COHORT" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "reference" ];
+         fhir:Extension.valueReference [
+           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/CohortGroupUnder25>;
+           fhir:Reference.reference [ fhir:value "Group/CohortGroupUnder25" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "active" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "referencedGroup" ]
+     ];
+     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references" ]
+  ];
+  fhir:ResearchSubject.status [ fhir:value "active"];
+  fhir:ResearchSubject.study [
+     fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ResearchStudy/ResearchStudy-1-002>;
+     fhir:Reference.reference [ fhir:value "ResearchStudy/ResearchStudy-1-002" ]
+  ];
+  fhir:ResearchSubject.subject [
+     fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Patient/Patient-1-001>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-1-001" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ResearchSubject/ResearchSubject-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

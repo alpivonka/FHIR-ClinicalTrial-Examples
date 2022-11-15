@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="CohortGroupUnder25"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Group</b><a name="CohortGroupUnder25"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Group "CohortGroupUnder25" </p></div><p><b>identifier</b>: id: 3292822228</p><p><b>type</b>: specimen</p><p><b>membership</b>: enumerated</p><p><b>code</b>: COHORT <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#COHORT)</span></p><p><b>name</b>: Men under 25</p><p><b>description</b>: my description</p></div>
+  </text>
+  <identifier>
+    <value value="3292822228"/>
+  </identifier>
+  <type value="specimen"/>
+  <membership value="enumerated"/>
+  <code>
+    <coding>
+      <code value="COHORT"/>
+    </coding>
+  </code>
+  <name value="Men under 25"/>
+  <description value="my description"/>
+</Group>

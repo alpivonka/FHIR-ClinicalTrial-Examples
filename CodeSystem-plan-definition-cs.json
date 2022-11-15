@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "plan-definition-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Visit<a name=\"plan-definition-cs-Visit\"> </a></td><td>Visit</td></tr><tr><td style=\"white-space:nowrap\">ActivityDefinition<a name=\"plan-definition-cs-ActivityDefinition\"> </a></td><td>Activity Definition</td></tr><tr><td style=\"white-space:nowrap\">Questionnaire<a name=\"plan-definition-cs-Questionnaire\"> </a></td><td>Questionnaire</td></tr><tr><td style=\"white-space:nowrap\">SoADefinition<a name=\"plan-definition-cs-SoADefinition\"> </a></td><td>SoADefinition</td></tr></table></div>"
+  },
+  "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs",
+  "version": "1.0.0",
+  "name": "PlanDefinitionCS",
+  "title": "CodeSystem: Plan Definition CS",
+  "status": "active",
+  "date": "2022-11-15T20:45:59+00:00",
+  "publisher": "ClinicalTrialExample",
+  "description": "Plan Definition CS",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "Visit",
+      "display": "Visit",
+      "definition": "Visit"
+    },
+    {
+      "code": "ActivityDefinition",
+      "display": "ActivityDefinition",
+      "definition": "Activity Definition"
+    },
+    {
+      "code": "Questionnaire",
+      "display": "Questionnaire",
+      "definition": "Questionnaire"
+    },
+    {
+      "code": "SoADefinition",
+      "display": "SoADefinition",
+      "definition": "SoADefinition"
+    }
+  ]
+}

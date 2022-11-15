@@ -1,9 +1,205 @@
 [
   {
-    "id": "xxexample.fhir.uv.myig",
+    "id": "343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2",
+    "type": "ActivityDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2",
+    "version": "1.0.0",
+    "name": "ActivityOID-ActivityEligibility"
+  },
+  {
+    "id": "9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen",
+    "type": "ActivityDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen",
+    "version": "1.0.0",
+    "name": "ActivityOID-CollectCosent"
+  },
+  {
+    "id": "c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
+    "type": "ActivityDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
+    "version": "1.0.0",
+    "name": "ActivityOID-ActivityStudyPeriod"
+  },
+  {
+    "id": "f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2",
+    "type": "ActivityDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2",
+    "version": "1.0.0",
+    "name": "ActivityOID-ActivityScreening"
+  },
+  {
+    "id": "plan-definition-cs",
+    "type": "CodeSystem",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs",
+    "version": "1.0.0",
+    "name": "PlanDefinitionCS"
+  },
+  {
+    "id": "questionnare-code-cs",
+    "type": "CodeSystem",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs",
+    "version": "1.0.0",
+    "name": "QuestionnareCodeCS"
+  },
+  {
+    "id": "visit-segment-cs",
+    "type": "CodeSystem",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs",
+    "version": "1.0.0",
+    "name": "VisitSegmentCS"
+  },
+  {
+    "id": "ClinicalTrialExample",
     "type": "ImplementationGuide",
-    "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
-    "version": "0.1.0-test",
-    "name": "XXYourComputableMyIGNameHere"
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ImplementationGuide/ClinicalTrialExample",
+    "version": "1.0.0",
+    "name": "ClinicalTrialExampleIG"
+  },
+  {
+    "id": "NEW-SOA-UUID-FHIR2",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/NEW-SOA-UUID-FHIR2",
+    "version": "1.0.0",
+    "name": "SoADefinitionOID2"
+  },
+  {
+    "id": "Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2",
+    "version": "1.0.0",
+    "name": "v1"
+  },
+  {
+    "id": "Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2",
+    "version": "1.0.0",
+    "name": "v2"
+  },
+  {
+    "id": "Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2",
+    "version": "1.0.0",
+    "name": "v2"
+  },
+  {
+    "id": "Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
+    "version": "1.0.0",
+    "name": "v2"
+  },
+  {
+    "id": "-visit-range",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/-visit-range",
+    "version": "1.0.0",
+    "name": "VisitRange"
+  },
+  {
+    "id": "AcceptableOffsetRangeSoa",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/AcceptableOffsetRangeSoa",
+    "version": "1.0.0",
+    "name": "AcceptableOffsetRangeSoa"
+  },
+  {
+    "id": "arm-group-att-ext",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext",
+    "version": "1.0.0",
+    "name": "ARMGroupAttExt"
+  },
+  {
+    "id": "arm-group-ext",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-ext",
+    "version": "1.0.0",
+    "name": "ArmGroupExt"
+  },
+  {
+    "id": "arm-group-profile",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile",
+    "version": "1.0.0",
+    "name": "ARMGroupProfile"
+  },
+  {
+    "id": "cohort-group-ext",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/cohort-group-ext",
+    "version": "1.0.0",
+    "name": "CohortGroupExt"
+  },
+  {
+    "id": "epoch",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch",
+    "version": "1.0.0",
+    "name": "Epoch"
+  },
+  {
+    "id": "group-references",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references",
+    "version": "1.0.0",
+    "name": "GroupReferences"
+  },
+  {
+    "id": "segment-plan-definition",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/segment-plan-definition",
+    "version": "1.0.0",
+    "name": "SoASegmentPlanDefinition"
+  },
+  {
+    "id": "so-aactivity",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
+    "version": "1.0.0",
+    "name": "SoAActivity"
+  },
+  {
+    "id": "soa-definition",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-definition",
+    "version": "1.0.0",
+    "name": "SoADefinition"
+  },
+  {
+    "id": "soa-plan-definition",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-plan-definition",
+    "version": "1.0.0",
+    "name": "SoAPlanDefinition"
+  },
+  {
+    "id": "soa-questionnaire",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-questionnaire",
+    "version": "1.0.0",
+    "name": "SoAQuestionnaire"
+  },
+  {
+    "id": "soa-visit-definition",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition",
+    "version": "1.0.0",
+    "name": "SoAVisitDefinition"
+  },
+  {
+    "id": "study",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study",
+    "version": "1.0.0",
+    "name": "Study"
+  },
+  {
+    "id": "the-research-subject",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject",
+    "version": "1.0.0",
+    "name": "TheResearchSubject"
   }
 ]

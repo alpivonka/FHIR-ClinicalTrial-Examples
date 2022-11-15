@@ -1,0 +1,24 @@
+{
+  "resourceType": "Group",
+  "id": "CohortGroupOver50-ss9s9s9",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"CohortGroupOver50-ss9s9s9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group \"CohortGroupOver50-ss9s9s9\" </p></div><p><b>identifier</b>: id: 32928228</p><p><b>type</b>: person</p><p><b>membership</b>: enumerated</p><p><b>code</b>: COHORT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#COHORT)</span></p><p><b>name</b>: Men over 50</p><p><b>description</b>: my description</p></div>"
+  },
+  "identifier": [
+    {
+      "value": "32928228"
+    }
+  ],
+  "type": "person",
+  "membership": "enumerated",
+  "code": {
+    "coding": [
+      {
+        "code": "COHORT"
+      }
+    ]
+  },
+  "name": "Men over 50",
+  "description": "my description"
+}

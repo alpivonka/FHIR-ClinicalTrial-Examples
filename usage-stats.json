@@ -1,20 +1,499 @@
 {
-  "package": "xxexample.fhir.uv.myig",
-  "version": "0.1.0-test",
-  "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
-  "extensions": [],
-  "profiles": {},
-  "usage": {
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
-      "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
+  "package": "ClinicalTrialExample",
+  "version": "1.0.0",
+  "fhirVersion": "5.0.0-ballot",
+  "extensions": [
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/-visit-range",
+      "title": "Visit Range",
+      "types": [
+        "uri",
+        "uri",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/AcceptableOffsetRangeSoa",
+      "title": "Extension: Acceptable Offset Range",
+      "types": [
+        "Range"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext",
+      "title": "ARMGroup",
+      "types": [
+        "decimal",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-ext",
+      "title": "Arm Group",
+      "types": [
+        "boolean",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/cohort-group-ext",
+      "title": "Cohort Group",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch",
+      "title": "Epoch",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references",
+      "title": "Group References",
+      "types": [
+        "boolean",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study",
+      "title": "Part Of Research Study",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "Group": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile",
+        "title": "ARM Group"
+      }
     ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
-      "ImplementationGuide.definition"
+    "PlanDefinition": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition",
+        "title": "Profile: SoA Visit Definition"
+      }
+    ],
+    "ActivityDefinition": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
+        "title": "SoA Activity"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-questionnaire",
+        "title": "SoA Questionnaire"
+      }
+    ],
+    "ResearchSubject": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject",
+        "title": "ResearchSubject"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/event-basedOn": [
+      "ActivityDefinition",
+      "PlanDefinition",
+      "Questionnaire"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/firstCreated": [
+      "ActivityDefinition.meta",
+      "PlanDefinition.meta",
+      "Questionnaire.meta",
+      "ResearchSubject.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/task-replaces": [
+      "ActivityDefinition",
+      "PlanDefinition",
+      "Questionnaire"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/AcceptableOffsetRangeSoa": [
+      "PlanDefinition.action.relatedAction"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext": [
+      "Group"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch": [
+      "PlanDefinition.action",
+      "PlanDefinition.action.action"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references": [
+      "ResearchSubject"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study": [
+      "ActivityDefinition",
+      "PlanDefinition",
+      "Questionnaire"
     ]
   }
 }

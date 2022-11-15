@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "questionnare-code-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">recurrring<a name=\"questionnare-code-cs-recurrring\"> </a></td><td>Recurrring-Form</td><td>Recurrring Form</td></tr><tr><td style=\"white-space:nowrap\">adHoc<a name=\"questionnare-code-cs-adHoc\"> </a></td><td>adHoc-Form</td><td>adHoc Form</td></tr><tr><td style=\"white-space:nowrap\">onGoing<a name=\"questionnare-code-cs-onGoing\"> </a></td><td>onGoing-Form</td><td>eDiaronGoingy Form</td></tr></table></div>"
+  },
+  "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs",
+  "version": "1.0.0",
+  "name": "QuestionnareCodeCS",
+  "title": "CodeSystem: Questionnare Code Cs",
+  "status": "active",
+  "date": "2022-11-15T20:45:59+00:00",
+  "publisher": "ClinicalTrialExample",
+  "description": "specific Codes for Questionnaire",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "recurrring",
+      "display": "Recurrring-Form",
+      "definition": "Recurrring Form"
+    },
+    {
+      "code": "adHoc",
+      "display": "adHoc-Form",
+      "definition": "adHoc Form"
+    },
+    {
+      "code": "onGoing",
+      "display": "onGoing-Form",
+      "definition": "eDiaronGoingy Form"
+    }
+  ]
+}
