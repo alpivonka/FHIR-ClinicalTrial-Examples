@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0-test",
+  "version": "1.0.0",
   "fhirVersion": [
-    "4.0.1"
+    "5.0.0-ballot"
   ],
-  "date": "20221115175908",
-  "name": "xxexample.fhir.uv.myig"
+  "date": "20221115204501",
+  "name": "ClinicalTrialExample"
 }

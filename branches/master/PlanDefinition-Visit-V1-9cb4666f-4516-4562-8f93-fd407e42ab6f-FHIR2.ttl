@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2> a fhir:PlanDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/firstCreated" ];
+       fhir:Extension.valueInstant [ fhir:value "2022-01-01T10:08:10Z"^^xsd:dateTime ]
+     ];
+     fhir:Meta.lastUpdated [ fhir:value "2022-01-01T10:08:10Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition";
+       fhir:index 0;
+       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition \"Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2\" Updated \"2022-01-01 10:08:10+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-soa-visit-definition.html\">Profile: SoA Visit Definition</a></p></div><p><b>Part Of Research Study</b>: <a href=\"ResearchStudy-ResearchStudy-1-002.html\">ResearchStudy/ResearchStudy-1-002</a></p><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: v1</p><p><b>type</b>: Visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-plan-definition-cs.html\">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-15 08:45:59+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>type</b>: eConsentActivity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#eConsentActivity)</span></p><p><b>definition</b>: <code>ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f</code></p><blockquote><p><b>action</b></p><p><b>prefix</b>: consentFormGroupId</p><p><b>type</b>: consentFormGroupId <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#consentFormGroupId)</span></p><p><b>definition</b>: <code>beec3554-45a0-4447-9931-875b6d62efbf</code></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: PRO_Jl_DatesInForm</p><p><b>definition</b>: <code>Questionnaire/2995b4b6-c3cc-4a40-a27b-dc7ef903aa5d/1</code></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: 2.PRO_tt_Missed_Edairy</p><p><b>definition</b>: <code>Questionnaire/39e2b915-6728-4138-8653-0b309910bb21/3</code></p></blockquote></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ResearchStudy/ResearchStudy-1-002>;
+       fhir:Reference.reference [ fhir:value "ResearchStudy/ResearchStudy-1-002" ]
+     ]
+  ];
+  fhir:PlanDefinition.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2"];
+  fhir:PlanDefinition.version [ fhir:value "1.0.0"];
+  fhir:PlanDefinition.name [ fhir:value "v1"];
+  fhir:PlanDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs" ];
+       fhir:Coding.code [ fhir:value "Visit" ]
+     ]
+  ];
+  fhir:PlanDefinition.status [ fhir:value "active"];
+  fhir:PlanDefinition.date [ fhir:value "2022-11-15T20:45:59+00:00"^^xsd:dateTime];
+  fhir:PlanDefinition.publisher [ fhir:value "ClinicalTrialExample"];
+  fhir:PlanDefinition.action [
+     fhir:index 0;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "eConsentActivity" ]
+       ]
+     ];
+     fhir:PlanDefinition.action.definitionUri [ fhir:value "ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f" ];
+     fhir:PlanDefinition.action.action [
+       fhir:index 0;
+       fhir:PlanDefinition.action.prefix [ fhir:value "consentFormGroupId" ];
+       fhir:PlanDefinition.action.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "consentFormGroupId" ]
+         ]
+       ];
+       fhir:PlanDefinition.action.definitionUri [ fhir:value "beec3554-45a0-4447-9931-875b6d62efbf" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "PROJlDatesInForm" ];
+       fhir:PlanDefinition.action.title [ fhir:value "PRO_Jl_DatesInForm" ];
+       fhir:PlanDefinition.action.relatedAction [
+         fhir:index 0;
+         fhir:PlanDefinition.action.relatedAction.targetId [ fhir:value "PRO4MDatesinForm" ];
+         fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before" ]
+       ];
+       fhir:PlanDefinition.action.definitionUri [ fhir:value "Questionnaire/2995b4b6-c3cc-4a40-a27b-dc7ef903aa5d/1" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "2PROttMissedEdairy" ];
+       fhir:PlanDefinition.action.title [ fhir:value "2.PRO_tt_Missed_Edairy" ];
+       fhir:PlanDefinition.action.relatedAction [
+         fhir:index 0;
+         fhir:PlanDefinition.action.relatedAction.targetId [ fhir:value "PRO4MDatesinForm" ];
+         fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+       ];
+       fhir:PlanDefinition.action.definitionUri [ fhir:value "Questionnaire/39e2b915-6728-4138-8653-0b309910bb21/3" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

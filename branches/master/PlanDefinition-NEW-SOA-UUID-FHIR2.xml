@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="NEW-SOA-UUID-FHIR2"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/firstCreated">
+      <valueInstant value="2022-01-01T10:08:10Z"/>
+    </extension>
+    <lastUpdated value="2022-01-01T10:08:10Z"/>
+    <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-definition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="NEW-SOA-UUID-FHIR2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition "NEW-SOA-UUID-FHIR2" Updated "2022-01-01 10:08:10+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-soa-definition.html">Profile: SoA Definition</a></p></div><p><b>Part Of Research Study</b>: <a href="ResearchStudy-ResearchStudy-1-002.html">ResearchStudy/ResearchStudy-1-002</a></p><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/NEW-SOA-UUID-FHIR2</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: SoADefinitionOID2</p><p><b>type</b>: SoADefinition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#SoADefinition)</span></p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-15 08:45:59+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>type</b>: Activities <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-visit-segment-cs.html">CodeSystem: Visit Segment CS</a>#ACTIVITIES)</span></p><blockquote><p><b>action</b></p><p><b>Epoch</b>: TREATMENT EPOCH</p><p><b>code</b>: eConsent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#eConsent)</span></p><p><b>timing</b>: Do Once</p><p><b>type</b>: Visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>definition</b>: <code>PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f</code></p></blockquote><blockquote><p><b>action</b></p><p><b>Epoch</b>: TREATMENT_EPOCH</p><p><b>code</b>: Screening <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Screening)</span></p><p><b>timing</b>: Do Once</p><p><b>type</b>: Visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>definition</b>: <code>PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3</code></p></blockquote><blockquote><p><b>action</b></p><p><b>Epoch</b>: TREATMENT_EPOCH</p><p><b>code</b>: Eligibility <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Eligibility)</span></p><p><b>timing</b>: Do Once</p><p><b>type</b>: Visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>definition</b>: <code>PlanDefinition/Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2</code></p></blockquote><blockquote><p><b>action</b></p><p><b>Epoch</b>: FOLLOW_UP_EPOCH</p><p><b>code</b>: StudyPeriod <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#StudyPeriod)</span></p><p><b>timing</b>: Do Once</p><p><b>type</b>: Visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>definition</b>: <code>PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820</code></p></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>type</b>: UnscheduledActivities <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-visit-segment-cs.html">CodeSystem: Visit Segment CS</a>#UNSCHEDULED_ACTIVITIES)</span></p><blockquote><p><b>action</b></p><p><b>type</b>: Visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>definition</b>: <code>PlanDefinition/1289d38a-653a-4cd9-afb9-b95299741b3a1</code></p></blockquote><blockquote><p><b>action</b></p><p><b>type</b>: Visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-plan-definition-cs.html">CodeSystem: Plan Definition CS</a>#Visit)</span></p><p><b>definition</b>: <code>PlanDefinition/1289d38a-653a-4cd9-afb9-b95299741b3c1</code></p></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>type</b>: Recurrring-Form <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-visit-segment-cs.html">CodeSystem: Visit Segment CS</a>#RECURRING_FORMS)</span></p><blockquote><p><b>action</b></p><p><b>type</b>: Questionnaire <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Questionnaire)</span></p><p><b>definition</b>: <code>Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8</code></p></blockquote><blockquote><p><b>action</b></p><p><b>type</b>: Questionnaire <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Questionnaire)</span></p><p><b>definition</b>: <code>Questionnaire/6ff38b3d-099a-4fe0-ac46-267092619e2c</code></p></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>type</b>: adHoc-Form <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-visit-segment-cs.html">CodeSystem: Visit Segment CS</a>#ADHOC_FORMS)</span></p><h3>Actions</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>Questionnaire <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Questionnaire)</span></td><td><code>Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8x</code></td></tr><tr><td>*</td><td>Questionnaire <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Questionnaire)</span></td><td><code>Questionnaire/49858fac-02bd-4d51-91d1-37ebb9097d36x</code></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>type</b>: onGoing-Form <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-visit-segment-cs.html">CodeSystem: Visit Segment CS</a>#ONGOING_FORMS)</span></p><h3>Actions</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>Questionnaire <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Questionnaire)</span></td><td><code>Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8xy</code></td></tr><tr><td>*</td><td>Questionnaire <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Questionnaire)</span></td><td><code>Questionnaire/49858fac-02bd-4d51-91d1-37ebb9097d36xy</code></td></tr></table></blockquote></div>
+  </text>
+  <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study">
+    <valueReference>
+      <reference value="ResearchStudy/ResearchStudy-1-002"/>
+    </valueReference>
+  </extension>
+  <url value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/NEW-SOA-UUID-FHIR2"/>
+  <version value="1.0.0"/>
+  <name value="SoADefinitionOID2"/>
+  <type>
+    <coding>
+      <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+      <code value="SoADefinition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <date value="2022-11-15T20:45:59+00:00"/>
+  <publisher value="ClinicalTrialExample"/>
+  <action>
+    <type>
+      <coding>
+        <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs"/>
+        <code value="ACTIVITIES"/>
+      </coding>
+    </type>
+    <action id="Visit-V1">
+      <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch">
+        <valueString value="TREATMENT EPOCH"/>
+      </extension>
+      <code>
+        <coding>
+          <code value="eConsent"/>
+        </coding>
+      </code>
+      <relatedAction>
+        <targetId value="Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3"/>
+        <relationship value="before"/>
+      </relatedAction>
+      <timingTiming>
+        <repeat>
+          <boundsRange>
+            <low>
+              <value value="5"/>
+            </low>
+            <high>
+              <value value="1"/>
+            </high>
+          </boundsRange>
+          <periodUnit value="d"/>
+          <offset value="5"/>
+        </repeat>
+      </timingTiming>
+      <type>
+        <coding>
+          <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+          <code value="Visit"/>
+        </coding>
+      </type>
+      <definitionUri value="PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f"/>
+    </action>
+    <action id="Visit-V2">
+      <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch">
+        <valueString value="TREATMENT_EPOCH"/>
+      </extension>
+      <code>
+        <coding>
+          <code value="Screening"/>
+        </coding>
+      </code>
+      <relatedAction>
+        <targetId value="Visit-V1"/>
+        <relationship value="after"/>
+      </relatedAction>
+      <relatedAction>
+        <targetId value="Visit-V3"/>
+        <relationship value="before"/>
+      </relatedAction>
+      <timingTiming>
+        <repeat>
+          <boundsRange>
+            <low>
+              <value value="0"/>
+            </low>
+            <high>
+              <value value="2"/>
+            </high>
+          </boundsRange>
+          <periodUnit value="d"/>
+        </repeat>
+      </timingTiming>
+      <type>
+        <coding>
+          <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+          <code value="Visit"/>
+        </coding>
+      </type>
+      <definitionUri value="PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3"/>
+    </action>
+    <action id="Visit-V3">
+      <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch">
+        <valueString value="TREATMENT_EPOCH"/>
+      </extension>
+      <code>
+        <coding>
+          <code value="Eligibility"/>
+        </coding>
+      </code>
+      <relatedAction>
+        <targetId value="Visit-V1"/>
+        <relationship value="after"/>
+      </relatedAction>
+      <relatedAction>
+        <targetId value="Visit-V2"/>
+        <relationship value="after"/>
+      </relatedAction>
+      <relatedAction>
+        <targetId value="Visit-V4"/>
+        <relationship value="before"/>
+      </relatedAction>
+      <timingTiming>
+        <repeat>
+          <boundsRange>
+            <low>
+              <value value="0"/>
+            </low>
+            <high>
+              <value value="2"/>
+            </high>
+          </boundsRange>
+          <periodUnit value="d"/>
+        </repeat>
+      </timingTiming>
+      <type>
+        <coding>
+          <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+          <code value="Visit"/>
+        </coding>
+      </type>
+      <definitionUri value="PlanDefinition/Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2"/>
+    </action>
+    <action id="Visit-V4">
+      <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch">
+        <valueString value="FOLLOW_UP_EPOCH"/>
+      </extension>
+      <code>
+        <coding>
+          <code value="StudyPeriod"/>
+        </coding>
+      </code>
+      <relatedAction>
+        <targetId value="Visit-V1"/>
+        <relationship value="after"/>
+      </relatedAction>
+      <relatedAction>
+        <targetId value="Visit-V2"/>
+        <relationship value="after"/>
+      </relatedAction>
+      <relatedAction>
+        <targetId value="Visit-V3"/>
+        <relationship value="after"/>
+      </relatedAction>
+      <timingTiming>
+        <repeat>
+          <boundsRange>
+            <low>
+              <value value="5"/>
+            </low>
+            <high>
+              <value value="1"/>
+            </high>
+          </boundsRange>
+          <periodUnit value="d"/>
+          <offset value="5"/>
+        </repeat>
+      </timingTiming>
+      <type>
+        <coding>
+          <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+          <code value="Visit"/>
+        </coding>
+      </type>
+      <definitionUri value="PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820"/>
+    </action>
+  </action>
+  <action>
+    <type>
+      <coding>
+        <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs"/>
+        <code value="UNSCHEDULED_ACTIVITIES"/>
+      </coding>
+    </type>
+    <action id="Visit-A1">
+      <type>
+        <coding>
+          <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+          <code value="Visit"/>
+        </coding>
+      </type>
+      <definitionUri value="PlanDefinition/1289d38a-653a-4cd9-afb9-b95299741b3a1"/>
+    </action>
+    <action id="Visit-C1">
+      <type>
+        <coding>
+          <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+          <code value="Visit"/>
+        </coding>
+      </type>
+      <definitionUri value="PlanDefinition/1289d38a-653a-4cd9-afb9-b95299741b3c1"/>
+    </action>
+  </action>
+  <action>
+    <type>
+      <coding>
+        <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs"/>
+        <code value="RECURRING_FORMS"/>
+      </coding>
+    </type>
+    <action>
+      <trigger>
+        <type value="named-event"/>
+        <name value="VISIT"/>
+        <timingTiming>
+          <repeat>
+            <durationUnit value="d"/>
+            <period value="1"/>
+          </repeat>
+        </timingTiming>
+      </trigger>
+      <type>
+        <coding>
+          <code value="Questionnaire"/>
+        </coding>
+      </type>
+      <definitionUri value="Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8"/>
+    </action>
+    <action>
+      <trigger>
+        <type value="named-event"/>
+        <name value="PREVIOUS_VISIT"/>
+        <timingTiming>
+          <repeat>
+            <countMax value="6"/>
+            <durationUnit value="d"/>
+            <period value="1"/>
+            <periodUnit value="wk"/>
+            <dayOfWeek value="sun"/>
+            <dayOfWeek value="mon"/>
+            <dayOfWeek value="wed"/>
+            <dayOfWeek value="sat"/>
+          </repeat>
+        </timingTiming>
+      </trigger>
+      <condition>
+        <kind value="start"/>
+        <expression>
+          <expression value="if my dog has a cat is he a catdog"/>
+          <reference value="cl/2928292782"/>
+        </expression>
+      </condition>
+      <type>
+        <coding>
+          <code value="Questionnaire"/>
+        </coding>
+      </type>
+      <definitionUri value="Questionnaire/6ff38b3d-099a-4fe0-ac46-267092619e2c"/>
+    </action>
+  </action>
+  <action>
+    <type>
+      <coding>
+        <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs"/>
+        <code value="ADHOC_FORMS"/>
+      </coding>
+    </type>
+    <action>
+      <type>
+        <coding>
+          <code value="Questionnaire"/>
+        </coding>
+      </type>
+      <definitionUri value="Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8x"/>
+    </action>
+    <action>
+      <type>
+        <coding>
+          <code value="Questionnaire"/>
+        </coding>
+      </type>
+      <definitionUri value="Questionnaire/49858fac-02bd-4d51-91d1-37ebb9097d36x"/>
+    </action>
+  </action>
+  <action>
+    <type>
+      <coding>
+        <system value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs"/>
+        <code value="ONGOING_FORMS"/>
+      </coding>
+    </type>
+    <action>
+      <type>
+        <coding>
+          <code value="Questionnaire"/>
+        </coding>
+      </type>
+      <definitionUri value="Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8xy"/>
+    </action>
+    <action>
+      <type>
+        <coding>
+          <code value="Questionnaire"/>
+        </coding>
+      </type>
+      <definitionUri value="Questionnaire/49858fac-02bd-4d51-91d1-37ebb9097d36xy"/>
+    </action>
+  </action>
+</PlanDefinition>

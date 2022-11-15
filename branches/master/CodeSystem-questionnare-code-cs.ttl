@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "questionnare-code-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">recurrring<a name=\"questionnare-code-cs-recurrring\"> </a></td><td>Recurrring-Form</td><td>Recurrring Form</td></tr><tr><td style=\"white-space:nowrap\">adHoc<a name=\"questionnare-code-cs-adHoc\"> </a></td><td>adHoc-Form</td><td>adHoc Form</td></tr><tr><td style=\"white-space:nowrap\">onGoing<a name=\"questionnare-code-cs-onGoing\"> </a></td><td>onGoing-Form</td><td>eDiaronGoingy Form</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
+  fhir:CodeSystem.name [ fhir:value "QuestionnareCodeCS"];
+  fhir:CodeSystem.title [ fhir:value "CodeSystem: Questionnare Code Cs"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-11-15T20:45:59+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "ClinicalTrialExample"];
+  fhir:CodeSystem.description [ fhir:value "specific Codes for Questionnaire"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "recurrring" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Recurrring-Form" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Recurrring Form" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "adHoc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "adHoc-Form" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "adHoc Form" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "onGoing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "onGoing-Form" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "eDiaronGoingy Form" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/questionnare-code-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

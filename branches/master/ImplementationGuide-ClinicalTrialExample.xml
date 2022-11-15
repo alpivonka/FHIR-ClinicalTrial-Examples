@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ClinicalTrialExample"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ClinicalTrialExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ImplementationGuide/ClinicalTrialExample</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
+</div></div>
+  </text>
+  <url value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ImplementationGuide/ClinicalTrialExample"/>
+  <version value="1.0.0"/>
+  <name value="ClinicalTrialExampleIG"/>
+  <title value="HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"/>
+  <status value="active"/>
+  <date value="2020-02-26"/>
+  <publisher value="ClinicalTrialExample"/>
+  <description value="Example IG exercises many of the fields in a SUSHI configuration."/>
+  <packageId value="ClinicalTrialExample"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0-ballot"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="5.0.0"/>
+  </dependsOn>
+  <definition>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/arm-group-profile"/>
+      </reference>
+      <name value="ARM Group"/>
+      <description value="ARM SPECIFIC extentions"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/so-aactivity"/>
+      </reference>
+      <name value="SoA Activity"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/soa-definition"/>
+      </reference>
+      <name value="Profile: SoA Definition"/>
+      <description value="SoA Definition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/soa-plan-definition"/>
+      </reference>
+      <name value="Profile: SoA Plan Definition"/>
+      <description value="SoA PlanDefinition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/soa-questionnaire"/>
+      </reference>
+      <name value="SoA Questionnaire"/>
+      <description value="SoA Questionnaire"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/segment-plan-definition"/>
+      </reference>
+      <name value="Profile: SoA Segment Plan Definition"/>
+      <description value="SoA SegmentPlanDefinition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/soa-visit-definition"/>
+      </reference>
+      <name value="Profile: SoA Visit Definition"/>
+      <description value="SoA Visit Definition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/the-research-subject"/>
+      </reference>
+      <name value="ResearchSubject"/>
+      <description value="ResearchSubject"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/arm-group-att-ext"/>
+      </reference>
+      <name value="ARMGroup"/>
+      <description value="ARM Group attribute extensions"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AcceptableOffsetRangeSoa"/>
+      </reference>
+      <name value="Extension: Acceptable Offset Range"/>
+      <description value="Provides an offset range that, along with offsetDuration, indicates an acceptable range of dates for a related action."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/arm-group-ext"/>
+      </reference>
+      <name value="Arm Group"/>
+      <description value="Arm Group"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cohort-group-ext"/>
+      </reference>
+      <name value="Cohort Group"/>
+      <description value="Cohort Group"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/epoch"/>
+      </reference>
+      <name value="Epoch"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/group-references"/>
+      </reference>
+      <name value="Group References"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study"/>
+      </reference>
+      <name value="Part Of Research Study"/>
+      <description value="child to parent reference/association"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/-visit-range"/>
+      </reference>
+      <name value="Visit Range"/>
+      <description value="Range of Visits"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/plan-definition-cs"/>
+      </reference>
+      <name value="CodeSystem: Plan Definition CS"/>
+      <description value="Plan Definition CS"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/questionnare-code-cs"/>
+      </reference>
+      <name value="CodeSystem: Questionnare Code Cs"/>
+      <description value="specific Codes for Questionnaire"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/visit-segment-cs"/>
+      </reference>
+      <name value="CodeSystem: Visit Segment CS"/>
+      <description value="Visit Segment CS"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: ActivityEligibility-Visit-V3--FHIR2"/>
+      <description value="ActivityEligibility-Visit-V3--FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen"/>
+      </reference>
+      <name value="Example-SoA: ActivityCollectCosen-Visit-V1--FHIR2"/>
+      <description value="ActivityCollectCosen-Visit-V1--FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ARMGroupMonkeyLegs-uuid22s"/>
+      </reference>
+      <name value="Example ARMGroup"/>
+      <description value="Example ARMGroup"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ARMMonkeyFeet-internal-uuid2s"/>
+      </reference>
+      <name value="Example ARMGroup"/>
+      <description value="Example ARMGroup"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/Cohort2GroupUnder50-ososi"/>
+      </reference>
+      <name value="Example CohortGroup"/>
+      <description value="Example CohortGroup"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/CohortGroupOver50-ss9s9s9"/>
+      </reference>
+      <name value="Example CohortGroup"/>
+      <description value="Example CohortGroup"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/CohortGroupUnder25"/>
+      </reference>
+      <name value="Example CohortGroup"/>
+      <description value="Example CohortGroup"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/NEW-SOA-UUID-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: SoADefinition-FHIR2"/>
+      <description value="SoADefinition-FHIR2 "/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-definition"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-1-001"/>
+      </reference>
+      <name value="Example ThePatient"/>
+      <description value="Example ThePatient"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/ResearchStudy-1-002"/>
+      </reference>
+      <name value="Example ResearchStudy"/>
+      <description value="Example ResearchStudy"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/ResearchSubject-1"/>
+      </reference>
+      <name value="Example ResearchSubject Cohort/ARM"/>
+      <description value="Example ResearchSubject Cohort/ARM"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: SoAVisitDefinition-Visit-V1-FHIR2"/>
+      <description value="SoAVisitDefinition-Visit-V1-FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: SoAVisitDefinition-Visit-V2-FHIR2"/>
+      <description value="SoAVisitDefinition-Visit-V2-FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: SoAVisitDefinition-Visit-V3-FHIR2"/>
+      <description value="SoAVisitDefinition-Visit-V3-FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: SoAVisitDefinition-Visit-V4-FHIR2"/>
+      <description value="SoAVisitDefinition-Visit-V4-FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: ActivityStudyPeriod-Visit-V4--FHIR2"/>
+      <description value="ActivityStudyPeriod-Visit-V4--FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2"/>
+      </reference>
+      <name value="Example-SoA: ActivityScreening-Visit-V2--FHIR2"/>
+      <description value="ActivityScreening-Visit-V2--FHIR2"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="changes.html"/>
+        <name value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2021+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="STU1"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/Cohort2GroupUnder50-ososi> a fhir:Group;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Cohort2GroupUnder50-ososi"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"Cohort2GroupUnder50-ososi\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group \"Cohort2GroupUnder50-ososi\" </p></div><p><b>identifier</b>: id: 3292822228</p><p><b>type</b>: specimen</p><p><b>membership</b>: enumerated</p><p><b>code</b>: COHORT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#COHORT)</span></p><p><b>name</b>: Men under 50</p><p><b>description</b>: my description</p></div>"
+  ];
+  fhir:Group.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "3292822228" ]
+  ];
+  fhir:Group.type [ fhir:value "specimen"];
+  fhir:Group.membership [ fhir:value "enumerated"];
+  fhir:Group.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "COHORT" ]
+     ]
+  ];
+  fhir:Group.name [ fhir:value "Men under 50"];
+  fhir:Group.description [ fhir:value "my description"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/Cohort2GroupUnder50-ososi.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

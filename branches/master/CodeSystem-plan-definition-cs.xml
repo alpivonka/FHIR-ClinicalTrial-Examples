@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="plan-definition-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">Visit<a name="plan-definition-cs-Visit"> </a></td><td>Visit</td></tr><tr><td style="white-space:nowrap">ActivityDefinition<a name="plan-definition-cs-ActivityDefinition"> </a></td><td>Activity Definition</td></tr><tr><td style="white-space:nowrap">Questionnaire<a name="plan-definition-cs-Questionnaire"> </a></td><td>Questionnaire</td></tr><tr><td style="white-space:nowrap">SoADefinition<a name="plan-definition-cs-SoADefinition"> </a></td><td>SoADefinition</td></tr></table></div>
+  </text>
+  <url value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/plan-definition-cs"/>
+  <version value="1.0.0"/>
+  <name value="PlanDefinitionCS"/>
+  <title value="CodeSystem: Plan Definition CS"/>
+  <status value="active"/>
+  <date value="2022-11-15T20:45:59+00:00"/>
+  <publisher value="ClinicalTrialExample"/>
+  <description value="Plan Definition CS"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="Visit"/>
+    <display value="Visit"/>
+    <definition value="Visit"/>
+  </concept>
+  <concept>
+    <code value="ActivityDefinition"/>
+    <display value="ActivityDefinition"/>
+    <definition value="Activity Definition"/>
+  </concept>
+  <concept>
+    <code value="Questionnaire"/>
+    <display value="Questionnaire"/>
+    <definition value="Questionnaire"/>
+  </concept>
+  <concept>
+    <code value="SoADefinition"/>
+    <display value="SoADefinition"/>
+    <definition value="SoADefinition"/>
+  </concept>
+</CodeSystem>

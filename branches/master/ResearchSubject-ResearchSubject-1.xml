@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchSubject xmlns="http://hl7.org/fhir">
+  <id value="ResearchSubject-1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/firstCreated">
+      <valueInstant value="2022-01-01T10:08:10Z"/>
+    </extension>
+    <lastUpdated value="2022-01-01T10:08:10Z"/>
+    <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ResearchSubject</b><a name="ResearchSubject-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ResearchSubject "ResearchSubject-1" Updated "2022-01-01 10:08:10+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-the-research-subject.html">ResearchSubject</a></p></div><blockquote><p><b>Group References</b></p><p><b>value</b>: ARM</p></blockquote><blockquote><p><b>Group References</b></p><p><b>value</b>: COHORT</p></blockquote><p><b>status</b>: active</p><p><b>study</b>: <a href="ResearchStudy-ResearchStudy-1-002.html">ResearchStudy/ResearchStudy-1-002</a></p><p><b>subject</b>: <a href="Patient-Patient-1-001.html">Patient/Patient-1-001</a></p></div>
+  </text>
+  <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references">
+    <extension url="type">
+      <valueString value="ARM"/>
+    </extension>
+    <extension url="referencedGroup">
+      <extension url="reference">
+        <valueReference>
+          <reference value="Group/ARMMonkeyFeet-internal-uuid2s"/>
+        </valueReference>
+      </extension>
+      <extension url="active">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+    <extension url="referencedGroup">
+      <extension url="reference">
+        <valueReference>
+          <reference value="Group/ARMGroupMonkeyLegs-uuid22s"/>
+        </valueReference>
+      </extension>
+      <extension url="active">
+        <valueBoolean value="false"/>
+      </extension>
+    </extension>
+  </extension>
+  <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references">
+    <extension url="type">
+      <valueString value="COHORT"/>
+    </extension>
+    <extension url="referencedGroup">
+      <extension url="reference">
+        <valueReference>
+          <reference value="Group/CohortGroupUnder25"/>
+        </valueReference>
+      </extension>
+      <extension url="active">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <study>
+    <reference value="ResearchStudy/ResearchStudy-1-002"/>
+  </study>
+  <subject>
+    <reference value="Patient/Patient-1-001"/>
+  </subject>
+</ResearchSubject>
