@@ -30,7 +30,7 @@
   fhir:StructureDefinition.name [ fhir:value "SoADefinition"];
   fhir:StructureDefinition.title [ fhir:value "Profile: SoA Definition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-16T15:32:30+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-16T21:11:06+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "SoA Definition"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];

@@ -145,6 +145,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/the-research-study"
+        },
+        "name": "The Research Study",
+        "description": "The research study",
+        "isExample": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/the-research-subject"
         },
         "name": "ResearchSubject",
@@ -215,9 +229,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/epoch"
+          "reference": "StructureDefinition/epoch-definition"
         },
-        "name": "Epoch",
+        "name": "Epoch Definition",
+        "description": "The Epoch definition",
+        "isExample": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/epoch-link-id"
+        },
+        "name": "Epoch Link Id",
         "isExample": false
       },
       {
@@ -297,10 +325,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/visit-segment-cs"
+          "reference": "CodeSystem/soa-action-cs"
         },
-        "name": "CodeSystem: Visit Segment CS",
-        "description": "Visit Segment CS",
+        "name": "CodeSystem: SoAAction CS",
+        "description": "SoAAction CS",
         "isExample": false
       },
       {
@@ -421,6 +449,20 @@
           }
         ],
         "reference": {
+          "reference": "PlanDefinition/EPCH-DEF-0002-2"
+        },
+        "name": "Epoch-Plan Def",
+        "description": "epoch list",
+        "isExample": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PlanDefinition"
+          }
+        ],
+        "reference": {
           "reference": "PlanDefinition/NEW-SOA-UUID-FHIR2"
         },
         "name": "Example-SoA: SoADefinition-FHIR2",
@@ -456,7 +498,10 @@
         },
         "name": "Example ResearchStudy",
         "description": "Example ResearchStudy",
-        "isExample": true
+        "profile": [
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study"
+        ]
       },
       {
         "extension": [
