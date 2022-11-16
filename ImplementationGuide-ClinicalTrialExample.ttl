@@ -40,6 +40,15 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r5" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc";
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.resource [

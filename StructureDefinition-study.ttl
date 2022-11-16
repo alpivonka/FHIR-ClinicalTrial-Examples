@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "Study"];
   fhir:StructureDefinition.title [ fhir:value "Part Of Research Study"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-15T20:45:59+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-16T15:08:29+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "child to parent reference/association"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
