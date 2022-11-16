@@ -21,4 +21,3 @@ Description: "Range of Visits"
 * extension[startVisitId].value[x] only uri
 * extension[endVisitId] ^short = "type of forms contained : ongoing, recurrring adhoc, forms-group,econsent-form-group"
 * extension[endVisitId].value[x] only uri
-

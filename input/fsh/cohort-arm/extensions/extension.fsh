@@ -52,3 +52,11 @@ Invariant:  max-one-active
 Description: "There can be no more than one active referencedGroup"
 Expression: "extension.where(url = 'referencedGroup').extension.where(url = 'active' and valueBoolean = true).count() <= 1"
 Severity:   #error
+
+
+Extension: EpochDefinition
+Id: epoch-definition
+Title: "Epoch Definition"
+Description: "The Epoch definition"
+* insert ExtensionContext(ResearchStudy)
+* value[x] only Reference(PlanDefinition)

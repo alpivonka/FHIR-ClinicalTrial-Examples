@@ -25,7 +25,6 @@ Id: soa-visit-definition
 Title: "Profile: SoA Visit Definition"
 Description: "SoA Visit Definition"
 * ^version = "1.0.0-SoAVisitDefinition"
-* action.extension contains epoch named Epoch 0..1
 
 
 Profile: SoAActivity

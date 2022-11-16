@@ -14,3 +14,11 @@ Id: arm-group-profile
 Title: "ARM Group"
 Description: "ARM SPECIFIC extentions"
 * extension contains arm-group-att-ext named ARMGroupAttExt 0..1
+
+
+Profile: TheResearchStudy
+Parent: ResearchStudy
+Id: the-research-study
+Title: "The Research Study"
+Description: "The research study"
+* extension contains epoch-definition named EpochDefinition 0..1
