@@ -10,7 +10,7 @@
     <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ActivityDefinition "9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen" Updated "2022-01-01 10:08:10+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-so-aactivity.html">SoA Activity</a></p></div><p><b>Part Of Research Study</b>: <a href="ResearchStudy-ResearchStudy-1-002.html">ResearchStudy/ResearchStudy-1-002</a></p><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ActivityOID-CollectCosent</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-16 03:08:29+0000</p><p><b>publisher</b>: ClinicalTrialExample</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ActivityDefinition "9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen" Updated "2022-01-01 10:08:10+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-so-aactivity.html">SoA Activity</a></p></div><p><b>Part Of Research Study</b>: <a href="ResearchStudy-ResearchStudy-1-002.html">ResearchStudy/ResearchStudy-1-002</a></p><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ActivityOID-CollectCosent</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-16 03:32:30+0000</p><p><b>publisher</b>: ClinicalTrialExample</p></div>
   </text>
   <extension url="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study">
     <valueReference>
@@ -21,6 +21,6 @@
   <version value="1.0.0"/>
   <name value="ActivityOID-CollectCosent"/>
   <status value="active"/>
-  <date value="2022-11-16T15:08:29+00:00"/>
+  <date value="2022-11-16T15:32:30+00:00"/>
   <publisher value="ClinicalTrialExample"/>
 </ActivityDefinition>
