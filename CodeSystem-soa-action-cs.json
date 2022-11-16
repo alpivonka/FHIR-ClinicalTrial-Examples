@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "soa-action-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/soa-action-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ACTIVITIES<a name=\"soa-action-cs-ACTIVITIES\"> </a></td><td>Activities</td><td>List of Activities</td></tr><tr><td style=\"white-space:nowrap\">UNSCHEDULED_ACTIVITIES<a name=\"soa-action-cs-UNSCHEDULED_ACTIVITIES\"> </a></td><td>UnscheduledActivities</td><td>Unscheduled Activities</td></tr><tr><td style=\"white-space:nowrap\">ACTVITY_SEGMENT<a name=\"soa-action-cs-ACTVITY_SEGMENT\"> </a></td><td>ACTVITY_SEGMENT</td><td>ACTVITY_SEGMENT</td></tr><tr><td style=\"white-space:nowrap\">RECURRING_FORMS<a name=\"soa-action-cs-RECURRING_FORMS\"> </a></td><td>Recurrring-Form</td><td>Recurrring Form</td></tr><tr><td style=\"white-space:nowrap\">ADHOC_FORMS<a name=\"soa-action-cs-ADHOC_FORMS\"> </a></td><td>adHoc-Form</td><td>adHoc Form</td></tr><tr><td style=\"white-space:nowrap\">ONGOING_FORMS<a name=\"soa-action-cs-ONGOING_FORMS\"> </a></td><td>onGoing-Form</td><td>eDiaronGoingy Form</td></tr><tr><td style=\"white-space:nowrap\">EPOCH<a name=\"soa-action-cs-EPOCH\"> </a></td><td>Epoch reference</td><td>Epoch References.</td></tr></table></div>"
+  },
+  "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/soa-action-cs",
+  "version": "1.0.0",
+  "name": "SoAActionCS",
+  "title": "CodeSystem: SoAAction CS",
+  "status": "active",
+  "date": "2022-11-16T21:11:06+00:00",
+  "publisher": "ClinicalTrialExample",
+  "description": "SoAAction CS",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "ACTIVITIES",
+      "display": "Activities",
+      "definition": "List of Activities"
+    },
+    {
+      "code": "UNSCHEDULED_ACTIVITIES",
+      "display": "UnscheduledActivities",
+      "definition": "Unscheduled Activities"
+    },
+    {
+      "code": "ACTVITY_SEGMENT",
+      "display": "ACTVITY_SEGMENT",
+      "definition": "ACTVITY_SEGMENT"
+    },
+    {
+      "code": "RECURRING_FORMS",
+      "display": "Recurrring-Form",
+      "definition": "Recurrring Form"
+    },
+    {
+      "code": "ADHOC_FORMS",
+      "display": "adHoc-Form",
+      "definition": "adHoc Form"
+    },
+    {
+      "code": "ONGOING_FORMS",
+      "display": "onGoing-Form",
+      "definition": "eDiaronGoingy Form"
+    },
+    {
+      "code": "EPOCH",
+      "display": "Epoch reference",
+      "definition": "Epoch References."
+    }
+  ]
+}

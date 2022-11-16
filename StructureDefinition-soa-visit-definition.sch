@@ -452,12 +452,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:PlanDefinition/f:action</sch:title>
-    <sch:rule context="f:PlanDefinition/f:action">
-      <sch:assert test="count(f:extension[@url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch']) &lt;= 1">extension with URL = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>PlanDefinition.action</sch:title>
     <sch:rule context="f:PlanDefinition/f:action">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -468,8 +462,6 @@
     <sch:rule context="f:PlanDefinition/f:action/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

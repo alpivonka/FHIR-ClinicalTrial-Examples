@@ -8,25 +8,28 @@
 <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ResearchStudy/ResearchStudy-1-002> a fhir:ResearchStudy;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ResearchStudy-1-002"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study";
+       fhir:index 0;
+       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study>
+     ]
+  ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"ResearchStudy-1-002\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy \"ResearchStudy-1-002\" </p></div><p><b>status</b>: active</p><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: ARM1</p><p><b>type</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>observedGroup</b>: <a href=\"ARMGroup\">ARMGroup</a></p></blockquote><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: ARMGroupMonkeyFeet</p><p><b>type</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>observedGroup</b>: <a href=\"Group-ARMMonkeyFeet-internal-uuid2s.html\">Group/ARMMonkeyFeet-internal-uuid2s</a> \"MonkeyFeet\"</p></blockquote><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: ARMGroupMonkeyLegs</p><p><b>type</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>observedGroup</b>: <a href=\"Group-ARMGroupMonkeyLegs-uuid22s.html\">Group/ARMGroupMonkeyLegs-uuid22s</a> \"MonkeyFeet\"</p></blockquote><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: CohortGroupOver50</p><p><b>type</b>: COHORT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#COHORT)</span></p><p><b>observedGroup</b>: <a href=\"Group-CohortGroupOver50-ss9s9s9.html\">Group/CohortGroupOver50-ss9s9s9</a> \"Men over 50\"</p></blockquote><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: Cohort2GroupUnder50</p><p><b>type</b>: COHORT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#COHORT)</span></p><p><b>observedGroup</b>: <a href=\"Group-Cohort2GroupUnder50-ososi.html\">Group/Cohort2GroupUnder50-ososi</a> \"Men under 50\"</p></blockquote><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: CohortGroupUnder25</p><p><b>type</b>: COHORT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#COHORT)</span></p><p><b>observedGroup</b>: <a href=\"Group-CohortGroupUnder25.html\">Group/CohortGroupUnder25</a> \"Men under 25\"</p></blockquote></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"ResearchStudy-1-002\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy \"ResearchStudy-1-002\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-the-research-study.html\">The Research Study</a></p></div><p><b>Epoch Definition</b>: <a href=\"PlanDefinition-EPCH-DEF-0002-2.html\">PlanDefinition/EPCH-DEF-0002-2</a> \"Epoch Plan Definition\"</p><p><b>status</b>: active</p><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: ARMGroupMonkeyFeet</p><p><b>type</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>observedGroup</b>: <a href=\"Group-ARMMonkeyFeet-internal-uuid2s.html\">Group/ARMMonkeyFeet-internal-uuid2s</a> \"MonkeyFeet\"</p></blockquote><blockquote><p><b>comparisonGroup</b></p><p><b>name</b>: ARMGroupMonkeyLegs</p><p><b>type</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>observedGroup</b>: <a href=\"Group-ARMGroupMonkeyLegs-uuid22s.html\">Group/ARMGroupMonkeyLegs-uuid22s</a> \"MonkeyFeet\"</p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2>;
+       fhir:Reference.reference [ fhir:value "PlanDefinition/EPCH-DEF-0002-2" ]
+     ]
   ];
   fhir:ResearchStudy.status [ fhir:value "active"];
   fhir:ResearchStudy.comparisonGroup [
      fhir:index 0;
-     fhir:ResearchStudy.comparisonGroup.name [ fhir:value "ARM1" ];
-     fhir:ResearchStudy.comparisonGroup.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "ARM" ]
-       ]
-     ];
-     fhir:ResearchStudy.comparisonGroup.observedGroup [
-       fhir:Reference.reference [ fhir:value "ARMGroup" ]
-     ]
-  ], [
-     fhir:index 1;
      fhir:ResearchStudy.comparisonGroup.name [ fhir:value "ARMGroupMonkeyFeet" ];
      fhir:ResearchStudy.comparisonGroup.type [
        fhir:CodeableConcept.coding [
@@ -39,7 +42,7 @@
        fhir:Reference.reference [ fhir:value "Group/ARMMonkeyFeet-internal-uuid2s" ]
      ]
   ], [
-     fhir:index 2;
+     fhir:index 1;
      fhir:ResearchStudy.comparisonGroup.name [ fhir:value "ARMGroupMonkeyLegs" ];
      fhir:ResearchStudy.comparisonGroup.type [
        fhir:CodeableConcept.coding [
@@ -50,45 +53,6 @@
      fhir:ResearchStudy.comparisonGroup.observedGroup [
        fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/ARMGroupMonkeyLegs-uuid22s>;
        fhir:Reference.reference [ fhir:value "Group/ARMGroupMonkeyLegs-uuid22s" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:ResearchStudy.comparisonGroup.name [ fhir:value "CohortGroupOver50" ];
-     fhir:ResearchStudy.comparisonGroup.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "COHORT" ]
-       ]
-     ];
-     fhir:ResearchStudy.comparisonGroup.observedGroup [
-       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/CohortGroupOver50-ss9s9s9>;
-       fhir:Reference.reference [ fhir:value "Group/CohortGroupOver50-ss9s9s9" ]
-     ]
-  ], [
-     fhir:index 4;
-     fhir:ResearchStudy.comparisonGroup.name [ fhir:value "Cohort2GroupUnder50" ];
-     fhir:ResearchStudy.comparisonGroup.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "COHORT" ]
-       ]
-     ];
-     fhir:ResearchStudy.comparisonGroup.observedGroup [
-       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/Cohort2GroupUnder50-ososi>;
-       fhir:Reference.reference [ fhir:value "Group/Cohort2GroupUnder50-ososi" ]
-     ]
-  ], [
-     fhir:index 5;
-     fhir:ResearchStudy.comparisonGroup.name [ fhir:value "CohortGroupUnder25" ];
-     fhir:ResearchStudy.comparisonGroup.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "COHORT" ]
-       ]
-     ];
-     fhir:ResearchStudy.comparisonGroup.observedGroup [
-       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Group/CohortGroupUnder25>;
-       fhir:Reference.reference [ fhir:value "Group/CohortGroupUnder25" ]
      ]
   ] .
 

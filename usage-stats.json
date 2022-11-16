@@ -258,10 +258,17 @@
       ]
     },
     {
-      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch",
-      "title": "Epoch",
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition",
+      "title": "Epoch Definition",
       "types": [
-        "string"
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-link-id",
+      "title": "Epoch Link Id",
+      "types": [
+        "uri"
       ]
     },
     {
@@ -414,6 +421,12 @@
         "title": "SoA Questionnaire"
       }
     ],
+    "ResearchStudy": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study",
+        "title": "The Research Study"
+      }
+    ],
     "ResearchSubject": [
       {
         "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject",
@@ -483,8 +496,10 @@
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext": [
       "Group"
     ],
-    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch": [
-      "PlanDefinition.action",
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition": [
+      "ResearchStudy"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-link-id": [
       "PlanDefinition.action.action"
     ],
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references": [

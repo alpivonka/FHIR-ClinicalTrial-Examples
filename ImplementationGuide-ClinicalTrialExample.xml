@@ -112,6 +112,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/the-research-study"/>
+      </reference>
+      <name value="The Research Study"/>
+      <description value="The research study"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/the-research-subject"/>
       </reference>
       <name value="ResearchSubject"/>
@@ -167,9 +178,20 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/epoch"/>
+        <reference value="StructureDefinition/epoch-definition"/>
       </reference>
-      <name value="Epoch"/>
+      <name value="Epoch Definition"/>
+      <description value="The Epoch definition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/epoch-link-id"/>
+      </reference>
+      <name value="Epoch Link Id"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -231,10 +253,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/visit-segment-cs"/>
+        <reference value="CodeSystem/soa-action-cs"/>
       </reference>
-      <name value="CodeSystem: Visit Segment CS"/>
-      <description value="Visit Segment CS"/>
+      <name value="CodeSystem: SoAAction CS"/>
+      <description value="SoAAction CS"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -323,6 +345,17 @@
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
+        <reference value="PlanDefinition/EPCH-DEF-0002-2"/>
+      </reference>
+      <name value="Epoch-Plan Def"/>
+      <description value="epoch list"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
         <reference value="PlanDefinition/NEW-SOA-UUID-FHIR2"/>
       </reference>
       <name value="Example-SoA: SoADefinition-FHIR2"/>
@@ -350,7 +383,8 @@
       </reference>
       <name value="Example ResearchStudy"/>
       <description value="Example ResearchStudy"/>
-      <isExample value="true"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

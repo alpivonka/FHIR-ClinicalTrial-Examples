@@ -42,11 +42,11 @@
     "name": "QuestionnareCodeCS"
   },
   {
-    "id": "visit-segment-cs",
+    "id": "soa-action-cs",
     "type": "CodeSystem",
-    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/visit-segment-cs",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/CodeSystem/soa-action-cs",
     "version": "1.0.0",
-    "name": "VisitSegmentCS"
+    "name": "SoAActionCS"
   },
   {
     "id": "ClinicalTrialExample",
@@ -54,6 +54,13 @@
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ImplementationGuide/ClinicalTrialExample",
     "version": "1.0.0",
     "name": "ClinicalTrialExampleIG"
+  },
+  {
+    "id": "EPCH-DEF-0002-2",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2",
+    "version": "1.0.0",
+    "name": "Epoch Plan Definition"
   },
   {
     "id": "NEW-SOA-UUID-FHIR2",
@@ -133,11 +140,18 @@
     "name": "CohortGroupExt"
   },
   {
-    "id": "epoch",
+    "id": "epoch-definition",
     "type": "StructureDefinition",
-    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition",
     "version": "1.0.0",
-    "name": "Epoch"
+    "name": "EpochDefinition"
+  },
+  {
+    "id": "epoch-link-id",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-link-id",
+    "version": "1.0.0",
+    "name": "EpochLinkId"
   },
   {
     "id": "group-references",
@@ -194,6 +208,13 @@
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study",
     "version": "1.0.0",
     "name": "Study"
+  },
+  {
+    "id": "the-research-study",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study",
+    "version": "1.0.0",
+    "name": "TheResearchStudy"
   },
   {
     "id": "the-research-subject",
