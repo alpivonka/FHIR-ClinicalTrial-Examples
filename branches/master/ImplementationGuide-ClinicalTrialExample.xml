@@ -47,6 +47,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/dog-cat-definition"/>
+      </reference>
+      <name value="Doc Cat Definition"/>
+      <description value="Definition of Doc Cat associated to a Study"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/epoch-definition"/>
       </reference>
       <name value="Epoch Definition"/>

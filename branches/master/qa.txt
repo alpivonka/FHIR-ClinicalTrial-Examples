@@ -1,9 +1,9 @@
 ﻿ClinicalTrialExampleIG : Validation Results
 =========================================
 
-err = 19, warn = 46, info = 0
+err = 21, warn = 47, info = 0
 IG Publisher Version: 1.2.15
-Generated Thu Nov 17 18:51:40 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+Generated Thu Nov 17 19:07:42 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 0 / 0 / 1
@@ -33,6 +33,7 @@ Generated Thu Nov 17 18:51:40 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/StructureDefinition-arm-group-ext : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arm-group-profile : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-cohort-group-ext : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dog-cat-definition : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-epoch-definition : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-epoch-definition-reference : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-epoch-link-id : 0 / 1 / 1
@@ -106,12 +107,16 @@ WARNING: StructureDefinition/arm-group-ext: StructureDefinition: Rule sdf-29: 'E
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-arm-group-profile.json ==
 WARNING: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
-ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[13].binding.extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
-ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[13].binding.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName' definition is for a simple extension, so it must contain a value
-ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[13].binding.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName|5.0.0-ballot)
+ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[22].binding.extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[22].binding.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName' definition is for a simple extension, so it must contain a value
+ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[22].binding.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName|5.0.0-ballot)
 == fsh-generated/resources/StructureDefinition-cohort-group-ext.json ==
 WARNING: StructureDefinition/cohort-group-ext: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/cohort-group-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dog-cat-definition.json ==
+ERROR: StructureDefinition/dog-cat-definition: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+ERROR: StructureDefinition/dog-cat-definition: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/dog-cat-definition'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-epoch-definition.json ==
 ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
