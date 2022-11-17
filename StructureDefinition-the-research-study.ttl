@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "the-research-study"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy\">ResearchStudy</a><a name=\"ResearchStudy\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/researchstudy.html\">ResearchStudy</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Investigation to increase healthcare-related patient-independent knowledge</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.extension\">Slices for extension</a><a name=\"ResearchStudy.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck04.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.extension:EpochDefinition\" title=\"Extension URL = https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition\">EpochDefinition</a><a name=\"ResearchStudy.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/references.html\">Reference</a>(<a href=\"http://build.fhir.org/plandefinition.html\">PlanDefinition</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Epoch Definition</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://build.fhir.org/StructureDefinition-epoch-definition.html\">https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy\">ResearchStudy</a><a name=\"ResearchStudy\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/researchstudy.html\">ResearchStudy</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Investigation to increase healthcare-related patient-independent knowledge</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.meta\">meta</a><a name=\"ResearchStudy.meta\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck114.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.meta.extension:createdAt\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/firstCreated\">createdAt</a><a name=\"ResearchStudy.meta.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The instant when this resource ID was first associated with content on this server</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://build.fhir.org/extension-firstcreated.html\">http://hl7.org/fhir/StructureDefinition/firstCreated</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.meta.lastUpdated\">lastUpdated</a><a name=\"ResearchStudy.meta.lastUpdated\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">When the resource version last changed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.extension\">Slices for extension</a><a name=\"ResearchStudy.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck04.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-the-research-study-definitions.html#ResearchStudy.extension:EpochDefinitionReference\" title=\"Extension URL = https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference\">EpochDefinitionReference</a><a name=\"ResearchStudy.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/references.html\">Reference</a>(<a href=\"http://build.fhir.org/plandefinition.html\">PlanDefinition</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Epoch Definition</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://build.fhir.org/StructureDefinition-epoch-definition-reference.html\">https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "TheResearchStudy"];
   fhir:StructureDefinition.title [ fhir:value "The Research Study"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-16T21:11:06+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-17T18:46:46+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "The research study"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
@@ -235,6 +235,395 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.id" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "id" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.extension:createdAt" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "createdAt" ];
+       fhir:ElementDefinition.short [ fhir:value "The instant when this resource ID was first associated with content on this server" ];
+       fhir:ElementDefinition.definition [ fhir:value "Indicates when this resource ID was first associated with content on this server." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/firstCreated";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/firstCreated>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.versionId" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.versionId" ];
+       fhir:ElementDefinition.short [ fhir:value "Version specific identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted." ];
+       fhir:ElementDefinition.comment [ fhir:value "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.versionId" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "id" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.lastUpdated" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.lastUpdated" ];
+       fhir:ElementDefinition.short [ fhir:value "When the resource version last changed" ];
+       fhir:ElementDefinition.definition [ fhir:value "When the resource last changed - e.g. when the version changed." ];
+       fhir:ElementDefinition.comment [ fhir:value "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://build.fhir.org/http.html#read) interaction." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.lastUpdated" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "instant" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.source" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.source" ];
+       fhir:ElementDefinition.short [ fhir:value "Identifies where the resource comes from" ];
+       fhir:ElementDefinition.definition [ fhir:value "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://build.fhir.org/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc." ];
+       fhir:ElementDefinition.comment [ fhir:value "The exact use of the source (and the possible implied Provenance.entity.role and agent.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. The source may correspond to Provenance.entity.what[x] or Provenance.agent.who[x], though it may be a more general or abstract reference. \n\nThis element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.source" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.profile" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.profile" ];
+       fhir:ElementDefinition.short [ fhir:value "Profiles this resource claims to conform to" ];
+       fhir:ElementDefinition.definition [ fhir:value "A list of profiles (references to [StructureDefinition](http://build.fhir.org/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](http://build.fhir.org/structuredefinition-definitions.html#StructureDefinition.url)." ];
+       fhir:ElementDefinition.comment [ fhir:value "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.profile" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "canonical" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/StructureDefinition";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/StructureDefinition>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.security" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.security" ];
+       fhir:ElementDefinition.short [ fhir:value "Security Labels applied to this resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure." ];
+       fhir:ElementDefinition.comment [ fhir:value "The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.security" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/build/StructureDefinition/binding-definition" ];
+           fhir:Extension.valueString [ fhir:value "Security Labels from the Healthcare Privacy and Security Classification System." ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "SecurityLabels" ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/security-labels";
+           fhir:link <http://hl7.org/fhir/ValueSet/security-labels>
+         ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.tag" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.tag" ];
+       fhir:ElementDefinition.short [ fhir:value "Tags applied to this resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource." ];
+       fhir:ElementDefinition.comment [ fhir:value "The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.tag" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/build/StructureDefinition/binding-definition" ];
+           fhir:Extension.valueString [ fhir:value "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"." ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "Tags" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/common-tags";
+           fhir:link <http://hl7.org/fhir/ValueSet/common-tags>
+         ]
+       ]
+     ], [
+       fhir:index 12;
        fhir:Element.id [ fhir:value "ResearchStudy.implicitRules" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.implicitRules" ];
        fhir:ElementDefinition.short [ fhir:value "A set of rules under which this content was created" ];
@@ -268,7 +657,7 @@
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "ResearchStudy.language" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.language" ];
        fhir:ElementDefinition.short [ fhir:value "Language of the resource content" ];
@@ -325,7 +714,7 @@
          ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "ResearchStudy.text" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text summary of the resource, for human interpretation" ];
@@ -376,7 +765,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.text?" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "ResearchStudy.contained" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.contained" ];
        fhir:ElementDefinition.short [ fhir:value "Contained, inline Resources" ];
@@ -412,7 +801,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "ResearchStudy.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.extension" ];
        fhir:ElementDefinition.slicing [
@@ -464,10 +853,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
-       fhir:Element.id [ fhir:value "ResearchStudy.extension:EpochDefinition" ];
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "ResearchStudy.extension:EpochDefinitionReference" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "EpochDefinition" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "EpochDefinitionReference" ];
        fhir:ElementDefinition.short [ fhir:value "Epoch Definition" ];
        fhir:ElementDefinition.definition [ fhir:value "The Epoch definition" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -481,9 +870,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition";
+           fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference";
            fhir:index 0;
-           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>
+           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -512,7 +901,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "ResearchStudy.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -570,7 +959,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "ResearchStudy.url" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.url" ];
        fhir:ElementDefinition.short [ fhir:value "Canonical identifier for this study resource" ];
@@ -602,7 +991,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "ResearchStudy.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Business Identifier for study" ];
@@ -652,7 +1041,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "ResearchStudy.version" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.version" ];
        fhir:ElementDefinition.short [ fhir:value "The business version for the study record" ];
@@ -684,7 +1073,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "ResearchStudy.name" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.name" ];
        fhir:ElementDefinition.short [ fhir:value "Name for this study (computer friendly)" ];
@@ -716,7 +1105,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "ResearchStudy.title" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.title" ];
        fhir:ElementDefinition.short [ fhir:value "Human readable name of the study" ];
@@ -757,7 +1146,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "No BRIDG mapping (although there is  StudyProtocolDocumentVersionPublicTitle this is arguably a different semantic: title of a document vs title of a research study)" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "ResearchStudy.label" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.label" ];
        fhir:ElementDefinition.short [ fhir:value "Additional names for the study" ];
@@ -789,7 +1178,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "ResearchStudy.label.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.label.id" ];
        fhir:ElementDefinition.representation [
@@ -822,7 +1211,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "ResearchStudy.label.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.label.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -877,7 +1266,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "ResearchStudy.label.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.label.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -937,7 +1326,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "ResearchStudy.label.type" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.label.type" ];
        fhir:ElementDefinition.short [ fhir:value "primary | official | scientific | plain-language | subtitle | short-title | acronym | earlier-title | language | auto-translated | human-use | machine-use | duplicate-uid" ];
@@ -982,7 +1371,7 @@
          ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "ResearchStudy.label.value" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.label.value" ];
        fhir:ElementDefinition.short [ fhir:value "The name" ];
@@ -1014,7 +1403,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "ResearchStudy.protocol" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.protocol" ];
        fhir:ElementDefinition.short [ fhir:value "Steps followed in executing study" ];
@@ -1064,7 +1453,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=DEFN].target" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "ResearchStudy.partOf" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.partOf" ];
        fhir:ElementDefinition.short [ fhir:value "Part of larger study" ];
@@ -1115,7 +1504,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".inboundRelationship[typeCode=COMP].source[moodCode=EVN]" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "ResearchStudy.relatedArtifact" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.relatedArtifact" ];
        fhir:ElementDefinition.short [ fhir:value "References and dependencies" ];
@@ -1156,7 +1545,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyProtocolDocument, StudyProtocolDocumentVersion" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "ResearchStudy.date" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.date" ];
        fhir:ElementDefinition.short [ fhir:value "Date the resource last changed" ];
@@ -1188,7 +1577,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "ResearchStudy.status" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.status" ];
        fhir:ElementDefinition.short [ fhir:value "draft | active | retired | unknown" ];
@@ -1251,7 +1640,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".status" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "ResearchStudy.primaryPurposeType" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.primaryPurposeType" ];
        fhir:ElementDefinition.short [ fhir:value "treatment | prevention | diagnostic | supportive-care | screening | health-services-research | basic-science | device-feasibility" ];
@@ -1301,7 +1690,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyProtocolVersion.primaryPurposeTypeCode" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "ResearchStudy.phase" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.phase" ];
        fhir:ElementDefinition.short [ fhir:value "n-a | early-phase-1 | phase-1 | phase-1-phase-2 | phase-2 | phase-2-phase-3 | phase-3 | phase-4" ];
@@ -1355,7 +1744,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyProtocolVersion.phaseCode" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "ResearchStudy.studyDesign" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.studyDesign" ];
        fhir:ElementDefinition.short [ fhir:value "Classifications of the study design characteristics" ];
@@ -1409,7 +1798,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "InterventionalStudyProtocolVersion; InterventionalStudyProtocol.allocationCode; InterventionalStudyProtocol.blindedRoleCode; InterventionalStudyProtocol.blindingSchemaCode; InterventionalStudyProtocol.controlTypeCode" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "ResearchStudy.focus" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus" ];
        fhir:ElementDefinition.short [ fhir:value "Drugs, devices, etc. under study" ];
@@ -1441,7 +1830,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "ResearchStudy.focus.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus.id" ];
        fhir:ElementDefinition.representation [
@@ -1474,7 +1863,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "ResearchStudy.focus.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1529,7 +1918,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "ResearchStudy.focus.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1589,7 +1978,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "ResearchStudy.focus.productCode" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus.productCode" ];
        fhir:ElementDefinition.short [ fhir:value "Identification of product under study" ];
@@ -1643,7 +2032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "InterventionalStudyProtocol.interventionTypeCode" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "ResearchStudy.focus.focusType" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus.focusType" ];
        fhir:ElementDefinition.short [ fhir:value "medication | device | intervention | factor" ];
@@ -1688,7 +2077,7 @@
          ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "ResearchStudy.focus.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.focus.factor" ];
        fhir:ElementDefinition.short [ fhir:value "An independent variable manipulated by the experimentalist" ];
@@ -1720,7 +2109,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "ResearchStudy.condition" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.condition" ];
        fhir:ElementDefinition.short [ fhir:value "Condition being studied" ];
@@ -1778,7 +2167,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyCondition.code" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "ResearchStudy.keyword" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.keyword" ];
        fhir:ElementDefinition.short [ fhir:value "Used to search for the study" ];
@@ -1828,7 +2217,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "DocumentVersion.keywordCode; DocumentVersion.keywordText" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "ResearchStudy.region" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.region" ];
        fhir:ElementDefinition.short [ fhir:value "Geographic area for the study" ];
@@ -1882,7 +2271,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyProtocolVersion.participatingLocationCode" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "ResearchStudy.descriptionSummary" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.descriptionSummary" ];
        fhir:ElementDefinition.short [ fhir:value "Brief text explaining the study" ];
@@ -1914,7 +2303,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "ResearchStudy.description" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.description" ];
        fhir:ElementDefinition.short [ fhir:value "Detailed narrative of the study" ];
@@ -1955,7 +2344,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyProtocolDocumentVersion.publicDescription" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "ResearchStudy.period" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.period" ];
        fhir:ElementDefinition.short [ fhir:value "When the study began and ended" ];
@@ -2008,7 +2397,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "ResearchStudy.site" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.site" ];
        fhir:ElementDefinition.short [ fhir:value "Facility where study activities are conducted" ];
@@ -2066,7 +2455,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "PlannedStudySite; StudySite" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "ResearchStudy.note" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.note" ];
        fhir:ElementDefinition.short [ fhir:value "Comments made about the study" ];
@@ -2107,7 +2496,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".inboundRelationship(typeCode=SUBJ].source[classCode=ANNGEN, moodCode=EVN].value[xsi:type=ST]" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "ResearchStudy.classifier" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.classifier" ];
        fhir:ElementDefinition.short [ fhir:value "Classification for the study" ];
@@ -2152,7 +2541,7 @@
          ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty" ];
        fhir:ElementDefinition.short [ fhir:value "Sponsors, collaborators, and other parties" ];
@@ -2186,7 +2575,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.id" ];
        fhir:ElementDefinition.representation [
@@ -2219,7 +2608,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2274,7 +2663,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2334,7 +2723,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.name" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.name" ];
        fhir:ElementDefinition.short [ fhir:value "Name of associated party" ];
@@ -2366,7 +2755,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 50;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.role" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.role" ];
        fhir:ElementDefinition.short [ fhir:value "sponsor | lead-sponsor | sponsor-investigator | primary-investigator | collaborator | funding-source | general-contact | recruitment-contact | sub-investigator | study-director | study-chair" ];
@@ -2411,7 +2800,7 @@
          ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.period" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.period" ];
        fhir:ElementDefinition.short [ fhir:value "When active in the role" ];
@@ -2444,7 +2833,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.classifier" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.classifier" ];
        fhir:ElementDefinition.short [ fhir:value "nih | fda | government | nonprofit | academic | industry" ];
@@ -2489,7 +2878,7 @@
          ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "ResearchStudy.associatedParty.party" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.associatedParty.party" ];
        fhir:ElementDefinition.short [ fhir:value "Individual or organization associated with study (use practitionerRole to specify their organisation)" ];
@@ -2535,7 +2924,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus" ];
        fhir:ElementDefinition.short [ fhir:value "Status of study with time for that status" ];
@@ -2567,7 +2956,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus.id" ];
        fhir:ElementDefinition.representation [
@@ -2600,7 +2989,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2655,7 +3044,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2715,7 +3104,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus.state" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus.state" ];
        fhir:ElementDefinition.short [ fhir:value "Label for status or state (e.g. recruitment status)" ];
@@ -2760,7 +3149,7 @@
          ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus.actual" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus.actual" ];
        fhir:ElementDefinition.short [ fhir:value "Actual if true else anticipated" ];
@@ -2792,7 +3181,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "ResearchStudy.progressStatus.period" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.progressStatus.period" ];
        fhir:ElementDefinition.short [ fhir:value "Date range" ];
@@ -2824,7 +3213,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 61;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "ResearchStudy.whyStopped" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.whyStopped" ];
        fhir:ElementDefinition.short [ fhir:value "accrual-goal-met | closed-due-to-toxicity | closed-due-to-lack-of-study-progress | temporarily-closed-per-study-design" ];
@@ -2882,7 +3271,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyOverallStatus.studyStoppedReasonCode" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment" ];
        fhir:ElementDefinition.short [ fhir:value "Target or actual group of participants enrolled in study" ];
@@ -2935,7 +3324,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.id" ];
        fhir:ElementDefinition.representation [
@@ -2968,7 +3357,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3023,7 +3412,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3083,7 +3472,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.targetNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.targetNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Estimated total number of participants to be enrolled" ];
@@ -3115,7 +3504,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.actualNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.actualNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Actual total number of participants enrolled in study" ];
@@ -3147,7 +3536,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.eligibility" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.eligibility" ];
        fhir:ElementDefinition.short [ fhir:value "Inclusion and exclusion criteria" ];
@@ -3188,7 +3577,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "ResearchStudy.recruitment.actualGroup" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.recruitment.actualGroup" ];
        fhir:ElementDefinition.short [ fhir:value "Group of participants who were enrolled in study" ];
@@ -3246,7 +3635,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup" ];
        fhir:ElementDefinition.short [ fhir:value "Defined path through the study for a subject" ];
@@ -3292,7 +3681,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Arm" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.id" ];
        fhir:ElementDefinition.representation [
@@ -3325,7 +3714,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3380,7 +3769,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3440,7 +3829,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.identifier[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.identifier[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily" ];
@@ -3475,7 +3864,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.name" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.name" ];
        fhir:ElementDefinition.short [ fhir:value "Label for study comparisonGroup" ];
@@ -3516,7 +3905,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Arm.name" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.type" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.type" ];
        fhir:ElementDefinition.short [ fhir:value "Categorization of study comparisonGroup" ];
@@ -3570,7 +3959,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Arm.typeCode" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.description" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.description" ];
        fhir:ElementDefinition.short [ fhir:value "Short explanation of study path" ];
@@ -3611,7 +4000,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Arm.description" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.intendedExposure" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.intendedExposure" ];
        fhir:ElementDefinition.short [ fhir:value "Interventions or exposures in this comparisonGroup or cohort" ];
@@ -3649,7 +4038,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "ResearchStudy.comparisonGroup.observedGroup" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.comparisonGroup.observedGroup" ];
        fhir:ElementDefinition.short [ fhir:value "Group of participants who were enrolled in study comparisonGroup" ];
@@ -3687,7 +4076,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "ResearchStudy.objective" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective" ];
        fhir:ElementDefinition.short [ fhir:value "A goal for the study" ];
@@ -3724,7 +4113,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyObjective" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "ResearchStudy.objective.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective.id" ];
        fhir:ElementDefinition.representation [
@@ -3757,7 +4146,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "ResearchStudy.objective.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3812,7 +4201,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "ResearchStudy.objective.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3872,7 +4261,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "ResearchStudy.objective.name" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective.name" ];
        fhir:ElementDefinition.short [ fhir:value "Label for the objective" ];
@@ -3909,7 +4298,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "No BRIDG mapping (BRIDG has a description, but not a name)" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "ResearchStudy.objective.type" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective.type" ];
        fhir:ElementDefinition.short [ fhir:value "primary | secondary | exploratory" ];
@@ -3959,7 +4348,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "StudyObjective.typeCode" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "ResearchStudy.objective.description" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.objective.description" ];
        fhir:ElementDefinition.short [ fhir:value "Description of the objective" ];
@@ -3991,7 +4380,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure" ];
        fhir:ElementDefinition.short [ fhir:value "An outcome or planned variable to measure during the study" ];
@@ -4023,7 +4412,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.id" ];
        fhir:ElementDefinition.representation [
@@ -4056,7 +4445,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4111,7 +4500,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4171,7 +4560,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.name" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.name" ];
        fhir:ElementDefinition.short [ fhir:value "Label for the outcome" ];
@@ -4203,7 +4592,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 92;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.type" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.type" ];
        fhir:ElementDefinition.short [ fhir:value "primary | secondary | exploratory" ];
@@ -4248,7 +4637,7 @@
          ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.description" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.description" ];
        fhir:ElementDefinition.short [ fhir:value "Description of the outcome" ];
@@ -4280,7 +4669,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 94;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "ResearchStudy.outcomeMeasure.reference" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.outcomeMeasure.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Structured outcome definition" ];
@@ -4317,7 +4706,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "ResearchStudy.result" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.result" ];
        fhir:ElementDefinition.short [ fhir:value "Link to results generated during the study" ];
@@ -4362,7 +4751,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 96;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "ResearchStudy.webLocation" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.webLocation" ];
        fhir:ElementDefinition.short [ fhir:value "Archive location for the study" ];
@@ -4394,7 +4783,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 97;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "ResearchStudy.webLocation.id" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.webLocation.id" ];
        fhir:ElementDefinition.representation [
@@ -4427,7 +4816,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "ResearchStudy.webLocation.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.webLocation.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4482,7 +4871,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "ResearchStudy.webLocation.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.webLocation.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4542,7 +4931,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "ResearchStudy.webLocation.classifier" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.webLocation.classifier" ];
        fhir:ElementDefinition.short [ fhir:value "registry-page|recruitment-page|contact-page" ];
@@ -4587,7 +4976,7 @@
          ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "ResearchStudy.webLocation.url" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.webLocation.url" ];
        fhir:ElementDefinition.short [ fhir:value "The location address" ];
@@ -4627,6 +5016,28 @@
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy" ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.extension:createdAt" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "createdAt" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/firstCreated";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/firstCreated>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "ResearchStudy.meta.lastUpdated" ];
+       fhir:ElementDefinition.path [ fhir:value "ResearchStudy.meta.lastUpdated" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
        fhir:Element.id [ fhir:value "ResearchStudy.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4639,19 +5050,19 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "ResearchStudy.extension:EpochDefinition" ];
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "ResearchStudy.extension:EpochDefinitionReference" ];
        fhir:ElementDefinition.path [ fhir:value "ResearchStudy.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "EpochDefinition" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "EpochDefinitionReference" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition";
+           fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference";
            fhir:index 0;
-           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>
+           fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference>
          ]
        ]
      ]

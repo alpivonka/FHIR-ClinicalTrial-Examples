@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition",
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference",
       "valueReference": {
         "reference": "PlanDefinition/EPCH-DEF-0002-2"
       }

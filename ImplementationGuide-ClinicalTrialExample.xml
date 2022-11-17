@@ -47,9 +47,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/so-aactivity"/>
+        <reference value="StructureDefinition/epoch-definition"/>
+      </reference>
+      <name value="Epoch Definition"/>
+      <description value="Definition of Epochs associated to a Study"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/soa-activity"/>
       </reference>
       <name value="SoA Activity"/>
+      <description value="SoA Activity"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -178,7 +190,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/epoch-definition"/>
+        <reference value="StructureDefinition/epoch-definition-reference"/>
       </reference>
       <name value="Epoch Definition"/>
       <description value="The Epoch definition"/>
@@ -268,8 +280,8 @@
       </reference>
       <name value="Example-SoA: ActivityEligibility-Visit-V3--FHIR2"/>
       <description value="ActivityEligibility-Visit-V3--FHIR2"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -280,8 +292,8 @@
       </reference>
       <name value="Example-SoA: ActivityCollectCosen-Visit-V1--FHIR2"/>
       <description value="ActivityCollectCosen-Visit-V1--FHIR2"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -349,7 +361,8 @@
       </reference>
       <name value="Epoch-Plan Def"/>
       <description value="epoch list"/>
-      <isExample value="true"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -455,8 +468,8 @@
       </reference>
       <name value="Example-SoA: ActivityStudyPeriod-Visit-V4--FHIR2"/>
       <description value="ActivityStudyPeriod-Visit-V4--FHIR2"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -467,8 +480,8 @@
       </reference>
       <name value="Example-SoA: ActivityScreening-Visit-V2--FHIR2"/>
       <description value="ActivityScreening-Visit-V2--FHIR2"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"/>
     </resource>
     <page>
       <sourceUrl value="toc.html"/>

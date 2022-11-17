@@ -21,7 +21,7 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition" ];
+     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference" ];
      fhir:Extension.valueReference [
        fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2>;
        fhir:Reference.reference [ fhir:value "PlanDefinition/EPCH-DEF-0002-2" ]
