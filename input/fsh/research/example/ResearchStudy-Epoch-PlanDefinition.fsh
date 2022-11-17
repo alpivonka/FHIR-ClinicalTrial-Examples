@@ -1,5 +1,5 @@
-Instance: EpochDefinition
-InstanceOf: PlanDefinition
+Instance: EpochDefinitionExample
+InstanceOf: EpochDefinition
 Usage: #example
 Title: "Epoch-Plan Def"
 Description: "epoch list"

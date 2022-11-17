@@ -21,4 +21,16 @@ Parent: ResearchStudy
 Id: the-research-study
 Title: "The Research Study"
 Description: "The research study"
-* extension contains epoch-definition named EpochDefinition 0..1
+* meta.extension contains firstCreated named createdAt 0..1 MS
+* meta.lastUpdated MS
+* extension contains epoch-definition-reference named EpochDefinitionReference 0..1
+
+
+Profile: EpochDefinition
+Parent: PlanDefinition
+Id: epoch-definition
+Title: "Epoch Definition"
+Description: "Definition of Epochs associated to a Study"
+* meta.extension contains firstCreated named createdAt 0..1 MS
+* meta.lastUpdated MS
+

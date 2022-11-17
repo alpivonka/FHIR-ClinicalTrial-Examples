@@ -29,9 +29,9 @@ Description: "SoA Visit Definition"
 
 Profile: SoAActivity
 Parent: ActivityDefinition
-Id: so-aactivity
+Id: soa-activity
 Title: "SoA Activity"
-Description: ""
+Description: "SoA Activity"
 * meta.extension contains firstCreated named createdAt 0..1 MS
 * meta.lastUpdated MS
 * extension contains study named Study 0..1

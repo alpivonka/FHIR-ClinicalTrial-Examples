@@ -20,4 +20,4 @@ Description: "Example ResearchStudy"
 * comparisonGroup[=].observedGroup = Reference(ARMGroupMonkeyLegs)
 
 
-* extension[EpochDefinition].valueReference = Reference(EpochDefinition)
+* extension[EpochDefinitionReference].valueReference = Reference(EpochDefinitionExample)

@@ -54,8 +54,8 @@ Expression: "extension.where(url = 'referencedGroup').extension.where(url = 'act
 Severity:   #error
 
 
-Extension: EpochDefinition
-Id: epoch-definition
+Extension: EpochDefinitionReference
+Id: epoch-definition-reference
 Title: "Epoch Definition"
 Description: "The Epoch definition"
 * insert ExtensionContext(ResearchStudy)
