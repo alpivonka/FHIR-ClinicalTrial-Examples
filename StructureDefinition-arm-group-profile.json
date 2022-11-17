@@ -20,7 +20,7 @@
   "name": "ARMGroupProfile",
   "title": "ARM Group",
   "status": "active",
-  "date": "2022-11-17T18:46:46+00:00",
+  "date": "2022-11-17T18:50:22+00:00",
   "publisher": "ClinicalTrialExample",
   "description": "ARM SPECIFIC extentions",
   "fhirVersion": "5.0.0-ballot",
