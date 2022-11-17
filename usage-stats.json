@@ -457,6 +457,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/firstCreated": [
       "ActivityDefinition.meta",
+      "Group.meta",
       "PlanDefinition.meta",
       "Questionnaire.meta",
       "ResearchStudy.meta",

@@ -140,6 +140,13 @@
     "name": "CohortGroupExt"
   },
   {
+    "id": "dog-cat-definition",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/dog-cat-definition",
+    "version": "1.0.0",
+    "name": "DogCatDefinition"
+  },
+  {
     "id": "epoch-definition",
     "type": "StructureDefinition",
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition",
