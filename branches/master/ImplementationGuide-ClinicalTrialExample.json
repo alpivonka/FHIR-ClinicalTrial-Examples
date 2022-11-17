@@ -62,9 +62,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/so-aactivity"
+          "reference": "StructureDefinition/epoch-definition"
+        },
+        "name": "Epoch Definition",
+        "description": "Definition of Epochs associated to a Study",
+        "isExample": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/soa-activity"
         },
         "name": "SoA Activity",
+        "description": "SoA Activity",
         "isExample": false
       },
       {
@@ -229,7 +244,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/epoch-definition"
+          "reference": "StructureDefinition/epoch-definition-reference"
         },
         "name": "Epoch Definition",
         "description": "The Epoch definition",
@@ -344,8 +359,8 @@
         "name": "Example-SoA: ActivityEligibility-Visit-V3--FHIR2",
         "description": "ActivityEligibility-Visit-V3--FHIR2",
         "profile": [
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"
         ]
       },
       {
@@ -361,8 +376,8 @@
         "name": "Example-SoA: ActivityCollectCosen-Visit-V1--FHIR2",
         "description": "ActivityCollectCosen-Visit-V1--FHIR2",
         "profile": [
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"
         ]
       },
       {
@@ -453,7 +468,10 @@
         },
         "name": "Epoch-Plan Def",
         "description": "epoch list",
-        "isExample": true
+        "profile": [
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition"
+        ]
       },
       {
         "extension": [
@@ -601,8 +619,8 @@
         "name": "Example-SoA: ActivityStudyPeriod-Visit-V4--FHIR2",
         "description": "ActivityStudyPeriod-Visit-V4--FHIR2",
         "profile": [
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"
         ]
       },
       {
@@ -618,8 +636,8 @@
         "name": "Example-SoA: ActivityScreening-Visit-V2--FHIR2",
         "description": "ActivityScreening-Visit-V2--FHIR2",
         "profile": [
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity"
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity"
         ]
       }
     ],

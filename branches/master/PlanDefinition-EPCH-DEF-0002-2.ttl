@@ -8,9 +8,16 @@
 <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2> a fhir:PlanDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "EPCH-DEF-0002-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition";
+       fhir:index 0;
+       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"EPCH-DEF-0002-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition \"EPCH-DEF-0002-2\" </p></div><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: Epoch Plan Definition</p><p><b>type</b>: Epoch reference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-soa-action-cs.html\">CodeSystem: SoAAction CS</a>#EPOCH)</span></p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-16 09:11:06+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>linkId</b>: SCREENING-65e9-11ed-9022-0242ac120002</p><p><b>prefix</b>: SCREENING-EPOCH</p><p><b>title</b>: SCREENING</p></blockquote><blockquote><p><b>action</b></p><p><b>linkId</b>: Treatment-65e9-11ed-9022-0242ac120001</p><p><b>prefix</b>: Treatment-EPOCH</p><p><b>title</b>: Treatment</p></blockquote><blockquote><p><b>action</b></p><p><b>linkId</b>: Followup-65e9-11ed-9022-0242ac120000</p><p><b>prefix</b>: Followup-EPOCH</p><p><b>title</b>: Followup</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"EPCH-DEF-0002-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition \"EPCH-DEF-0002-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-epoch-definition.html\">Epoch Definition</a></p></div><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: Epoch Plan Definition</p><p><b>type</b>: Epoch reference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-soa-action-cs.html\">CodeSystem: SoAAction CS</a>#EPOCH)</span></p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-17 06:46:46+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>linkId</b>: SCREENING-65e9-11ed-9022-0242ac120002</p><p><b>prefix</b>: SCREENING-EPOCH</p><p><b>title</b>: SCREENING</p></blockquote><blockquote><p><b>action</b></p><p><b>linkId</b>: Treatment-65e9-11ed-9022-0242ac120001</p><p><b>prefix</b>: Treatment-EPOCH</p><p><b>title</b>: Treatment</p></blockquote><blockquote><p><b>action</b></p><p><b>linkId</b>: Followup-65e9-11ed-9022-0242ac120000</p><p><b>prefix</b>: Followup-EPOCH</p><p><b>title</b>: Followup</p></blockquote></div>"
   ];
   fhir:PlanDefinition.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2"];
   fhir:PlanDefinition.version [ fhir:value "1.0.0"];
@@ -23,7 +30,7 @@
      ]
   ];
   fhir:PlanDefinition.status [ fhir:value "active"];
-  fhir:PlanDefinition.date [ fhir:value "2022-11-16T21:11:06+00:00"^^xsd:dateTime];
+  fhir:PlanDefinition.date [ fhir:value "2022-11-17T18:46:46+00:00"^^xsd:dateTime];
   fhir:PlanDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:PlanDefinition.action [
      fhir:index 0;

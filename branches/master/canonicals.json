@@ -147,6 +147,13 @@
     "name": "EpochDefinition"
   },
   {
+    "id": "epoch-definition-reference",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference",
+    "version": "1.0.0",
+    "name": "EpochDefinitionReference"
+  },
+  {
     "id": "epoch-link-id",
     "type": "StructureDefinition",
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-link-id",
@@ -168,9 +175,9 @@
     "name": "SoASegmentPlanDefinition"
   },
   {
-    "id": "so-aactivity",
+    "id": "soa-activity",
     "type": "StructureDefinition",
-    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/so-aactivity",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity",
     "version": "1.0.0",
     "name": "SoAActivity"
   },
