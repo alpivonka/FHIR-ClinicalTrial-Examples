@@ -28,6 +28,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>Questionnaire.meta</sch:title>
+    <sch:rule context="f:Questionnaire/f:meta">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Questionnaire.meta.extension</sch:title>
     <sch:rule context="f:Questionnaire/f:meta/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
