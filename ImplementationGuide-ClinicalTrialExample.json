@@ -30,12 +30,6 @@
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r5",
       "version": "5.0.0"
-    },
-    {
-      "id": "hl7_fhir_uv_sdc",
-      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
-      "packageId": "hl7.fhir.uv.sdc",
-      "version": "3.0.0"
     }
   ],
   "definition": {
@@ -62,10 +56,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/dog-cat-definition"
+          "reference": "StructureDefinition/epoch-definition"
         },
-        "name": "Doc Cat Definition",
-        "description": "Definition of Doc Cat associated to a Study",
+        "name": "Epoch Definition",
+        "description": "Definition of Epochs associated to a Study",
         "isExample": false
       },
       {
@@ -76,10 +70,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/epoch-definition"
+          "reference": "StructureDefinition/research-study-epoch"
         },
-        "name": "Epoch Definition",
-        "description": "Definition of Epochs associated to a Study",
+        "name": "Research Study with Epoch",
+        "description": " Research study with defined Epochs",
         "isExample": false
       },
       {
@@ -164,20 +158,6 @@
         },
         "name": "Profile: SoA Visit Definition",
         "description": "SoA Visit Definition",
-        "isExample": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/the-research-study"
-        },
-        "name": "The Research Study",
-        "description": "The research study",
         "isExample": false
       },
       {
@@ -275,6 +255,7 @@
           "reference": "StructureDefinition/epoch-link-id"
         },
         "name": "Epoch Link Id",
+        "description": "Stores the Epoch Link Id URL to the defintion or reference. ",
         "isExample": false
       },
       {
@@ -288,6 +269,7 @@
           "reference": "StructureDefinition/group-references"
         },
         "name": "Group References",
+        "description": "Contains the Subjects group references.",
         "isExample": false
       },
       {
@@ -531,8 +513,8 @@
         "name": "Example ResearchStudy",
         "description": "Example ResearchStudy",
         "profile": [
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study",
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study"
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch"
         ]
       },
       {
@@ -672,6 +654,18 @@
           "name": "changes.html",
           "title": "Changes",
           "generation": "html"
+        },
+        {
+          "sourceUrl": "ResearchStudy-Epoch-Definition.html",
+          "name": "ResearchStudy-Epoch-Definition.html",
+          "title": "Research Study Epoch Definition",
+          "generation": "markdown"
+        },
+        {
+          "sourceUrl": "SoA-Activity-Epoch-Reference.html",
+          "name": "SoA-Activity-Epoch-Reference.html",
+          "title": "So A Activity Epoch Reference",
+          "generation": "markdown"
         }
       ]
     },

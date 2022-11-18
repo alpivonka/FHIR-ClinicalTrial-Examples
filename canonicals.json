@@ -140,13 +140,6 @@
     "name": "CohortGroupExt"
   },
   {
-    "id": "dog-cat-definition",
-    "type": "StructureDefinition",
-    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/dog-cat-definition",
-    "version": "1.0.0",
-    "name": "DogCatDefinition"
-  },
-  {
     "id": "epoch-definition",
     "type": "StructureDefinition",
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition",
@@ -173,6 +166,13 @@
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references",
     "version": "1.0.0",
     "name": "GroupReferences"
+  },
+  {
+    "id": "research-study-epoch",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch",
+    "version": "1.0.0",
+    "name": "ResearchStudyEpoch"
   },
   {
     "id": "segment-plan-definition",
@@ -222,13 +222,6 @@
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study",
     "version": "1.0.0",
     "name": "Study"
-  },
-  {
-    "id": "the-research-study",
-    "type": "StructureDefinition",
-    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study",
-    "version": "1.0.0",
-    "name": "TheResearchStudy"
   },
   {
     "id": "the-research-subject",

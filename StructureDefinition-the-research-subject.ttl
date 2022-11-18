@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "TheResearchSubject"];
   fhir:StructureDefinition.title [ fhir:value "ResearchSubject"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-17T19:05:57+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-18T18:58:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "ResearchSubject"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
@@ -850,7 +850,7 @@
        fhir:ElementDefinition.path [ fhir:value "ResearchSubject.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "GroupReferences" ];
        fhir:ElementDefinition.short [ fhir:value "Group References" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Contains the Subjects group references." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "2" ];
        fhir:ElementDefinition.base [

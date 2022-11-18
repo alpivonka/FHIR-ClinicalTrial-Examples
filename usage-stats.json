@@ -409,6 +409,12 @@
         "title": "Profile: SoA Visit Definition"
       }
     ],
+    "ResearchStudy": [
+      {
+        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch",
+        "title": "Research Study with Epoch"
+      }
+    ],
     "ActivityDefinition": [
       {
         "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity",
@@ -419,12 +425,6 @@
       {
         "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-questionnaire",
         "title": "SoA Questionnaire"
-      }
-    ],
-    "ResearchStudy": [
-      {
-        "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study",
-        "title": "The Research Study"
       }
     ],
     "ResearchSubject": [
