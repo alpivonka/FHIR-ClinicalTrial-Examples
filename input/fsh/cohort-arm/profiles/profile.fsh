@@ -35,11 +35,3 @@ Title: "Epoch Definition"
 Description: "Definition of Epochs associated to a Study"
 * meta.extension contains firstCreated named createdAt 0..1 MS
 * meta.lastUpdated MS
-
-Profile: DogCatDefinition
-Parent: PlanDefinition
-Id: dog-cat-definition
-Title: "Doc Cat Definition"
-Description: "Definition of Doc Cat associated to a Study"
-* meta.extension contains firstCreated named createdAt 0..1 MS
-* meta.lastUpdated MS
