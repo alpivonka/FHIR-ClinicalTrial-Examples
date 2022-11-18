@@ -1,0 +1,29 @@
+
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+
+
+    <center><img src="ResearchStudy-Epoch-Definition.jpg"/></center>
+    <p><span>How a designer defines the Epochs for a specific ResearchStudy.   
+    The blue boxes represent the contextual model and relationships defined. </span></p>
+    <ol>
+        <li><span>EpochDefinitionReference &lt;Extension&gt; is used by the research study to capture the reference to the EpochDefintion/PlanDefiniton. </span></li>
+        <li><span>EpochDefinition&lt;PlanDefinition&gt; As the desginer defines each Epoch it is added to the EpochDefintion as an action.:</span></li>
+    </ol>
+    <ol>
+        <li ><span>Id: &lt;Same as linkId&gt;</span></li>
+        <li ><span>linkId: &lt;UUID&gt;</span></li>
+        <li ><span>description:</span></li>
+        <li ><span>title: used as the Epoch name</span></li>
+    </ol>
+    <p><span></span></p>
+<center><img src="SoA-Action.Extesion-EpochLinkId.png"/></center>
+    <p><span></span></p>
+    <p><span>The designer of an SoA needs a way to reference and associate specific activities to Epochs defined at the ResearchStudy level. 
+        <br>The designer of an SoA will establish a relationship from the SoA to an Activity with the use of PlanDefintion's actions. 
+        In order to associate a specific action/Activity with a study-defined Epoch a new extension is introduced at the SoA.action/PlanDefintion 
+        to capture the URI to the specific Epoch in question.</br></span></p>
+    <p><span></span></p>
+    <p><span></span></p>
+    <p><span></span></p>
+
+    </div>

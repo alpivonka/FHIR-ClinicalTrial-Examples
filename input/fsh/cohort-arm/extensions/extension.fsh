@@ -35,7 +35,7 @@ Description: "Arm Group"
 Extension: GroupReferences
 Id: group-references
 Title: "Group References"
-Description: ""
+Description: "Contains the Subjects group references."
 * obeys max-one-active
 * extension contains
   referencedGroup 0..* and

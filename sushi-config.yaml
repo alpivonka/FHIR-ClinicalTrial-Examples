@@ -58,8 +58,8 @@ publisher:
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
-dependencies:
- hl7.fhir.uv.sdc: 3.0.0
+#dependencies:
+#hl7.fhir.uv.sdc: 3.0.0
 #  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
 #    id: mcode
@@ -160,8 +160,9 @@ dependencies:
 # include a `menu.xml` file in input/includes.
 menu:
  Home: index.html
+ Epoch: ResearchStudy-Epoch-Definition.html
  Artifacts:
-    Profiles: artifacts.html#2
+    Epoch: ResearchStudy-Epoch-Definition.html#2
     Extensions: artifacts.html#3
 #    Value Sets: artifacts.html#4
 #  Downloads: downloads.html

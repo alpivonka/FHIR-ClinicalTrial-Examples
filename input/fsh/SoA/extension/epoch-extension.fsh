@@ -1,7 +1,7 @@
 Extension: EpochLinkId
 Id: epoch-link-id
 Title: "Epoch Link Id"
-Description: ""
+Description: "Stores the Epoch Link Id URL to the defintion or reference. "
 * ^context[+].type = #element
 * ^context[=].expression = "EpochDefinition.action"
 * value[x] 1..1

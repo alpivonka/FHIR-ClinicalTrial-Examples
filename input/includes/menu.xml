@@ -6,6 +6,7 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
+	
 <!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
@@ -24,6 +25,9 @@
 		<ul class="dropdown-menu">
 			<li>
 				<a href="artifacts.html">Artifact Index</a>
+			</li>
+			<li>
+				<a href="ResearchStudy-Epoch-Definition.html">Epoch-Definition</a>
 			</li>
 		</ul>
 	</li>
