@@ -40,15 +40,6 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r5" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
-  ], [
-     fhir:index 1;
-     fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ];
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc";
-       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
-     ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.resource [
@@ -73,11 +64,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/dog-cat-definition>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/dog-cat-definition" ]
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/epoch-definition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Doc Cat Definition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Definition of Doc Cat associated to a Study" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Epoch Definition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Definition of Epochs associated to a Study" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -87,11 +78,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/epoch-definition" ]
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/research-study-epoch" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Epoch Definition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Definition of Epochs associated to a Study" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Study with Epoch" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value " Research study with defined Epochs" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -185,20 +176,6 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/the-research-study" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The Research Study" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The research study" ];
-       fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/the-research-subject" ]
        ];
@@ -206,7 +183,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ResearchSubject" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -220,7 +197,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ARM Group attribute extensions" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -234,7 +211,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provides an offset range that, along with offsetDuration, indicates an acceptable range of dates for a related action." ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -248,7 +225,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Arm Group" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -262,7 +239,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cohort Group" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -276,7 +253,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Epoch definition" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -287,9 +264,10 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/epoch-link-id" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Epoch Link Id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stores the Epoch Link Id URL to the defintion or reference. " ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -300,9 +278,10 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/group-references" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Group References" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contains the Subjects group references." ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -316,7 +295,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "child to parent reference/association" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -330,7 +309,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Range of Visits" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -344,7 +323,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Plan Definition CS" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -358,7 +337,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "specific Codes for Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -372,7 +351,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SoAAction CS" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -394,7 +373,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -416,7 +395,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -438,7 +417,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -460,7 +439,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-profile>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -474,7 +453,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CohortGroup" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -488,7 +467,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CohortGroup" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -502,7 +481,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CohortGroup" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -524,7 +503,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -546,7 +525,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-definition>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -560,7 +539,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ThePatient" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -573,16 +552,16 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example ResearchStudy" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ResearchStudy" ];
        fhir:ImplementationGuide.definition.resource.profile [
-         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study";
+         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch";
          fhir:index 0;
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study>
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch>
        ], [
-         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study";
+         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch";
          fhir:index 1;
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study>
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -604,7 +583,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-subject>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -626,7 +605,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -648,7 +627,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -670,7 +649,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -692,7 +671,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition>
        ]
      ], [
-       fhir:index 39;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -714,7 +693,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-activity>
        ]
      ], [
-       fhir:index 40;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -753,6 +732,18 @@
          fhir:ImplementationGuide.definition.page.name [ fhir:value "changes.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.sourceUrl [ fhir:value "ResearchStudy-Epoch-Definition.html" ];
+         fhir:ImplementationGuide.definition.page.name [ fhir:value "ResearchStudy-Epoch-Definition.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Research Study Epoch Definition" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.sourceUrl [ fhir:value "SoA-Activity-Epoch-Reference.html" ];
+         fhir:ImplementationGuide.definition.page.name [ fhir:value "SoA-Activity-Epoch-Reference.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "So A Activity Epoch Reference" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
      fhir:ImplementationGuide.definition.parameter [

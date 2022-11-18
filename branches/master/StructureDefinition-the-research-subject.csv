@@ -53,7 +53,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchSubject.extension:GroupReferences","ResearchSubject.extension","GroupReferences","","",0,2,"","","","Extension {[CanonicalType[https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references]]} {[]}
-","Group References","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Group References","Contains the Subjects group references.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}max-one-active:There can be no more than one active referencedGroup {extension.where(url = 'referencedGroup').extension.where(url = 'active' and valueBoolean = true).count() <= 1}"
 "ResearchSubject.modifierExtension","ResearchSubject.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}

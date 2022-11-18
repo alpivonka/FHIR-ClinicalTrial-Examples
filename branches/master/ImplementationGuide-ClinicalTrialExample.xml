@@ -25,11 +25,6 @@
     <packageId value="hl7.terminology.r5"/>
     <version value="5.0.0"/>
   </dependsOn>
-  <dependsOn id="hl7_fhir_uv_sdc">
-    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
-    <packageId value="hl7.fhir.uv.sdc"/>
-    <version value="3.0.0"/>
-  </dependsOn>
   <definition>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -47,10 +42,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dog-cat-definition"/>
+        <reference value="StructureDefinition/epoch-definition"/>
       </reference>
-      <name value="Doc Cat Definition"/>
-      <description value="Definition of Doc Cat associated to a Study"/>
+      <name value="Epoch Definition"/>
+      <description value="Definition of Epochs associated to a Study"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -58,10 +53,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/epoch-definition"/>
+        <reference value="StructureDefinition/research-study-epoch"/>
       </reference>
-      <name value="Epoch Definition"/>
-      <description value="Definition of Epochs associated to a Study"/>
+      <name value="Research Study with Epoch"/>
+      <description value=" Research study with defined Epochs"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -128,17 +123,6 @@
       </reference>
       <name value="Profile: SoA Visit Definition"/>
       <description value="SoA Visit Definition"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/the-research-study"/>
-      </reference>
-      <name value="The Research Study"/>
-      <description value="The research study"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -215,6 +199,7 @@
         <reference value="StructureDefinition/epoch-link-id"/>
       </reference>
       <name value="Epoch Link Id"/>
+      <description value="Stores the Epoch Link Id URL to the defintion or reference. "/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -225,6 +210,7 @@
         <reference value="StructureDefinition/group-references"/>
       </reference>
       <name value="Group References"/>
+      <description value="Contains the Subjects group references."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -407,8 +393,8 @@
       </reference>
       <name value="Example ResearchStudy"/>
       <description value="Example ResearchStudy"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/the-research-study"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -510,6 +496,18 @@
         <name value="changes.html"/>
         <title value="Changes"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="ResearchStudy-Epoch-Definition.html"/>
+        <name value="ResearchStudy-Epoch-Definition.html"/>
+        <title value="Research Study Epoch Definition"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="SoA-Activity-Epoch-Reference.html"/>
+        <name value="SoA-Activity-Epoch-Reference.html"/>
+        <title value="So A Activity Epoch Reference"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>
