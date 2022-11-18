@@ -1,5 +1,5 @@
 Instance: TheResearchStudy
-InstanceOf: TheResearchStudy
+InstanceOf: ResearchStudyEpoch
 Usage: #example
 Title: "Example ResearchStudy"
 Description: "Example ResearchStudy"

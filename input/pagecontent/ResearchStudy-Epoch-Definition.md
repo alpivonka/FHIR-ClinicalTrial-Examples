@@ -9,6 +9,9 @@ The system must profide the ability for a SoA designer to:
   
 
 The blue boxes represent the contextual model and relationships defined.
+1. ResearchStudy
+   * [Profile Definition](StructureDefinition-research-study-epoch.html)
+   * [Example](ResearchStudy-ResearchStudy-1-002.json.html)
 
 EpochDefinition.action attributes:
 1. Id: **Same as linkId**

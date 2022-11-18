@@ -18,11 +18,11 @@ Description: "ARM SPECIFIC extentions"
 * extension contains arm-group-att-ext named ARMGroupAttExt 0..1
 
 
-Profile: TheResearchStudy
+Profile: ResearchStudyEpoch
 Parent: ResearchStudy
-Id: the-research-study
-Title: "The Research Study"
-Description: "The research study"
+Id: research-study-epoch
+Title: "Research Study with Epoch"
+Description: " Research study with defined Epochs"
 * meta.extension contains firstCreated named createdAt 0..1 MS
 * meta.lastUpdated MS
 * extension contains epoch-definition-reference named EpochDefinitionReference 0..1
