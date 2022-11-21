@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "EpochLinkId"];
   fhir:StructureDefinition.title [ fhir:value "Epoch Link Id"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-18T18:58:55+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-21T14:25:15+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "Stores the Epoch Link Id URL to the defintion or reference. "];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
