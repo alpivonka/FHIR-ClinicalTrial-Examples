@@ -14,7 +14,6 @@ The blue boxes represent the contextual model and relationships defined.
    * [Example](ResearchStudy-ResearchStudy-1-002.json.html)
 
 EpochDefinition.action attributes:
-1. Id: **Same as linkId**
-2. linkId: **UUID**
+1. Id: **UUID**
 3. description: **Description of Epoch**
 4. title: **Epoch name**
