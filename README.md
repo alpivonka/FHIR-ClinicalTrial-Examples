@@ -20,4 +20,5 @@ Kanban board:  __https://github.com/openhie/fhir-ig-empty/projects/1__
 
 This repos is based on https://github.com/openhie/empty-fhir-ig-custom as the starting point. 
 
-![Screen Shot 2022-11-09 at 10 36 21 AM](https://user-images.githubusercontent.com/4975072/201123499-a8b6f210-3820-4f5f-8803-f750f1768ffa.png)
+![Screen Shot 2022-11-09 at 10 36 21 AM]![OverView](https://user-images.githubusercontent.com/4975072/203099986-26113a52-9003-44c2-99d9-c8763e1b385d.jpg)
+
