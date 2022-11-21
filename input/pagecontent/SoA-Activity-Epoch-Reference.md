@@ -11,10 +11,8 @@
   
 **Needing to:**
 1. Identify how to define the URI to enable searching for specific PlanDefinition action(s) by linkId.
-   ``` "valueUri": "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Treatment-65e9-11ed-9022-0242ac120001"```
+   ``` "valueUri": "PlanDefinition/EPCH-DEF-0002-2/1.0#Treatment-65e9-11ed-9022-0242ac120001"```
    1. The Id of the EpochDefinition(PlanDefintion)
 		 * *PlanDefinition/EPCH-DEF-0002-2*
-    2.  Uri parameter (**this is were it gets tricky**) to target a specific action's linkId as a reference point.
-          *  *PlanDefinition/EPCH-DEF-0002-2?***action.linkId**
-    3. Id of the EpochDefinition(PlanDefintion).action in question i.e. the Epoch. Specifying both the PlanDefinition canonical (and maybe version) as well as the activity id
+   2. Id of the EpochDefinition(PlanDefintion).action in question i.e. the Epoch. Specifying both the PlanDefinition canonical (and maybe version) as well as the activity id
          *  *"PlanDefinition/EPCH-DEF-0002-2/1.0#***Treatment-65e9-11ed-9022-0242ac120001"**
