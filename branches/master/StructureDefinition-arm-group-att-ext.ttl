@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ARMGroupAttExt"];
   fhir:StructureDefinition.title [ fhir:value "ARMGroup"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-21T16:10:12+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-21T16:11:07+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "ARM Group attribute extensions"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];

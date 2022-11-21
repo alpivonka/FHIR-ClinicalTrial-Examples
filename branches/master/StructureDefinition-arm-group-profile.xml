@@ -22,7 +22,7 @@
   <name value="ARMGroupProfile"/>
   <title value="ARM Group"/>
   <status value="active"/>
-  <date value="2022-11-21T16:10:12+00:00"/>
+  <date value="2022-11-21T16:11:07+00:00"/>
   <publisher value="ClinicalTrialExample"/>
   <description value="ARM SPECIFIC extentions"/>
   <fhirVersion value="5.0.0-ballot"/>
