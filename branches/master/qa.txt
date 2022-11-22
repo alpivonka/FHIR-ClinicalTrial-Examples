@@ -1,9 +1,9 @@
 ﻿ClinicalTrialExampleIG : Validation Results
 =========================================
 
-err = 19, warn = 44, info = 0
-IG Publisher Version: 1.2.18
-Generated Mon Nov 21 16:12:09 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+err = 22, warn = 45, info = 0
+IG Publisher Version: 1.2.19
+Generated Tue Nov 22 17:31:43 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
  Build Errors : 1 / 3 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 0 / 0 / 1
@@ -12,8 +12,8 @@ Generated Mon Nov 21 16:12:09 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/CodeSystem-plan-definition-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-questionnare-code-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-soa-action-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Group-ARMGroupMonkeyLegs-uuid22s : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Group-ARMMonkeyFeet-internal-uuid2s : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Group-ARMGroupMonkeyLegs-uuid22s : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Group-ARMMonkeyFeet-internal-uuid2s : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Group-Cohort2GroupUnder50-ososi : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Group-CohortGroupOver50-ss9s9s9 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Group-CohortGroupUnder25 : 0 / 1 / 1
@@ -25,7 +25,7 @@ Generated Mon Nov 21 16:12:09 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2 : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ResearchStudy-ResearchStudy-1-002 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ResearchStudy-ResearchStudy-1-002 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ResearchSubject-ResearchSubject-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition--visit-range : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AcceptableOffsetRangeSoa : 0 / 2 / 1
@@ -43,6 +43,7 @@ Generated Mon Nov 21 16:12:09 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/StructureDefinition-soa-definition : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-soa-plan-definition : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-soa-questionnaire : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-soa-reference : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-soa-visit-definition : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-study : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-the-research-subject : 0 / 2 / 1
@@ -63,8 +64,10 @@ WARNING: CodeSystem/questionnare-code-cs: CodeSystem: The ShareableCodeSystem pr
 == fsh-generated/resources/CodeSystem-soa-action-cs.json ==
 WARNING: CodeSystem/soa-action-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Group-ARMGroupMonkeyLegs-uuid22s.json ==
+ERROR: Group/ARMGroupMonkeyLegs-uuid22s: Group: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext is not allowed to be used at this point (allowed = e:ResearchStudy.relatedAction; this element is [Group])
 WARNING: Group/ARMGroupMonkeyLegs-uuid22s: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Group-ARMMonkeyFeet-internal-uuid2s.json ==
+ERROR: Group/ARMMonkeyFeet-internal-uuid2s: Group: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext is not allowed to be used at this point (allowed = e:ResearchStudy.relatedAction; this element is [Group])
 WARNING: Group/ARMMonkeyFeet-internal-uuid2s: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Group-Cohort2GroupUnder50-ososi.json ==
 WARNING: Group/Cohort2GroupUnder50-ososi: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -90,6 +93,7 @@ WARNING: PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2: Pla
 WARNING: PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2: PlanDefinition.action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ResearchStudy-ResearchStudy-1-002.json ==
 WARNING: ResearchStudy/ResearchStudy-1-002: ResearchStudy.comparisonGroup[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: ResearchStudy/ResearchStudy-1-002: ResearchStudy.comparisonGroup[1]: Duplicate id value 's98d706a7d6'
 WARNING: ResearchStudy/ResearchStudy-1-002: ResearchStudy.comparisonGroup[1].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ResearchSubject-ResearchSubject-1.json ==
 == fsh-generated/resources/StructureDefinition--visit-range.json ==
@@ -124,7 +128,7 @@ WARNING: StructureDefinition/group-references: StructureDefinition: Rule sdf-29:
 WARNING: StructureDefinition/research-study-epoch: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 WARNING: StructureDefinition/research-study-epoch: StructureDefinition.snapshot.element[71]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 WARNING: StructureDefinition/research-study-epoch: StructureDefinition.snapshot.element[78]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
-WARNING: StructureDefinition/research-study-epoch: StructureDefinition.snapshot.element[109].binding.extension[0].value.ofType(string): value should not start or finish with whitespace ' ArtifactUrlClassifier'
+WARNING: StructureDefinition/research-study-epoch: StructureDefinition.snapshot.element[110].binding.extension[0].value.ofType(string): value should not start or finish with whitespace ' ArtifactUrlClassifier'
 == fsh-generated/resources/StructureDefinition-segment-plan-definition.json ==
 ERROR: StructureDefinition/segment-plan-definition: StructureDefinition.snapshot.element[143].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 ERROR: StructureDefinition/segment-plan-definition: StructureDefinition.snapshot.element[143].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
@@ -145,6 +149,8 @@ ERROR: StructureDefinition/soa-questionnaire: StructureDefinition.snapshot.eleme
 ERROR: StructureDefinition/soa-questionnaire: StructureDefinition.snapshot.element[24].binding.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName' definition is for a simple extension, so it must contain a value
 ERROR: StructureDefinition/soa-questionnaire: StructureDefinition.snapshot.element[24].binding.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName|5.0.0-ballot)
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-questionnaire'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-soa-reference.json ==
+WARNING: StructureDefinition/soa-reference: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 == fsh-generated/resources/StructureDefinition-soa-visit-definition.json ==
 ERROR: StructureDefinition/soa-visit-definition: StructureDefinition.snapshot.element[143].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 ERROR: StructureDefinition/soa-visit-definition: StructureDefinition.snapshot.element[143].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)

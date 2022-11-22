@@ -3,9 +3,9 @@
   "name": "ClinicalTrialExampleIG",
   "package-id": "ClinicalTrialExample",
   "ig-ver": "1.0.0",
-  "date": "Mon, 21 Nov, 2022 16:11:07 +0000",
-  "errs": 19,
-  "warnings": 44,
+  "date": "Tue, 22 Nov, 2022 17:30:40 +0000",
+  "errs": 22,
+  "warnings": 45,
   "hints": 0,
   "version": "5.0.0-ballot",
   "tool": "5.0.0-ballot (3)"
