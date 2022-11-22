@@ -265,7 +265,7 @@
       ]
     },
     {
-      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-link-id",
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id",
       "title": "Epoch Link Id",
       "types": [
         "uri"
@@ -502,13 +502,11 @@
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/AcceptableOffsetRangeSoa": [
       "PlanDefinition.action.relatedAction"
     ],
-    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext": [
-      "Group"
-    ],
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition-reference": [
       "ResearchStudy"
     ],
-    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-link-id": [
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id": [
+      "PlanDefinition.action",
       "PlanDefinition.action.action"
     ],
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references": [

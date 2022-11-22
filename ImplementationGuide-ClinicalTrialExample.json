@@ -56,6 +56,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/defined-activities"
+        },
+        "name": "Profile: Defined Activities",
+        "description": "Defined Activities PlanDefinition",
+        "isExample": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/epoch-definition"
         },
         "name": "Epoch Definition",
@@ -252,7 +266,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/epoch-link-id"
+          "reference": "StructureDefinition/epoch-id"
         },
         "name": "Epoch Link Id",
         "description": "Stores the Epoch Link Id URL to the defintion or reference. ",
@@ -465,6 +479,23 @@
         "name": "Example CohortGroup",
         "description": "Example CohortGroup",
         "isExample": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PlanDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PlanDefinition/DefinedActivities-001"
+        },
+        "name": "Defined Activities",
+        "description": " Example of use of actions to define a list of defined activities for a given study",
+        "profile": [
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"
+        ]
       },
       {
         "extension": [

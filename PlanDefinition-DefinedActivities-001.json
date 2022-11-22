@@ -1,0 +1,106 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "DefinedActivities-001",
+  "meta": {
+    "profile": [
+      "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"DefinedActivities-001\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;DefinedActivities-001&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-defined-activities.html\">Profile: Defined Activities</a></p></div><p><b>Part Of Research Study</b>: <a href=\"ResearchStudy-ResearchStudy-1-002.html\">ResearchStudy/ResearchStudy-1-002</a></p><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivities-001</code></p><p><b>version</b>: 1.0.0</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-22 09:05:37+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>code</b>: ActivityDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ActivityDefinition)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Title</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>ActivityDef-Name-1</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120001</code></td></tr><tr><td>*</td><td>ActivityDef-Name-2</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120002</code></td></tr><tr><td>*</td><td>ActivityDef-Name-3</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120003</code></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: ObservationDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ObservationDefinition)</span></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: PlanDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#PlanDefinition)</span></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Questionnaire <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Questionnaire)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Title</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>Questionnaire-Name-1</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120001</code></td></tr><tr><td>*</td><td>Questionnaire-Name-2</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120002</code></td></tr><tr><td>*</td><td>Questionnaire-Name-3</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120003</code></td></tr><tr><td>*</td><td>Questionnaire-Name-4</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120004</code></td></tr><tr><td>*</td><td>Questionnaire-Name-5</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120005</code></td></tr><tr><td>*</td><td>Questionnaire-Name-6</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120006</code></td></tr></table></blockquote></div>"
+  },
+  "extension": [
+    {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study",
+      "valueReference": {
+        "reference": "ResearchStudy/ResearchStudy-1-002"
+      }
+    }
+  ],
+  "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivities-001",
+  "version": "1.0.0",
+  "status": "active",
+  "date": "2022-11-22T21:05:37+00:00",
+  "publisher": "ClinicalTrialExample",
+  "action": [
+    {
+      "id": "fab63b28-6aa5-11ed-a1eb-0242ac120000",
+      "code": {
+        "coding": [
+          {
+            "code": "ActivityDefinition"
+          }
+        ]
+      },
+      "action": [
+        {
+          "title": "ActivityDef-Name-1",
+          "definitionUri": "ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120001"
+        },
+        {
+          "title": "ActivityDef-Name-2",
+          "definitionUri": "ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120002"
+        },
+        {
+          "title": "ActivityDef-Name-3",
+          "definitionUri": "ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120003"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "ObservationDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "PlanDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fab63b28-6aa5-11ed-a1eb-0242ac160000",
+      "code": {
+        "coding": [
+          {
+            "code": "Questionnaire"
+          }
+        ]
+      },
+      "action": [
+        {
+          "title": "Questionnaire-Name-1",
+          "definitionUri": "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120001"
+        },
+        {
+          "title": "Questionnaire-Name-2",
+          "definitionUri": "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120002"
+        },
+        {
+          "title": "Questionnaire-Name-3",
+          "definitionUri": "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120003"
+        },
+        {
+          "title": "Questionnaire-Name-4",
+          "definitionUri": "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120004"
+        },
+        {
+          "title": "Questionnaire-Name-5",
+          "definitionUri": "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120005"
+        },
+        {
+          "title": "Questionnaire-Name-6",
+          "definitionUri": "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120006"
+        }
+      ]
+    }
+  ]
+}

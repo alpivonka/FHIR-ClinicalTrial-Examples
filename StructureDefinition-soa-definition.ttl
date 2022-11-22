@@ -30,7 +30,7 @@
   fhir:StructureDefinition.name [ fhir:value "SoADefinition"];
   fhir:StructureDefinition.title [ fhir:value "Profile: SoA Definition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-22T17:30:40+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-22T21:05:37+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "SoA Definition"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
@@ -783,9 +783,9 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 17;
-       fhir:Element.id [ fhir:value "PlanDefinition.extension:Study" ];
+       fhir:Element.id [ fhir:value "PlanDefinition.extension:study" ];
        fhir:ElementDefinition.path [ fhir:value "PlanDefinition.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "Study" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "study" ];
        fhir:ElementDefinition.short [ fhir:value "Part Of Research Study" ];
        fhir:ElementDefinition.definition [ fhir:value "child to parent reference/association" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
