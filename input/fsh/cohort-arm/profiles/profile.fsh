@@ -15,7 +15,7 @@ Title: "ARM Group"
 Description: "ARM SPECIFIC extentions"
 * meta.extension contains firstCreated named createdAt 0..1 MS
 * meta.lastUpdated MS
-* extension contains arm-group-att-ext named ARMGroupAttExt 0..1
+
 
 
 Profile: ResearchStudyEpoch
@@ -36,3 +36,4 @@ Title: "Epoch Definition"
 Description: "Definition of Epochs associated to a Study"
 * meta.extension contains firstCreated named createdAt 0..1 MS
 * meta.lastUpdated MS
+* action.extension contains epoch-id named EpochId 0..1

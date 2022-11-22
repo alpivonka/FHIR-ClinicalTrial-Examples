@@ -1,5 +1,5 @@
-Extension: EpochLinkId
-Id: epoch-link-id
+Extension: EpochId
+Id: epoch-id
 Title: "Epoch Link Id"
 Description: "Stores the Epoch Link Id URL to the defintion or reference. "
 * ^context[+].type = #element

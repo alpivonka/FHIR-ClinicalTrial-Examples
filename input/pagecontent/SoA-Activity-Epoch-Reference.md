@@ -1,10 +1,10 @@
-<center><img src="SoA-Action.Extesion-EpochLinkId.jpg"/></center>
+<center><img src="SoA-Action.Extesion-EpochId.jpg"/></center>
 
 
 1. An SoA designer needs to define and reference Epochs to be used within the scope of a ResearchStudy.
 2. The designer will establish a relationship from the SoA Activity with the use of PlanDefintion's actions.
 3. The designer will associate a specific action/Activity and a ResearchStudy defined Epoch. 
-   * EpochLinkId (Extension) captures the URI to the ResearchStudy's EpochDefinition(PlanDefinition) specific Epoch.
+   * EpochId (Extension) captures the URI to the ResearchStudy's EpochDefinition(PlanDefinition) specific Epoch.
 	   * Expression: EpochDefinition.action
 	   * value[x] only uri ([Canonical Reference and Fragments](https://build.fhir.org/references.html#canonical-fragments) : specifying both the PlanDefinition canonical (and maybe version) as well as the action/activity id)
 	   * SoA.action (PlanDefintion.action) to capture the URI to the specific Epoch in question.

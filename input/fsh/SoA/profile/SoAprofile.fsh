@@ -34,7 +34,7 @@ Title: "SoA Activity"
 Description: "SoA Activity"
 * meta.extension contains firstCreated named createdAt 0..1
 * meta.lastUpdated MS
-* extension contains study named Study 0..1
+* extension contains study named study 0..1
 * extension contains basedOn named basedOn 0..1
 * extension contains replaces named replaces 0..1
 
@@ -46,7 +46,7 @@ Title: "SoA Questionnaire"
 Description: "SoA Questionnaire"
 * meta.extension contains firstCreated named createdAt 0..1
 * meta.lastUpdated
-* extension contains study named Study 0..1
+* extension contains study named study 0..1
 * extension contains basedOn named basedOn 0..1
 * extension contains replaces named replaces 0..1
 
@@ -58,7 +58,7 @@ Description: "SoA PlanDefinition"
 * ^version = "1.0.0-SoAPlanDefinition"
 * meta.lastUpdated MS
 * meta.extension contains firstCreated named createdAt 0..1
-* extension contains study named Study 0..1
+* extension contains study named study 0..1
 * extension contains basedOn named basedOn 0..1
 * extension contains replaces named replaces 0..1
 * url MS

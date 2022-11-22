@@ -12,8 +12,6 @@ Description: "Example ARMGroup"
 * name = "MonkeyFeet"
 * description = "my description"
 * identifier.value = "3292822228"
-* extension[ARMGroupAttExt].extension[randomizationWeight].valueDecimal = 33.33
-* extension[ARMGroupAttExt].extension[soa].valueReference = Reference(ScheduleOfActivities-FHIR2)
 
 Instance: ARMGroupMonkeyLegs
 InstanceOf: ARMGroupProfile
@@ -28,5 +26,3 @@ Description: "Example ARMGroup"
 * name = "MonkeyFeet"
 * description = "my description"
 * identifier.value = "s90ds890d8"
-* extension[ARMGroupAttExt].extension[randomizationWeight].valueDecimal = 9.88
-* extension[ARMGroupAttExt].extension[soa].valueReference = Reference(ScheduleOfActivities-FHIR2)
