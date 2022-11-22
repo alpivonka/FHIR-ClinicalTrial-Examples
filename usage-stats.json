@@ -389,6 +389,13 @@
       ]
     },
     {
+      "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-reference",
+      "title": "SoAReference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study",
       "title": "Part Of Research Study",
       "types": [
@@ -506,6 +513,9 @@
     ],
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/group-references": [
       "ResearchSubject"
+    ],
+    "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-reference": [
+      "ResearchStudy.comparisonGroup"
     ],
     "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study": [
       "ActivityDefinition",

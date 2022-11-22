@@ -280,6 +280,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/soa-reference"
+        },
+        "name": "SoAReference",
+        "description": "SoAReference",
+        "isExample": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/study"
         },
         "name": "Part Of Research Study",

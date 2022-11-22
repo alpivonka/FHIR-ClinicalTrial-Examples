@@ -210,6 +210,13 @@
     "name": "SoAQuestionnaire"
   },
   {
+    "id": "soa-reference",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-reference",
+    "version": "1.0.0",
+    "name": "SoAReference"
+  },
+  {
     "id": "soa-visit-definition",
     "type": "StructureDefinition",
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-visit-definition",

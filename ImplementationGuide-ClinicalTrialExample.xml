@@ -218,6 +218,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/soa-reference"/>
+      </reference>
+      <name value="SoAReference"/>
+      <description value="SoAReference"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/study"/>
       </reference>
       <name value="Part Of Research Study"/>

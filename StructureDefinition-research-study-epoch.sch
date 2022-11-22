@@ -445,6 +445,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:ResearchStudy/f:comparisonGroup</sch:title>
+    <sch:rule context="f:ResearchStudy/f:comparisonGroup">
+      <sch:assert test="count(f:extension[@url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-reference']) &lt;= 1">extension with URL = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-reference': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>ResearchStudy.comparisonGroup</sch:title>
     <sch:rule context="f:ResearchStudy/f:comparisonGroup">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -455,6 +461,8 @@
     <sch:rule context="f:ResearchStudy/f:comparisonGroup/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
