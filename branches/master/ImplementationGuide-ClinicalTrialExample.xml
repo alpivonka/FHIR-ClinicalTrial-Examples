@@ -42,6 +42,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/defined-activities"/>
+      </reference>
+      <name value="Profile: Defined Activities"/>
+      <description value="Defined Activities PlanDefinition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/epoch-definition"/>
       </reference>
       <name value="Epoch Definition"/>
@@ -196,7 +207,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/epoch-link-id"/>
+        <reference value="StructureDefinition/epoch-id"/>
       </reference>
       <name value="Epoch Link Id"/>
       <description value="Stores the Epoch Link Id URL to the defintion or reference. "/>
@@ -359,6 +370,18 @@
       <name value="Example CohortGroup"/>
       <description value="Example CohortGroup"/>
       <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/DefinedActivities-001"/>
+      </reference>
+      <name value="Defined Activities"/>
+      <description value=" Example of use of actions to define a list of defined activities for a given study"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

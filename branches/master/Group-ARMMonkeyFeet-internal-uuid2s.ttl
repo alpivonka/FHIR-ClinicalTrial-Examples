@@ -16,24 +16,8 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"ARMMonkeyFeet-internal-uuid2s\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;ARMMonkeyFeet-internal-uuid2s&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-arm-group-profile.html\">ARM Group</a></p></div><blockquote><p><b>ARMGroup</b></p><p><b>value</b>: 33.33</p><p><b>value</b>: <a href=\"PlanDefinition-NEW-SOA-UUID-FHIR2.html\">PlanDefinition/NEW-SOA-UUID-FHIR2</a> &quot;SoADefinitionOID2&quot;</p></blockquote><p><b>identifier</b>: id: 3292822228</p><p><b>type</b>: specimen</p><p><b>membership</b>: enumerated</p><p><b>code</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>name</b>: MonkeyFeet</p><p><b>description</b>: my description</p></div>"
-  ];
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "randomizationWeight" ];
-       fhir:Extension.valueDecimal [ fhir:value "33.33"^^xsd:decimal ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "soa" ];
-       fhir:Extension.valueReference [
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/NEW-SOA-UUID-FHIR2>;
-         fhir:Reference.reference [ fhir:value "PlanDefinition/NEW-SOA-UUID-FHIR2" ]
-       ]
-     ];
-     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext" ]
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"ARMMonkeyFeet-internal-uuid2s\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;ARMMonkeyFeet-internal-uuid2s&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-arm-group-profile.html\">ARM Group</a></p></div><p><b>identifier</b>: id: 3292822228</p><p><b>type</b>: specimen</p><p><b>membership</b>: enumerated</p><p><b>code</b>: ARM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ARM)</span></p><p><b>name</b>: MonkeyFeet</p><p><b>description</b>: my description</p></div>"
   ];
   fhir:Group.identifier [
      fhir:index 0;

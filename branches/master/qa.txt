@@ -1,10 +1,10 @@
 ﻿ClinicalTrialExampleIG : Validation Results
 =========================================
 
-err = 22, warn = 45, info = 0
+err = 22, warn = 50, info = 0
 IG Publisher Version: 1.2.19
-Generated Tue Nov 22 17:31:43 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
- Build Errors : 1 / 3 / 0
+Generated Tue Nov 22 21:07:04 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+ Build Errors : 2 / 3 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-c936f630-d853-4933-b743-ae16e1f07820-FHIR2 : 0 / 0 / 1
@@ -12,13 +12,14 @@ Generated Tue Nov 22 17:31:43 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/CodeSystem-plan-definition-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-questionnare-code-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-soa-action-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Group-ARMGroupMonkeyLegs-uuid22s : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/Group-ARMMonkeyFeet-internal-uuid2s : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Group-ARMGroupMonkeyLegs-uuid22s : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Group-ARMMonkeyFeet-internal-uuid2s : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Group-Cohort2GroupUnder50-ososi : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Group-CohortGroupOver50-ss9s9s9 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Group-CohortGroupUnder25 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-ClinicalTrialExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Patient-1-001 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-DefinedActivities-001 : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2 : 0 / 2 / 1
@@ -29,13 +30,14 @@ Generated Tue Nov 22 17:31:43 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/ResearchSubject-ResearchSubject-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition--visit-range : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AcceptableOffsetRangeSoa : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-arm-group-att-ext : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-arm-group-att-ext : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arm-group-ext : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-arm-group-profile : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-cohort-group-ext : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-defined-activities : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-epoch-definition : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-epoch-definition-reference : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-epoch-link-id : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-epoch-id : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-group-references : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-research-study-epoch : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-segment-plan-definition : 2 / 1 / 1
@@ -49,6 +51,7 @@ Generated Tue Nov 22 17:31:43 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/StructureDefinition-the-research-subject : 0 / 2 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/SoA-Activity-Epoch-Reference.html#/html/body/div/div/div/div/div/center/img at Line 191, column 10: The image source 'SoA-Action.Extesion-EpochId.jpg' cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/center/img at Line 180, column 13: The image source 'OvervView.jpg' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -64,10 +67,8 @@ WARNING: CodeSystem/questionnare-code-cs: CodeSystem: The ShareableCodeSystem pr
 == fsh-generated/resources/CodeSystem-soa-action-cs.json ==
 WARNING: CodeSystem/soa-action-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Group-ARMGroupMonkeyLegs-uuid22s.json ==
-ERROR: Group/ARMGroupMonkeyLegs-uuid22s: Group: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext is not allowed to be used at this point (allowed = e:ResearchStudy.relatedAction; this element is [Group])
 WARNING: Group/ARMGroupMonkeyLegs-uuid22s: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Group-ARMMonkeyFeet-internal-uuid2s.json ==
-ERROR: Group/ARMMonkeyFeet-internal-uuid2s: Group: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext is not allowed to be used at this point (allowed = e:ResearchStudy.relatedAction; this element is [Group])
 WARNING: Group/ARMMonkeyFeet-internal-uuid2s: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Group-Cohort2GroupUnder50-ososi.json ==
 WARNING: Group/Cohort2GroupUnder50-ososi: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -77,6 +78,11 @@ WARNING: Group/CohortGroupOver50-ss9s9s9: Group.code.coding[0]: A code with no s
 WARNING: Group/CohortGroupUnder25: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ImplementationGuide-ClinicalTrialExample.json ==
 == fsh-generated/resources/Patient-Patient-1-001.json ==
+== fsh-generated/resources/PlanDefinition-DefinedActivities-001.json ==
+WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.action[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.action[1].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.action[2].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.action[3].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2.json ==
 == fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2.json ==
 == fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2.json ==
@@ -104,24 +110,28 @@ WARNING: StructureDefinition/AcceptableOffsetRangeSoa: StructureDefinition: Rule
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/AcceptableOffsetRangeSoa'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-arm-group-att-ext.json ==
 WARNING: StructureDefinition/arm-group-att-ext: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
+WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-att-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-arm-group-ext.json ==
 WARNING: StructureDefinition/arm-group-ext: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/arm-group-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-arm-group-profile.json ==
 WARNING: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
-ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[22].binding.extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
-ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[22].binding.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName' definition is for a simple extension, so it must contain a value
-ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[22].binding.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName|5.0.0-ballot)
+ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[21].binding.extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[21].binding.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName' definition is for a simple extension, so it must contain a value
+ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.element[21].binding.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName|5.0.0-ballot)
 == fsh-generated/resources/StructureDefinition-cohort-group-ext.json ==
 WARNING: StructureDefinition/cohort-group-ext: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/cohort-group-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-defined-activities.json ==
+ERROR: StructureDefinition/defined-activities: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+ERROR: StructureDefinition/defined-activities: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 == fsh-generated/resources/StructureDefinition-epoch-definition.json ==
-ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
-ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 == fsh-generated/resources/StructureDefinition-epoch-definition-reference.json ==
 WARNING: StructureDefinition/epoch-definition-reference: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
-== fsh-generated/resources/StructureDefinition-epoch-link-id.json ==
-WARNING: StructureDefinition/epoch-link-id: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
+== fsh-generated/resources/StructureDefinition-epoch-id.json ==
+WARNING: StructureDefinition/epoch-id: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 == fsh-generated/resources/StructureDefinition-group-references.json ==
 WARNING: StructureDefinition/group-references: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 == fsh-generated/resources/StructureDefinition-research-study-epoch.json ==
