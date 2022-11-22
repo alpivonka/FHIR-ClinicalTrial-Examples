@@ -26,6 +26,7 @@ Description: " Research study with defined Epochs"
 * meta.extension contains firstCreated named createdAt 0..1 MS
 * meta.lastUpdated MS
 * extension contains epoch-definition-reference named EpochDefinitionReference 0..1
+* comparisonGroup.extension contains soa-reference named SoAReference 0..1
 
 
 Profile: EpochDefinition

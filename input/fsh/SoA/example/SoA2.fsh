@@ -16,7 +16,7 @@ Description: "SoADefinition-FHIR2 "
 * action[=].action[+].id = "Visit-V1"
 * action[=].action[=].type = PlanDefinitionCS#Visit
 * action[=].action[=].definitionUri = "PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 //RelatedAction
 * action[=].action[=].relatedAction.targetId = "Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3"
 * action[=].action[=].relatedAction.relationship = #before
@@ -30,7 +30,7 @@ Description: "SoADefinition-FHIR2 "
 * action[=].action[+].id = "Visit-V2"
 * action[=].action[=].type = PlanDefinitionCS#Visit
 * action[=].action[=].definitionUri = "PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 //RelatedAction
 * action[=].action[=].relatedAction[+].targetId = "Visit-V1"
 * action[=].action[=].relatedAction[=].relationship = #after
@@ -45,7 +45,7 @@ Description: "SoADefinition-FHIR2 "
 * action[=].action[+].id = "Visit-V3"
 * action[=].action[=].type = PlanDefinitionCS#Visit
 * action[=].action[=].definitionUri = "PlanDefinition/Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 //RelatedAction
 * action[=].action[=].relatedAction[+].targetId = "Visit-V1"
 * action[=].action[=].relatedAction[=].relationship = #after
@@ -63,7 +63,7 @@ Description: "SoADefinition-FHIR2 "
 * action[=].action[+].id = "Visit-V4"
 * action[=].action[=].type = PlanDefinitionCS#Visit
 * action[=].action[=].definitionUri = "PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Followup-65e9-11ed-9022-0242ac120000"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Followup-65e9-11ed-9022-0242ac120000"
 * action[=].action[=].relatedAction[+].targetId = "Visit-V1"
 * action[=].action[=].relatedAction[=].relationship = #after
 * action[=].action[=].relatedAction[+].targetId = "Visit-V2"
@@ -87,19 +87,19 @@ Description: "SoADefinition-FHIR2 "
 * action[=].action[+].id = "Visit-A1"
 * action[=].action[=].type = PlanDefinitionCS#Visit
 * action[=].action[=].definitionUri = "PlanDefinition/1289d38a-653a-4cd9-afb9-b95299741b3a1"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 
 * action[=].action[+].id = "Visit-C1"
 * action[=].action[=].type = PlanDefinitionCS#Visit
 * action[=].action[=].definitionUri = "PlanDefinition/1289d38a-653a-4cd9-afb9-b95299741b3c1"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2?action.linkId=Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 
 //RECURRING_FORMS
 * action[+].type = SoAActionCS#RECURRING_FORMS
 
 * action[=].action[+].type = #Questionnaire
 * action[=].action[=].definitionUri = "Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 * action[=].action[=].trigger.type = #named-event
 * action[=].action[=].trigger.name = "VISIT"
 * action[=].action[=].trigger.timingTiming.repeat[+].durationUnit = #d
@@ -107,7 +107,7 @@ Description: "SoADefinition-FHIR2 "
 
 * action[=].action[+].type = #Questionnaire
 * action[=].action[=].definitionUri = "Questionnaire/6ff38b3d-099a-4fe0-ac46-267092619e2c"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 * action[=].action[=].trigger.type = #named-event
 * action[=].action[=].trigger.name = "PREVIOUS_VISIT"
 * action[=].action[=].trigger.timingTiming.repeat[+].durationUnit = #d
@@ -129,21 +129,21 @@ Description: "SoADefinition-FHIR2 "
 //* action[=].action[+].title = "eProFormX"
 * action[=].action[+].type = #Questionnaire
 * action[=].action[=].definitionUri = "Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8x"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 
 //* action[=].action[+].title = "eCRFx"
 * action[=].action[+].type = #Questionnaire
 * action[=].action[=].definitionUri = "Questionnaire/49858fac-02bd-4d51-91d1-37ebb9097d36x"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 
 //ONGOING_FORMS
 * action[+].type = SoAActionCS#ONGOING_FORMS
 
 * action[=].action[+].type = #Questionnaire
 * action[=].action[=].definitionUri = "Questionnaire/f1489be3-f6dd-483c-a82a-65243cd01eb8xy"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 
 * action[=].action[+].type = #Questionnaire
 * action[=].action[=].definitionUri = "Questionnaire/49858fac-02bd-4d51-91d1-37ebb9097d36xy"
-* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/Treatment-65e9-11ed-9022-0242ac120001"
+* action[=].action[=].extension[EpochLinkId].valueUri = "PlanDefinition/EPCH-DEF-0002-2/#Treatment-65e9-11ed-9022-0242ac120001"
 

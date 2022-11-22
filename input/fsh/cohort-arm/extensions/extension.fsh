@@ -1,9 +1,16 @@
+Extension: SoAReference
+Id: soa-reference
+Title: "SoAReference"
+Description: "SoAReference"
+* insert ExtensionContext(ResearchStudy.comparisonGroup)
+* value[x] only Reference(PlanDefinition)
 
 
 Extension: ARMGroupAttExt
 Id: arm-group-att-ext
 Title: "ARMGroup"
 Description: "ARM Group attribute extensions"
+* insert ExtensionContext(ResearchStudy.relatedAction)
 * extension contains
   randomizationWeight 0..1 and
   soa 0..1
