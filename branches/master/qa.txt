@@ -3,7 +3,7 @@
 
 err = 32, warn = 68, info = 1
 IG Publisher Version: 1.2.19
-Generated Mon Nov 28 18:46:23 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+Generated Mon Nov 28 18:47:51 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
  Build Errors : 2 / 3 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 1 / 2 / 1
@@ -19,9 +19,9 @@ Generated Mon Nov 28 18:46:23 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/Group-CohortGroupUnder25 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-ClinicalTrialExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Patient-1-001 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-DefinedActivities-001 : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2 : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-PlatformDefinedActivities-001 : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2 : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2 : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 1 / 4 / 1
@@ -91,15 +91,15 @@ WARNING: Group/CohortGroupOver50-ss9s9s9: Group.code.coding[0]: A code with no s
 WARNING: Group/CohortGroupUnder25: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ImplementationGuide-ClinicalTrialExample.json ==
 == fsh-generated/resources/Patient-Patient-1-001.json ==
-== fsh-generated/resources/PlanDefinition-DefinedActivities-001.json ==
-ERROR: PlanDefinition/DefinedActivities-001: PlanDefinition.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
-INFORMATION: PlanDefinition/DefinedActivities-001: PlanDefinition.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
-WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2.json ==
 == fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2.json ==
 ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0].type.coding[1]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/PlanDefinition-PlatformDefinedActivities-001.json ==
+ERROR: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2.json ==
 WARNING: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference

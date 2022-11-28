@@ -530,28 +530,6 @@
          fhir:Extension.valueString [ fhir:value "PlanDefinition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivities-001>;
-         fhir:Reference.reference [ fhir:value "PlanDefinition/DefinedActivities-001" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Defined Activities" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value " Example of use of actions to define a list of defined activities for a given study" ];
-       fhir:ImplementationGuide.definition.resource.profile [
-         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities";
-         fhir:index 0;
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities>
-       ], [
-         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities";
-         fhir:index 1;
-         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities>
-       ]
-     ], [
-       fhir:index 33;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "PlanDefinition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/EPCH-DEF-0002-2>;
          fhir:Reference.reference [ fhir:value "PlanDefinition/EPCH-DEF-0002-2" ]
        ];
@@ -567,7 +545,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-definition>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -589,7 +567,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/soa-definition>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -602,6 +580,28 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example ThePatient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ThePatient" ];
        fhir:ImplementationGuide.definition.resource.isExample [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PlanDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/PlatformDefinedActivities-001>;
+         fhir:Reference.reference [ fhir:value "PlanDefinition/PlatformDefinedActivities-001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Defined Activities" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value " Example of use of actions to define a list of defined activities for a given study" ];
+       fhir:ImplementationGuide.definition.resource.profile [
+         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities";
+         fhir:index 0;
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities>
+       ], [
+         fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities";
+         fhir:index 1;
+         fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities>
+       ]
      ], [
        fhir:index 36;
        fhir:Element.extension [
