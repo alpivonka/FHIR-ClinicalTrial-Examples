@@ -71,7 +71,7 @@ Description: "FHIR DefinedActivities"
 ```
 [Example Defined Activities](PlanDefinition-PlatformDefinedActivities-001.html)
 
-<center><img src="PlatformDefinedActivities.jpg"/></center>
+<img src="../images/PlatformDefinedActivities2.jpg"/>
 
 ---
 
