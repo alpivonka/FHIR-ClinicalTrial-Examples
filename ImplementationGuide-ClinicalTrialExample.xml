@@ -387,18 +387,6 @@
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
-        <reference value="PlanDefinition/DefinedActivities-001"/>
-      </reference>
-      <name value="Defined Activities"/>
-      <description value=" Example of use of actions to define a list of defined activities for a given study"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
-      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PlanDefinition"/>
-      </extension>
-      <reference>
         <reference value="PlanDefinition/EPCH-DEF-0002-2"/>
       </reference>
       <name value="Epoch-Plan Def"/>
@@ -428,6 +416,18 @@
       <name value="Example ThePatient"/>
       <description value="Example ThePatient"/>
       <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/PlatformDefinedActivities-001"/>
+      </reference>
+      <name value="Defined Activities"/>
+      <description value=" Example of use of actions to define a list of defined activities for a given study"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
+      <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

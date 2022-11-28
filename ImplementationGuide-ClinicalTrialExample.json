@@ -502,23 +502,6 @@
           }
         ],
         "reference": {
-          "reference": "PlanDefinition/DefinedActivities-001"
-        },
-        "name": "Defined Activities",
-        "description": " Example of use of actions to define a list of defined activities for a given study",
-        "profile": [
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities",
-          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PlanDefinition"
-          }
-        ],
-        "reference": {
           "reference": "PlanDefinition/EPCH-DEF-0002-2"
         },
         "name": "Epoch-Plan Def",
@@ -558,6 +541,23 @@
         "name": "Example ThePatient",
         "description": "Example ThePatient",
         "isExample": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PlanDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PlanDefinition/PlatformDefinedActivities-001"
+        },
+        "name": "Defined Activities",
+        "description": " Example of use of actions to define a list of defined activities for a given study",
+        "profile": [
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities",
+          "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"
+        ]
       },
       {
         "extension": [
