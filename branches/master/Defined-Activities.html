@@ -143,7 +143,7 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="Defined-Activities.html">Defined Activities</a>
+				<a href="Defined-Activities.html">Defined Context (Global)</a>
 			</li>
 			<!--li>
 				<a href="SoA-Activity-Epoch-Reference.html">SoA Activity Epoch LinkId Reference</a>
@@ -197,16 +197,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#defined-context-global" id="markdown-toc-defined-context-global">Defined Context (Global)</a>    <ul>
-      <li><a href="#defined-activities-fhir-plandefinition" id="markdown-toc-defined-activities-fhir-plandefinition">Defined Activities: FHIR PlanDefinition:</a></li>
-      <li><a href="#defined-activity" id="markdown-toc-defined-activity">Defined Activity:</a></li>
-    </ul>
-  </li>
+  <li><a href="#defined-activities-fhir-plandefinition" id="markdown-toc-defined-activities-fhir-plandefinition">Defined Activities: FHIR PlanDefinition:</a></li>
+  <li><a href="#defined-activity" id="markdown-toc-defined-activity">Defined Activity:</a></li>
 </ul>
 
 </div>
-
-<h2 id="defined-context-global">Defined Context (Global)</h2>
 
 <p><em>Defined activities</em> are the characterization of a kind of activity, i.e. they define “what” an activity is. Most activities included in a study are not completely brand new, rather they are usually common tests or procedures, or they may be composite activities that are composed of several component activities that form a standard treatment strategy or a new treatment strategy used in several different studies. These activities are reusable concepts that essentially form a global library of activities that can be referenced in studies being planned, implemented, executed and evaluated. These activities can be defined once and referenced in many different studies to save the time and effort of re-entering data and, more importantly, to make the semantic connection between an activity being used in two different studies or at two different points in the same study. This notion of activities being defined once and referenced in many studies is the core idea of the defined activity class and its subclasses. This part of the model is what the BRIDG modeling team calls the “Defined Pillar”. For those familiar with HL7 moodCodes, this is somewhat similar to the defined mood. (<em>BRIDG User’s Guide Release 5.3.1 March 2019 Page 19-20</em>)</p>
 
@@ -264,24 +259,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
-</span><span class="err">Instance:</span><span class="w"> </span><span class="err">DefinedActivities</span><span class="w">
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Instance: DefinedActivities
 
-</span><span class="err">InstanceOf:</span><span class="w"> </span><span class="err">PlanDefinition</span><span class="w">
+InstanceOf: PlanDefinition
 
-</span><span class="err">Usage:</span><span class="w"> </span><span class="err">#example</span><span class="w">
+Usage: #example
 
-</span><span class="err">Title:</span><span class="w"> </span><span class="s2">"Example-FHIR"</span><span class="w">
+Title: "Example-FHIR"
 
-</span><span class="err">Description:</span><span class="w"> </span><span class="s2">"FHIR"</span><span class="w">
+Description: "FHIR"
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">status</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">#active</span><span class="w">
+* status = #active
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">identifier.type</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">#definedActivityOwner</span><span class="w">
+* identifier.type = #definedActivityOwner
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">identifier.value</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"Organization/7ad0f876s76dfa7d98a5s67"</span><span class="w">
+* identifier.value = "Organization/7ad0f876s76dfa7d98a5s67"
 
-</span></code></pre></div></div>
+</code></pre></div></div>
 
 <ul>
   <li>
@@ -292,48 +287,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
-</span><span class="err">Instance:</span><span class="w"> </span><span class="err">DefinedActivities</span><span class="w">
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Instance: DefinedActivities
 
-</span><span class="err">InstanceOf:</span><span class="w"> </span><span class="err">PlanDefinition</span><span class="w">
+InstanceOf: PlanDefinition
 
-</span><span class="err">Usage:</span><span class="w"> </span><span class="err">#example</span><span class="w">
+Usage: #example
 
-</span><span class="err">Title:</span><span class="w"> </span><span class="s2">"Example-FHIR"</span><span class="w">
+Title: "Example-FHIR"
 
-</span><span class="err">Description:</span><span class="w"> </span><span class="s2">"FHIR"</span><span class="w">
+Description: "FHIR"
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">status</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">#active</span><span class="w">
+* status = #active
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">meta.tag.display</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"{definedActivityOwner : Organization/7ad0f876s76dfa7d98a5s67}"</span><span class="w">
+* meta.tag.display = "{definedActivityOwner : Organization/7ad0f876s76dfa7d98a5s67}"
 
-</span></code></pre></div></div>
+</code></pre></div></div>
 <hr />
 
 <h3 id="defined-activity">Defined Activity:</h3>
 
 <p>From the individual defined activities perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), we will re-leverage either the resource identifier or meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
-</span><span class="err">Instance:</span><span class="w"> </span><span class="err">FHIR-Questionnaire</span><span class="w">
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Instance: FHIR-Questionnaire
 
-</span><span class="err">InstanceOf:</span><span class="w"> </span><span class="err">Questionnaire</span><span class="w">
+InstanceOf: Questionnaire
 
-</span><span class="err">Usage:</span><span class="w"> </span><span class="err">#example</span><span class="w">
+Usage: #example
 
-</span><span class="err">Title:</span><span class="w"> </span><span class="s2">"Example-FHIR Questionnaire"</span><span class="w">
+Title: "Example-FHIR Questionnaire"
 
-</span><span class="err">Description:</span><span class="w"> </span><span class="s2">"FHIR Questionnaire"</span><span class="w">
+Description: "FHIR Questionnaire"
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">status</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">#active</span><span class="w">
+* status = #active
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">meta.tag.display</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"{definedActivityOwner:ResearchStudy/7ad0f876s76dfa7d98a5s67}"</span><span class="w">
+* meta.tag.display = "{definedActivityOwner:ResearchStudy/7ad0f876s76dfa7d98a5s67}"
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">identifier.type</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">#definedActivityOwner</span><span class="w">
+* identifier.type = #definedActivityOwner
 
-</span><span class="err">*</span><span class="w"> </span><span class="err">identifier.value</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"ResearchStudy/7ad0f876s76dfa7d98a5s67"</span><span class="w">
+* identifier.value = "ResearchStudy/7ad0f876s76dfa7d98a5s67"
 
-</span></code></pre></div></div>
+</code></pre></div></div>
 
 
 
@@ -360,7 +355,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="">ClinicalTrialExample</a>.  Package ClinicalTrialExample#1.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Mon, Nov 28, 2022 16:09+0000">2022-11-28</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="">ClinicalTrialExample</a>.  Package ClinicalTrialExample#1.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Mon, Nov 28, 2022 16:23+0000">2022-11-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
