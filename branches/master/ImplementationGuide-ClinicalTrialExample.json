@@ -552,7 +552,7 @@
         "reference": {
           "reference": "PlanDefinition/PlatformDefinedActivities-001"
         },
-        "name": "Defined Activities",
+        "name": "Platform Defined Activities",
         "description": " Example of use of actions to define a list of defined activities for a given study",
         "profile": [
           "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities",
