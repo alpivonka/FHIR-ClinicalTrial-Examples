@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "ResearchStudyEpoch"];
   fhir:StructureDefinition.title [ fhir:value "Research Study with Epoch"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-28T18:54:17+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-28T18:57:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value " Research study with defined Epochs"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
