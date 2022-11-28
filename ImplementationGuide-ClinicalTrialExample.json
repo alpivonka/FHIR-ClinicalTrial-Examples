@@ -332,6 +332,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/part-of"
+        },
+        "name": "part Of",
+        "description": "References the resource inwhich this resource is part of, associated to, etc.",
+        "isExample": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -699,6 +713,12 @@
           "name": "changes.html",
           "title": "Changes",
           "generation": "html"
+        },
+        {
+          "sourceUrl": "Defined-Activities.html",
+          "name": "Defined-Activities.html",
+          "title": "Defined Activities",
+          "generation": "markdown"
         },
         {
           "sourceUrl": "ResearchStudy-Epoch-Definition.html",

@@ -259,6 +259,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/part-of"/>
+      </reference>
+      <name value="part Of"/>
+      <description value="References the resource inwhich this resource is part of, associated to, etc."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -530,6 +541,12 @@
         <name value="changes.html"/>
         <title value="Changes"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="Defined-Activities.html"/>
+        <name value="Defined-Activities.html"/>
+        <title value="Defined Activities"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <sourceUrl value="ResearchStudy-Epoch-Definition.html"/>

@@ -10,7 +10,7 @@
   "name": "EpochId",
   "title": "Epoch Link Id",
   "status": "active",
-  "date": "2022-11-22T21:05:37+00:00",
+  "date": "2022-11-28T16:09:45+00:00",
   "publisher": "ClinicalTrialExample",
   "description": "Stores the Epoch Link Id URL to the defintion or reference. ",
   "fhirVersion": "5.0.0-ballot",

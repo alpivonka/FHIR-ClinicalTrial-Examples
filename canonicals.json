@@ -181,6 +181,13 @@
     "name": "GroupReferences"
   },
   {
+    "id": "part-of",
+    "type": "StructureDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/part-of",
+    "version": "1.0.0",
+    "name": "partOf"
+  },
+  {
     "id": "research-study-epoch",
     "type": "StructureDefinition",
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/research-study-epoch",
