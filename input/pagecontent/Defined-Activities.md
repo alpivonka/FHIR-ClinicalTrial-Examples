@@ -1,7 +1,6 @@
 
   
 
-## Defined Context (Global)
 
 *Defined activities* are the characterization of a kind of activity, i.e. they define “what” an activity is. Most activities included in a study are not completely brand new, rather they are usually common tests or procedures, or they may be composite activities that are composed of several component activities that form a standard treatment strategy or a new treatment strategy used in several different studies. These activities are reusable concepts that essentially form a global library of activities that can be referenced in studies being planned, implemented, executed and evaluated. These activities can be defined once and referenced in many different studies to save the time and effort of re-entering data and, more importantly, to make the semantic connection between an activity being used in two different studies or at two different points in the same study. This notion of activities being defined once and referenced in many studies is the core idea of the defined activity class and its subclasses. This part of the model is what the BRIDG modeling team calls the “Defined Pillar”. For those familiar with HL7 moodCodes, this is somewhat similar to the defined mood. (*BRIDG User’s Guide Release 5.3.1 March 2019 Page 19-20*)
 
@@ -42,7 +41,7 @@ This pattern will leverage:
 
 * value: the uri to the (platform, tenant, study) in which this instance of Defined Activities is associated to.
 
-```json
+```
 
 Instance: DefinedActivities
 
@@ -66,7 +65,7 @@ Description: "FHIR"
 
 * tag.display is a string "{definedActivityLibary: uri}
 
-```json
+```
 
 Instance: DefinedActivities
 
@@ -92,7 +91,7 @@ From the individual defined activities perspective (resources: Questionnaire, Pl
 
   
 
-```json
+```
 
 Instance: FHIR-Questionnaire
 
