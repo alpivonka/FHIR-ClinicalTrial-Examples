@@ -715,9 +715,9 @@
           "generation": "html"
         },
         {
-          "sourceUrl": "Defined-Activities.html",
-          "name": "Defined-Activities.html",
-          "title": "Defined Activities",
+          "sourceUrl": "Defined-Activities-Global.html",
+          "name": "Defined-Activities-Global.html",
+          "title": "Defined Activities Global",
           "generation": "markdown"
         },
         {
