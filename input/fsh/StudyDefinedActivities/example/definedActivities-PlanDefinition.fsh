@@ -1,7 +1,7 @@
 Instance: PlatformDefinedActivities
 InstanceOf: DefinedActivities
 Usage: #example
-Title: "Defined Activities"
+Title: "Platform Defined Activities"
 Description: " Example of use of actions to define a list of defined activities for a given study"
 * meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"  
 * meta.tag[=].code = #definedActivityLibrary

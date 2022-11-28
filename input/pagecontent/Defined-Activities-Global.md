@@ -69,7 +69,7 @@ Description: "FHIR DefinedActivities"
 * action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
 * action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
 ```
-
+[Example Defined Activities](PlanDefinition-PlatformDefinedActivities-001.html)
 
 
 ### Defined Activity:
