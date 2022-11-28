@@ -10,12 +10,6 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>f:PlanDefinition</sch:title>
-    <sch:rule context="f:PlanDefinition">
-      <sch:assert test="count(f:extension[@url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study']) &lt;= 1">extension with URL = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>f:PlanDefinition/f:meta</sch:title>
     <sch:rule context="f:PlanDefinition/f:meta">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
@@ -93,8 +87,6 @@
     <sch:rule context="f:PlanDefinition/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

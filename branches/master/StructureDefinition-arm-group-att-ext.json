@@ -10,7 +10,7 @@
   "name": "ARMGroupAttExt",
   "title": "ARMGroup",
   "status": "active",
-  "date": "2022-11-28T18:28:29+00:00",
+  "date": "2022-11-28T18:44:16+00:00",
   "publisher": "ClinicalTrialExample",
   "description": "ARM Group attribute extensions",
   "fhirVersion": "5.0.0-ballot",

@@ -1,9 +1,9 @@
 ﻿ClinicalTrialExampleIG : Validation Results
 =========================================
 
-err = 32, warn = 69, info = 0
+err = 32, warn = 68, info = 1
 IG Publisher Version: 1.2.19
-Generated Mon Nov 28 18:29:40 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+Generated Mon Nov 28 18:45:46 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
  Build Errors : 2 / 3 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 1 / 2 / 1
@@ -19,7 +19,7 @@ Generated Mon Nov 28 18:29:40 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/Group-CohortGroupUnder25 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-ClinicalTrialExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Patient-1-001 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-DefinedActivities-001 : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-DefinedActivities-001 : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2 : 1 / 4 / 1
@@ -92,9 +92,9 @@ WARNING: Group/CohortGroupUnder25: Group.code.coding[0]: A code with no system h
 == fsh-generated/resources/ImplementationGuide-ClinicalTrialExample.json ==
 == fsh-generated/resources/Patient-Patient-1-001.json ==
 == fsh-generated/resources/PlanDefinition-DefinedActivities-001.json ==
-ERROR: PlanDefinition/DefinedActivities-001: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.identifier[0].type.coding[1]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/DefinedActivities-001: PlanDefinition.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: PlanDefinition/DefinedActivities-001: PlanDefinition.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
+WARNING: PlanDefinition/DefinedActivities-001: PlanDefinition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2.json ==
 == fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2.json ==
 ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
@@ -150,8 +150,8 @@ ERROR: StructureDefinition/arm-group-profile: StructureDefinition.snapshot.eleme
 WARNING: StructureDefinition/cohort-group-ext: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
 WARNING: StructureDefinition.where(url = 'https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/cohort-group-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-defined-activities.json ==
-ERROR: StructureDefinition/defined-activities: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
-ERROR: StructureDefinition/defined-activities: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+ERROR: StructureDefinition/defined-activities: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
+ERROR: StructureDefinition/defined-activities: StructureDefinition.snapshot.element[139].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 == fsh-generated/resources/StructureDefinition-epoch-definition.json ==
 ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/ObservationDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/ObservationDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
 ERROR: StructureDefinition/epoch-definition: StructureDefinition.snapshot.element[140].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/SpecimenDefinition is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/SpecimenDefinition], which is not a Canonical Resource (which is required because the PlanDefinition.action.definition[x] element has type canonical)
