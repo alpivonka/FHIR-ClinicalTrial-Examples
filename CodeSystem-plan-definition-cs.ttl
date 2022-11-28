@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "PlanDefinitionCS"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem: Plan Definition CS"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-11-28T18:28:29+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-11-28T18:44:16+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:CodeSystem.description [ fhir:value "Plan Definition CS"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
