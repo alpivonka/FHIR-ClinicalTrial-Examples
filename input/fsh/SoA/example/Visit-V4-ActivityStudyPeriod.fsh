@@ -10,6 +10,9 @@ Description: "ActivityStudyPeriod-Visit-V4--FHIR2"
 * meta.lastUpdated = "2022-01-01T10:08:10Z"
 * meta.extension[createdAt].valueInstant = "2022-01-01T10:08:10Z"
 //Used diring definition, once defined it is associated to a specific study and reused within.
-* extension[Study].valueReference = Reference(TheResearchStudy)
+* identifier.use = #secondary
+* identifier.type.coding[+] = #partOf
+* identifier.type.coding[+] = #ResearchStudy
+* identifier.system = "ResearchStudy/ResearchStudy-1-002"
 
 

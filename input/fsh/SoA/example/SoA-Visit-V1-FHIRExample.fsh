@@ -8,10 +8,16 @@ Description: "SoAVisitDefinition-Visit-V1-FHIR2"
 * type = PlanDefinitionCS#Visit
 * id = "Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2"
 * meta.lastUpdated = "2022-01-01T10:08:10Z"
+
 * meta.extension[createdAt].valueInstant = "2022-01-01T10:08:10Z"
+* identifier.use = #secondary
+* identifier.type.coding[+] = #partOf
+* identifier.type.coding[+] = #ResearchStudy
+* identifier.system = "ResearchStudy/ResearchStudy-1-002"
 
 //Used diring definition, once defined it is associated to a specific study and reused within.
-* extension[Study].valueReference = Reference(TheResearchStudy)
+
+
 
 /* Define Visits with Visit Windows to show examples. */
 

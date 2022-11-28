@@ -26,9 +26,6 @@
 			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
-			<li>
-				<a href="ResearchStudy-Epoch-Definition.html">Epoch-Definition</a>
-			</li>
 		</ul>
 	</li>
 		<li class="dropdown">
@@ -41,6 +38,19 @@
 			<li>
 				<a href="SoA-Activity-Epoch-Reference.html">SoA Activity Epoch LinkId Reference</a>
 			</li>
+		</ul>
+	</li>
+	</li>
+		<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">BRIDG<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Defined-Activities.html">Defined Activities</a>
+			</li>
+			<!--li>
+				<a href="SoA-Activity-Epoch-Reference.html">SoA Activity Epoch LinkId Reference</a>
+			</li-->
 		</ul>
 	</li>
 </ul>      
