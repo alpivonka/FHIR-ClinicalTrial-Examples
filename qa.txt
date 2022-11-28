@@ -3,7 +3,7 @@
 
 err = 32, warn = 68, info = 1
 IG Publisher Version: 1.2.19
-Generated Mon Nov 28 21:48:33 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+Generated Mon Nov 28 21:51:45 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
  Build Errors : 3 / 3 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 1 / 2 / 1
