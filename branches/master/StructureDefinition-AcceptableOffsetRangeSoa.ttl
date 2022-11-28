@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "AcceptableOffsetRangeSoa"];
   fhir:StructureDefinition.title [ fhir:value "Extension: Acceptable Offset Range"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-28T21:47:14+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-28T21:50:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "Provides an offset range that, along with offsetDuration, indicates an acceptable range of dates for a related action."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
