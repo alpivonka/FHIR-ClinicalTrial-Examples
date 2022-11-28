@@ -591,7 +591,7 @@
          fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/PlatformDefinedActivities-001>;
          fhir:Reference.reference [ fhir:value "PlanDefinition/PlatformDefinedActivities-001" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Defined Activities" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Platform Defined Activities" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value " Example of use of actions to define a list of defined activities for a given study" ];
        fhir:ImplementationGuide.definition.resource.profile [
          fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities";

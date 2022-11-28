@@ -424,7 +424,7 @@
       <reference>
         <reference value="PlanDefinition/PlatformDefinedActivities-001"/>
       </reference>
-      <name value="Defined Activities"/>
+      <name value="Platform Defined Activities"/>
       <description value=" Example of use of actions to define a list of defined activities for a given study"/>
       <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
       <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>

@@ -26,7 +26,7 @@
   <name value="EpochDefinition"/>
   <title value="Epoch Definition"/>
   <status value="active"/>
-  <date value="2022-11-28T18:46:24+00:00"/>
+  <date value="2022-11-28T18:54:17+00:00"/>
   <publisher value="ClinicalTrialExample"/>
   <description value="Definition of Epochs associated to a Study"/>
   <fhirVersion value="5.0.0-ballot"/>

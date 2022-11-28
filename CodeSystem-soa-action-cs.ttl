@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "SoAActionCS"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem: SoAAction CS"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-11-28T18:46:24+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-11-28T18:54:17+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:CodeSystem.description [ fhir:value "SoAAction CS"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
