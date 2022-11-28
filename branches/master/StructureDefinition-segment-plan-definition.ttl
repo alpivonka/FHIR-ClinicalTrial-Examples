@@ -30,7 +30,7 @@
   fhir:StructureDefinition.name [ fhir:value "SoASegmentPlanDefinition"];
   fhir:StructureDefinition.title [ fhir:value "Profile: SoA Segment Plan Definition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-28T20:19:31+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-28T21:47:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:StructureDefinition.description [ fhir:value "SoA SegmentPlanDefinition"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "5.0.0-ballot"];
