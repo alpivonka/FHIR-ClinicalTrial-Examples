@@ -1,4 +1,4 @@
-Instance: DefinedActivities
+Instance: PlatformDefinedActivities
 InstanceOf: DefinedActivities
 Usage: #example
 Title: "Defined Activities"
