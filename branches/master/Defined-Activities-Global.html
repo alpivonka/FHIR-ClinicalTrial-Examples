@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CLINICALTRIALEXAMPLE\ - FHIR v5.0.0-ballot</title>
+    <title>CLINICALTRIALEXAMPLE\Defined Activities Global - FHIR v5.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -166,7 +162,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Defined Activities Global</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -178,9 +174,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1 - Local Development build (v1.0.0). See the <a href="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Defined Activities Global</h2>
   
 
 
@@ -188,46 +191,148 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="ActivityDefinition-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2.html">Narrative Content</a>
-  </li>
-
-
-  
-    <li>
-      <a href="ActivityDefinition-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ActivityDefinition-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ActivityDefinition-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2.ttl.html">TTL</a>
-    </li>
-  
 
 
 
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#defined-activities-fhir-plandefinition" id="markdown-toc-defined-activities-fhir-plandefinition">Defined Activities: FHIR PlanDefinition:</a></li>
+  <li><a href="#defined-activity" id="markdown-toc-defined-activity">Defined Activity:</a></li>
 </ul>
-
-
-  <a name="root"> </a>
-  <h2 id="root">: ActivityOID-ActivityScreening - Change History</h2>
-  <p>History of changes for f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2 .</p>
-
-  
 
 </div>
 
+<p><em>Defined activities</em> are the characterization of a kind of activity, i.e. they define “what” an activity is. Most activities included in a study are not completely brand new, rather they are usually common tests or procedures, or they may be composite activities that are composed of several component activities that form a standard treatment strategy or a new treatment strategy used in several different studies. These activities are reusable concepts that essentially form a global library of activities that can be referenced in studies being planned, implemented, executed and evaluated. These activities can be defined once and referenced in many different studies to save the time and effort of re-entering data and, more importantly, to make the semantic connection between an activity being used in two different studies or at two different points in the same study. This notion of activities being defined once and referenced in many studies is the core idea of the defined activity class and its subclasses. This part of the model is what the BRIDG modeling team calls the “Defined Pillar”. For those familiar with HL7 moodCodes, this is somewhat similar to the defined mood. (<em>BRIDG User’s Guide Release 5.3.1 March 2019 Page 19-20</em>)</p>
+
+<hr />
+
+<h3 id="defined-activities-fhir-plandefinition">Defined Activities: FHIR PlanDefinition:</h3>
+
+<p>From the defined activities definition above, keep in mind the “where”, “who” and “what” is being defined for the following libraries:</p>
+
+<ol>
+  <li><strong>Where</strong>: Platform (global library):
+    <ul>
+      <li><strong>Who</strong>: Actor(s): Platform Owner</li>
+      <li><strong>What</strong>: Defined activities are created and referenced/re-used by tenants/sponsors within the platform.</li>
+    </ul>
+  </li>
+  <li><strong>Where</strong>: Tenant/Sponsor (tenant library):
+    <ul>
+      <li><strong>Who</strong>: Actor(s): Tenant Owner</li>
+      <li><strong>What</strong>: Defined activities are created and referenced/re-used by studies owned by the tenant/sponsor.
+        <ul>
+          <li>Able to reference Defined Activities established by the Platform (Global) library.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Where</strong>: Study (study library)
+    <ul>
+      <li><strong>Who</strong>: Actor(s): Study Designer/Coordinator</li>
+      <li><strong>What</strong>: Defined activities are created and reused by the specific study’s scope.
+        <ul>
+          <li>Able to reference Defined Activities established by the Tenant/Sponsor library.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>We want a pattern that is reusable in the different contexts above. FHIR’s <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> as an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity from RDBMS</a>, in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).</p>
+
+<p>This pattern will leverage:</p>
+
+<ul>
+  <li>
+    <p>PlanDefinition’s ability to contain hierarchical groups of action definitions and each action’s codable concept provides typing for each grouping of activities.</p>
+  </li>
+  <li>
+    <p>An PlanDefinition.identifier to establish ownership/parent reference (Platform, Tenant/Sponsor, Study).</p>
+  </li>
+  <li>
+    <p>type: new code (definedActivityOwner)</p>
+  </li>
+  <li>
+    <p>value: the uri to the (platform, tenant, study) in which this instance of Defined Activities is associated to.</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Instance: DefinedActivities
+
+InstanceOf: PlanDefinition
+
+Usage: #example
+
+Title: "Example-FHIR"
+
+Description: "FHIR"
+
+* status = #active
+
+* identifier.type = #definedActivityOwner
+
+* identifier.value = "Organization/7ad0f876s76dfa7d98a5s67"
+
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Alternative to PlanDefinition.identifier is PlanDefinition.meta tag</p>
+  </li>
+  <li>
+    <p>tag.display is a string “{definedActivityLibary: uri}</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Instance: DefinedActivities
+
+InstanceOf: PlanDefinition
+
+Usage: #example
+
+Title: "Example-FHIR"
+
+Description: "FHIR"
+
+* status = #active
+
+* meta.tag.display = "{definedActivityOwner : Organization/7ad0f876s76dfa7d98a5s67}"
+
+</code></pre></div></div>
+<hr />
+
+<h3 id="defined-activity">Defined Activity:</h3>
+
+<p>From the individual defined activities perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), we will re-leverage either the resource identifier or meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Instance: FHIR-Questionnaire
+
+InstanceOf: Questionnaire
+
+Usage: #example
+
+Title: "Example-FHIR Questionnaire"
+
+Description: "FHIR Questionnaire"
+
+* status = #active
+
+* meta.tag.display = "{definedActivityOwner:ResearchStudy/7ad0f876s76dfa7d98a5s67}"
+
+* identifier.type = #definedActivityOwner
+
+* identifier.value = "ResearchStudy/7ad0f876s76dfa7d98a5s67"
+
+</code></pre></div></div>
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -235,29 +340,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){

@@ -543,9 +543,9 @@
         <generation value="html"/>
       </page>
       <page>
-        <sourceUrl value="Defined-Activities.html"/>
-        <name value="Defined-Activities.html"/>
-        <title value="Defined Activities"/>
+        <sourceUrl value="Defined-Activities-Global.html"/>
+        <name value="Defined-Activities-Global.html"/>
+        <title value="Defined Activities Global"/>
         <generation value="markdown"/>
       </page>
       <page>
