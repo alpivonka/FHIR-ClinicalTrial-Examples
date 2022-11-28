@@ -10,7 +10,7 @@
   "name": "partOf",
   "title": "part Of",
   "status": "active",
-  "date": "2022-11-28T16:45:04+00:00",
+  "date": "2022-11-28T18:28:29+00:00",
   "publisher": "ClinicalTrialExample",
   "description": "References the resource inwhich this resource is part of, associated to, etc.",
   "fhirVersion": "5.0.0-ballot",

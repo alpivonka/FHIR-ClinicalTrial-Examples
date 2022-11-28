@@ -197,7 +197,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#defined-activities-fhir-plandefinition" id="markdown-toc-defined-activities-fhir-plandefinition">Defined Activities: FHIR PlanDefinition:</a></li>
+  <li><a href="#defined-activities-plandefinition" id="markdown-toc-defined-activities-plandefinition">Defined Activities (PlanDefinition):</a></li>
   <li><a href="#defined-activity" id="markdown-toc-defined-activity">Defined Activity:</a></li>
 </ul>
 
@@ -207,7 +207,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h3 id="defined-activities-fhir-plandefinition">Defined Activities: FHIR PlanDefinition:</h3>
+<h3 id="defined-activities-plandefinition">Defined Activities (PlanDefinition):</h3>
 
 <p>From the defined activities definition above, keep in mind the “where”, “who” and “what” is being defined for the following libraries:</p>
 
@@ -242,92 +242,70 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>We want a pattern that is reusable in the different contexts above. FHIR’s <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> as an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity from RDBMS</a>, in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).</p>
 
-<p>This pattern will leverage:</p>
-
+<p>This pattern will leverage PlanDefintion to define a collective list of Defined Activites from each of the “<strong>Where</strong>” scope:</p>
 <ul>
-  <li>
-    <p>PlanDefinition’s ability to contain hierarchical groups of action definitions and each action’s codable concept provides typing for each grouping of activities.</p>
+  <li>An PlanDefinition.meta to establish ownership/parent reference (Platform, Tenant/Sponsor, Study).
+    <ul>
+      <li>system: the uri to the (platform, tenant, study) in which this instance of Defined Activities is associated to.</li>
+      <li>code : #DefinedActivityLibrary (<strong>TBD</strong> need more descriptive code name)</li>
+    </ul>
   </li>
-  <li>
-    <p>An PlanDefinition.identifier to establish ownership/parent reference (Platform, Tenant/Sponsor, Study).</p>
+  <li>PlanDefinition.type :
+    <ul>
+      <li>provide typing of a Plan Defintion . For example:
+        <ul>
+          <li>#PlatformDefinedActivities</li>
+          <li>#TenantDefinedActivities</li>
+          <li>#StudyDefinedActivities</li>
+        </ul>
+      </li>
+    </ul>
   </li>
-  <li>
-    <p>type: new code (definedActivityOwner)</p>
-  </li>
-  <li>
-    <p>value: the uri to the (platform, tenant, study) in which this instance of Defined Activities is associated to.</p>
+  <li>PlanDefinition’s ability to contain hierarchical groups of action definitions and each action’s codable concept provides typing for each grouping of activities.
+    <ul>
+      <li>Leverage the http://hl7.org/fhir/resource-types resource type codes.</li>
+      <li>Each collection of actions contains the association to the concreate activity definition. The DefinedActivities (PlanDefintion) becomes the associative entiry to the “<strong>Where</strong>” (Scope of defintion) and the defined activity.</li>
+    </ul>
   </li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-Instance: DefinedActivities
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: Platform-DefinedActivities
 InstanceOf: PlanDefinition
-
 Usage: #example
-
-Title: "Example-FHIR"
-
-Description: "FHIR"
-
+Title: "Example-FHIR DefinedActivities"
+Description: "FHIR DefinedActivities"
+* id = "DefinedActivitiesDefinition-001"
 * status = #active
 
-* identifier.type = #definedActivityOwner
+# meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"  
+* meta.tag[=].code = #definedActivityLibrary
 
-* identifier.value = "Organization/7ad0f876s76dfa7d98a5s67"
+* type = #PlatformDefinedActivities
 
+* action[+].type.coding.code = #Questionnaire
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
+* action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52d"
+
+* action[+].type.coding.code = #ActivityDefinition
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
+* action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
 </code></pre></div></div>
-
-<ul>
-  <li>
-    <p>Alternative to PlanDefinition.identifier is PlanDefinition.meta tag</p>
-  </li>
-  <li>
-    <p>tag.display is a string “{definedActivityLibary: uri}</p>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-Instance: DefinedActivities
-
-InstanceOf: PlanDefinition
-
-Usage: #example
-
-Title: "Example-FHIR"
-
-Description: "FHIR"
-
-* status = #active
-
-* meta.tag.display = "{definedActivityOwner : Organization/7ad0f876s76dfa7d98a5s67}"
-
-</code></pre></div></div>
-<hr />
 
 <h3 id="defined-activity">Defined Activity:</h3>
 
-<p>From the individual defined activities perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), we will re-leverage either the resource identifier or meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).</p>
+<p>From the defined activity perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), the pattern will re-leverage meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-Instance: FHIR-Questionnaire
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: FHIR-Questionnaire
 InstanceOf: Questionnaire
-
 Usage: #example
-
 Title: "Example-FHIR Questionnaire"
-
 Description: "FHIR Questionnaire"
-
 * status = #active
-
-* meta.tag.display = "{definedActivityOwner:ResearchStudy/7ad0f876s76dfa7d98a5s67}"
-
-* identifier.type = #definedActivityOwner
-
-* identifier.value = "ResearchStudy/7ad0f876s76dfa7d98a5s67"
-
+* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"
+* meta.tag[=].code = #definedActivityLibrary
 </code></pre></div></div>
 
 
@@ -355,7 +333,7 @@ Description: "FHIR Questionnaire"
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="">ClinicalTrialExample</a>.  Package ClinicalTrialExample#1.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Mon, Nov 28, 2022 16:45+0000">2022-11-28</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="">ClinicalTrialExample</a>.  Package ClinicalTrialExample#1.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Mon, Nov 28, 2022 18:28+0000">2022-11-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
