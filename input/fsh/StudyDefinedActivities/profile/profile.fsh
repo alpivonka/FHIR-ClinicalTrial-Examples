@@ -6,4 +6,3 @@ Description: "Defined Activities PlanDefinition"
 * ^version = "1.0.0-DefinedActivities"
 * meta.lastUpdated MS
 * meta.extension contains firstCreated named createdAt 0..1
-* extension contains study named study 0..1

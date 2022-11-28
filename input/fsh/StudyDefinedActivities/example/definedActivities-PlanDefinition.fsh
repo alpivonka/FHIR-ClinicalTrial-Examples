@@ -3,15 +3,13 @@ InstanceOf: DefinedActivities
 Usage: #example
 Title: "Defined Activities"
 Description: " Example of use of actions to define a list of defined activities for a given study"
-* identifier.use = #secondary
-* identifier.type.coding[+] = #partOf
-* identifier.type.coding[+] = #ResearchStudy
-* identifier.system = "ResearchStudy/ResearchStudy-1-002"
+* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"  
+* meta.tag[=].code = #definedActivityLibrary
 * id = "DefinedActivities-001"
 * status = #active
+* type = #PlatformDefinedActivities
 * action[+].code.coding.code = #ActivityDefinition
 * action[=].code.coding.system = "http://hl7.org/fhir/resource-types"
-* action[=].id = "fab63b28-6aa5-11ed-a1eb-0242ac120000"
 
 * action[=].action[+].title = "ActivityDef-Name-1" // Must be kept in sych with the Activity Definition's name 
 * action[=].action[=].definitionUri = "ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120001"
@@ -29,7 +27,7 @@ Description: " Example of use of actions to define a list of defined activities 
 
 * action[+].code.coding.code = #Questionnaire
 * action[=].code.coding.system = "http://hl7.org/fhir/resource-types"
-* action[=].id = "fab63b28-6aa5-11ed-a1eb-0242ac160000"
+
 
 * action[=].action[+].title = "Questionnaire-Name-1" // Must be kept in sych with the Questionnaire's name
 * action[=].action[=].definitionUri = "Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120001"
