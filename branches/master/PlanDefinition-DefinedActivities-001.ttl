@@ -16,21 +16,27 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"DefinedActivities-001\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;DefinedActivities-001&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-defined-activities.html\">Profile: Defined Activities</a></p></div><p><b>Part Of Research Study</b>: <a href=\"ResearchStudy-ResearchStudy-1-002.html\">ResearchStudy/ResearchStudy-1-002</a></p><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivities-001</code></p><p><b>version</b>: 1.0.0</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-22 09:05:37+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>code</b>: ActivityDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ActivityDefinition)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Title</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>ActivityDef-Name-1</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120001</code></td></tr><tr><td>*</td><td>ActivityDef-Name-2</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120002</code></td></tr><tr><td>*</td><td>ActivityDef-Name-3</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120003</code></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: ObservationDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ObservationDefinition)</span></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: PlanDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#PlanDefinition)</span></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Questionnaire <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Questionnaire)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Title</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>Questionnaire-Name-1</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120001</code></td></tr><tr><td>*</td><td>Questionnaire-Name-2</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120002</code></td></tr><tr><td>*</td><td>Questionnaire-Name-3</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120003</code></td></tr><tr><td>*</td><td>Questionnaire-Name-4</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120004</code></td></tr><tr><td>*</td><td>Questionnaire-Name-5</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120005</code></td></tr><tr><td>*</td><td>Questionnaire-Name-6</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120006</code></td></tr></table></blockquote></div>"
-  ];
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/study" ];
-     fhir:Extension.valueReference [
-       fhir:link <https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ResearchStudy/ResearchStudy-1-002>;
-       fhir:Reference.reference [ fhir:value "ResearchStudy/ResearchStudy-1-002" ]
-     ]
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"DefinedActivities-001\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;DefinedActivities-001&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-defined-activities.html\">Profile: Defined Activities</a></p></div><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivities-001</code></p><p><b>identifier</b>: partOf: ?ngen-9? (use: SECONDARY)</p><p><b>version</b>: 1.0.0</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-28 04:09:45+0000</p><p><b>publisher</b>: ClinicalTrialExample</p><blockquote><p><b>action</b></p><p><b>code</b>: ActivityDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (All FHIR Types#ActivityDefinition)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Title</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>ActivityDef-Name-1</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120001</code></td></tr><tr><td>*</td><td>ActivityDef-Name-2</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120002</code></td></tr><tr><td>*</td><td>ActivityDef-Name-3</td><td><code>ActivityDefinition/fab63b28-6aa5-11ed-a1eb-0242ac120003</code></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: ObservationDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (All FHIR Types#ObservationDefinition)</span></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: PlanDefinition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (All FHIR Types#PlanDefinition)</span></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Questionnaire <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (All FHIR Types#Questionnaire)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Title</b></td><td><b>Definition[x]</b></td></tr><tr><td>*</td><td>Questionnaire-Name-1</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120001</code></td></tr><tr><td>*</td><td>Questionnaire-Name-2</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120002</code></td></tr><tr><td>*</td><td>Questionnaire-Name-3</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120003</code></td></tr><tr><td>*</td><td>Questionnaire-Name-4</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120004</code></td></tr><tr><td>*</td><td>Questionnaire-Name-5</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120005</code></td></tr><tr><td>*</td><td>Questionnaire-Name-6</td><td><code>Questionnaire/fab63b28-6aa5-11ed-a1eb-0242ac120006</code></td></tr></table></blockquote></div>"
   ];
   fhir:PlanDefinition.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivities-001"];
+  fhir:PlanDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "partOf" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.code [ fhir:value "ResearchStudy" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "ResearchStudy/ResearchStudy-1-002" ]
+  ];
   fhir:PlanDefinition.version [ fhir:value "1.0.0"];
   fhir:PlanDefinition.status [ fhir:value "active"];
-  fhir:PlanDefinition.date [ fhir:value "2022-11-22T21:05:37+00:00"^^xsd:dateTime];
+  fhir:PlanDefinition.date [ fhir:value "2022-11-28T16:09:45+00:00"^^xsd:dateTime];
   fhir:PlanDefinition.publisher [ fhir:value "ClinicalTrialExample"];
   fhir:PlanDefinition.action [
      fhir:index 0;
@@ -38,6 +44,7 @@
      fhir:PlanDefinition.action.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
          fhir:Coding.code [ fhir:value "ActivityDefinition" ]
        ]
      ];
@@ -59,6 +66,7 @@
      fhir:PlanDefinition.action.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
          fhir:Coding.code [ fhir:value "ObservationDefinition" ]
        ]
      ]
@@ -67,6 +75,7 @@
      fhir:PlanDefinition.action.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
          fhir:Coding.code [ fhir:value "PlanDefinition" ]
        ]
      ]
@@ -76,6 +85,7 @@
      fhir:PlanDefinition.action.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
          fhir:Coding.code [ fhir:value "Questionnaire" ]
        ]
      ];
