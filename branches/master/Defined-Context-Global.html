@@ -209,7 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="defined-activities-plandefinition">Defined Activities (PlanDefinition):</h3>
 
-<p>From the defined activities definition above, keep in mind the “where”, “who” and “what” is being defined for the following libraries:</p>
+<p>From the definition above, there are three distinct contexts to keep in mind. One should define the “where”, “who” and “what” of each library based on context.</p>
 
 <ol>
   <li><strong>Where</strong>: Platform (global library):
@@ -240,9 +240,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ol>
 
-<p>We want a pattern that is reusable in the different contexts above. FHIR’s <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> as an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity from RDBMS</a>, in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).</p>
+<p>The ideal pattern should be reusable in the different contexts above. FHIR’s <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> as an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity from RDBMS</a>, in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).</p>
 
-<p>This pattern will leverage PlanDefintion to define a collective list of Defined Activites from each of the “<strong>Where</strong>” scope:</p>
+<p>This pattern will leverage PlanDefintion to define a collective list of Defined Activites from each of the contexts “<strong>Where</strong>” above:</p>
 <ul>
   <li>An PlanDefinition.meta to establish ownership/parent reference (Platform, Tenant/Sponsor, Study).
     <ul>
@@ -269,16 +269,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
+<h4 id="platform-library">Platform Library</h4>
+
+<p>The platform owner has defined two Questionnaires and two Activity Definitions and associated them at the platform level.
+The Platform-DefinedActivities (PlanDefintion) is associated with the platform’s organization through the use of the PlanDefinition.meta.tag. The Platform-DefintionActivities is asigned a the type of #PlatformDefinedActivities, which provides a distinguishing search criterion within a planned definition service.</p>
+
+<p>Others within the platform are able to obtain the Platform-DefintionActivities and utilize/reference the contained activities for their use based on the platform’s business rules.</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: Platform-DefinedActivities
 InstanceOf: PlanDefinition
 Usage: #example
-Title: "Example-FHIR DefinedActivities"
-Description: "FHIR DefinedActivities"
-* id = "DefinedActivitiesDefinition-001"
+Title: "Platform-FHIR DefinedActivities"
+Description: "Platform DefinedActivities"
+* id = "Platform-DefinedActivities-001"
 * status = #active
 
-# meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
-* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"  
+//meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+* meta.tag[+].system = "Organization/5b90647f-adbe-4880-a670-bf9da0b3e39d"  
 * meta.tag[=].code = #definedActivityLibrary
 
 * type = #PlatformDefinedActivities
@@ -286,16 +293,60 @@ Description: "FHIR DefinedActivities"
 * action[+].type.coding.code = #Questionnaire
 * action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
 * action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
+* action[=].action[=].title = "Platform-Questionnair1 title"
 * action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52d"
+* action[=].action[=].title = "Platform-Questionnair2 title"
 
 * action[+].type.coding.code = #ActivityDefinition
 * action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
 * action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
+* action[=].action[=].title = "Platform-ActivityDefinition1 title"
 * action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
+* action[=].action[=].title = "Platform-ActivityDefinition2 title"
 </code></pre></div></div>
 <p><a href="PlanDefinition-PlatformDefinedActivities-001.html">Example Defined Activities</a></p>
 
 <p><img src="PlatformDefinedActivities2.jpg" /></p>
+
+<h4 id="tenant-library">Tenant Library</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: Tenant-DefinedActivities
+InstanceOf: PlanDefinition
+Usage: #example
+Title: "Tenant DefinedActivities"
+Description: "Tenant DefinedActivities"
+* id = "Tenant-DefinedActivities-001"
+* status = #active
+
+//meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+* meta.tag[+].system = "Organization/7faf6345-c323-4107-bd63-e3069ac75a13"  
+* meta.tag[=].code = #definedActivityLibrary
+
+* type = #TenantDefinedActivities
+
+* action[+].type.coding.code = #Questionnaire
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
+* action[=].action[=].title = "Platform-Questionnair1 title"
+* action[=].action[+].definitionUri = "Questionnaire/bccff427-22dd-47ec-a292-0965efe34551"
+// Tenant created two tenant specific Questionnairs
+* action[=].action[=].title = "Tenant-Questionnair1 title"
+* action[=].action[+].definitionUri = "Questionnaire/92b1df45-94ec-4c4f-bfe5-430c08dc9496"
+* action[=].action[=].title = "Tenant-Questionnair2 title"
+
+* action[+].type.coding.code = #ActivityDefinition
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
+* action[=].action[=].title = "Platform-ActivityDefinition1 title"
+* action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
+* action[=].action[=].title = "Platform-ActivityDefinition2 title"
+// Tenant created two tenant specific ActivityDefinitions
+* action[=].action[+].definitionUri = "ActivityDefinition/4585d305-06c0-46ed-8bea-23f4cfcb5cc1"
+* action[=].action[=].title = "Tenant-ActivityDefinition1 title"
+* action[=].action[+].definitionUri = "ActivityDefinition/035c2a2e-9fd3-4e96-a83c-66eda21cc75d"
+* action[=].action[=].title = "Tenant-ActivityDefinition2 title"
+
+</code></pre></div></div>
 
 <hr />
 
@@ -338,7 +389,7 @@ Description: "FHIR Questionnaire"
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="">ClinicalTrialExample</a>.  Package ClinicalTrialExample#1.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Tue, Nov 29, 2022 14:39+0000">2022-11-29</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="">ClinicalTrialExample</a>.  Package ClinicalTrialExample#1.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Tue, Nov 29, 2022 18:40+0000">2022-11-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
