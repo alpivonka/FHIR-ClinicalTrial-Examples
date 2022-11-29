@@ -2,7 +2,9 @@
   
 
 
-*Defined activities* are the characterization of a kind of activity, i.e. they define “what” an activity is. Most activities included in a study are not completely brand new, rather they are usually common tests or procedures, or they may be composite activities that are composed of several component activities that form a standard treatment strategy or a new treatment strategy used in several different studies. These activities are reusable concepts that essentially form a global library of activities that can be referenced in studies being planned, implemented, executed and evaluated. These activities can be defined once and referenced in many different studies to save the time and effort of re-entering data and, more importantly, to make the semantic connection between an activity being used in two different studies or at two different points in the same study. This notion of activities being defined once and referenced in many studies is the core idea of the defined activity class and its subclasses. This part of the model is what the BRIDG modeling team calls the “Defined Pillar”. For those familiar with HL7 moodCodes, this is somewhat similar to the defined mood. (*BRIDG User’s Guide Release 5.3.1 March 2019 Page 19-20*)
+*Defined activities* are the characterization of a kind of activity, i.e. they define “what” an activity is. Most activities included in a study are not completely brand new, rather they are usually common tests or procedures, or they may be composite activities that are composed of several component activities that form a standard treatment strategy or a new treatment strategy used in several different studies. These activities are reusable concepts that essentially form a global library of activities that can be referenced in studies being planned, implemented, executed and evaluated. These activities can be defined once and referenced in many different studies to save the time and effort of re-entering data and, more importantly, to make the semantic connection between an activity being used in two different studies or at two different points in the same study. This notion of activities being defined once and referenced in many studies is the core idea of the defined activity class and its subclasses. This part of the model is what the BRIDG modeling team calls the “Defined Pillar”. For those familiar with HL7 moodCodes, this is somewhat similar to the defined mood. 
+
+(*BRIDG User’s Guide Release 5.3.1 March 2019 Page 19-20*)
 
   
 
@@ -62,7 +64,7 @@ Description: "Platform DefinedActivities"
 * id = "Platform-DefinedActivities-001"
 * status = #active
 
-//meta.tag.system : Uri to either the Organization (Platform || Tenant) or potential ResearchStudy
+//Uri to either the Platform's Organization
 * meta.tag[+].system = "Organization/5b90647f-adbe-4880-a670-bf9da0b3e39d"  
 * meta.tag[=].code = #definedActivityOwner
 
@@ -147,6 +149,22 @@ Description: "Tenant DefinedActivities"
 * action[=].action[=].title = "Tenant-ActivityDefinition2 title"
 
 ```
+#### Study Library:
+
+Each study owned by a tenant could define study specific Defined Activities. The study Defined Activities (PlanDefintion) could contain study specific activities, and reference tenant Defined Activities. 
+
+
+
+#### Schedule Of Activities (SoA):
+
+SoA's defined within a study could reference activities defined both at the study and tenant levels and provide study specific characteristics. 
+
+**Planned Context (Study Specific)**
+*Planned activities* are the association of defined activities to a particular study. This association also includes the characterization of the sequencing (or timing) of these activities, also referred to as the study calendar or study design. For example, a defined activity is created for the notion of allocating subjects to arms on a study; however, the notion of when it occurs in the context of a particular study and the method to be used is characterized in a planned activity. This part of the model is what the BRIDG modeling team calls the “Planned Pillar”.
+
+(*BRIDG User’s Guide Release 5.3.1 March 2019 Page 20*)
+
+
 
 ---
 
