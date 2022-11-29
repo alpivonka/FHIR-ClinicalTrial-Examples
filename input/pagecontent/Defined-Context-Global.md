@@ -62,9 +62,9 @@ Description: "Platform DefinedActivities"
 * id = "Platform-DefinedActivities-001"
 * status = #active
 
-//meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+//meta.tag.system : Uri to either the Organization (Platform || Tenant) or potential ResearchStudy
 * meta.tag[+].system = "Organization/5b90647f-adbe-4880-a670-bf9da0b3e39d"  
-* meta.tag[=].code = #definedActivityLibrary
+* meta.tag[=].code = #definedActivityOwner
 
 * type = #PlatformDefinedActivities
 
@@ -90,7 +90,7 @@ Description: "Platform DefinedActivities"
 ---
 #### Tenant Library:
 
-Providing tenants with the capabilities to define Tenant specific Defined Activities allows tenants to pick and choose which Platform defined activities to purchase/use along side the tenant's defined activites for use within their given studies (Schedule Of Activites : SoA).
+Providing tenants with capabilities to define tenant specific Defined Activities allows tenants to pick and choose which Platform Defined Activities to purchase/use along side the tenant's defined activites for use within their studies (Schedule Of Activites : SoA).
 
 **Example**: A platform Tenant has created a DefinedActivities which reference available Platform Activities and the activities created/owned by the Tenant. All activites contained within the Tenant Defined Activities are able for used by any study owned by the Tenant, based on Tenant specific business rules. 
   
@@ -113,9 +113,9 @@ Description: "Tenant DefinedActivities"
 * id = "Tenant-DefinedActivities-001"
 * status = #active
 
-//meta.tag.system : url to the Tenant's Organization
+//meta.tag.system : Uri to the Tenant's Organization
 * meta.tag[+].system = "Organization/7faf6345-c323-4107-bd63-e3069ac75a13"  
-* meta.tag[=].code = #definedActivityLibrary
+* meta.tag[=].code = #definedActivityOwner
 
 * type = #TenantDefinedActivities
 
@@ -148,8 +148,6 @@ Description: "Tenant DefinedActivities"
 
 ```
 
-
-
 ---
 
 ### Defined Activity:
@@ -165,9 +163,9 @@ Usage: #example
 Title: "Example-Platform Questionnaire1"
 Description: "Platform Questionnaire1"
 
-// Platform Organization Reference . 
+// Uri Platform Organization definedActivityOwner Reference . 
 * meta.tag[+].system = "Organization/5b90647f-adbe-4880-a670-bf9da0b3e39d"  
-* meta.tag[=].code = #definedActivityLibrary
+* meta.tag[=].code = #definedActivityOwner  
 * status = #active
 * id = "eb57023c-1b1d-4777-9430-d9596bdcd52c"
 
@@ -179,9 +177,9 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Example-Tenant Questionnaire1"
 Description: "Tenant Questionnaire1"
-// Tenant Organization Reference . 
+// Uri Tenant Organization definedActivityOwner Reference . 
 * meta.tag[+].system = "Organization/7faf6345-c323-4107-bd63-e3069ac75a13"  
-* meta.tag[=].code = #definedActivityLibrary
+* meta.tag[=].code = #definedActivityOwner
 * status = #active
 * id = "bccff427-22dd-47ec-a292-0965efe34551"
 
