@@ -22,7 +22,7 @@
   fhir:Questionnaire.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Questionnaire/QuestionnaireActivity-01"];
   fhir:Questionnaire.version [ fhir:value "1.0.0"];
   fhir:Questionnaire.status [ fhir:value "active"];
-  fhir:Questionnaire.date [ fhir:value "2022-11-29T19:57:48+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2022-11-29T20:07:11+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "ClinicalTrialExample"] .
 
 # - ontology header ------------------------------------------------------------
