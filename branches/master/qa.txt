@@ -1,12 +1,13 @@
 ﻿ClinicalTrialExampleIG : Validation Results
 =========================================
 
-err = 32, warn = 68, info = 1
+err = 54, warn = 85, info = 5
 IG Publisher Version: 1.2.19
-Generated Mon Nov 28 22:15:07 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
- Build Errors : 2 / 3 / 0
+Generated Tue Nov 29 14:32:52 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTrialExample#1.0.0 (canonical = https://github.com/alpivonka/FHIR-Base-Clinical-Examples)
+ Build Errors : 4 / 3 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ActivityDefinition-ActivityDefinitionActivity-01 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ActivityDefinition-c936f630-d853-4933-b743-ae16e1f07820-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ActivityDefinition-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-plan-definition-cs : 0 / 1 / 1
@@ -19,13 +20,16 @@ Generated Mon Nov 28 22:15:07 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/Group-CohortGroupUnder25 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-ClinicalTrialExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Patient-1-001 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-DefinedActivitiesDefinition-001 : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2 : 1 / 2 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-PlatformDefinedActivities-001 : 1 / 1 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2 : 1 / 4 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2 : 19 / 8 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-PlatformDefinedActivities-001 : 1 / 10 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2 : 1 / 5 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2 : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V3-343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2 : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2 : 1 / 4 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-QuestionnaireActivity-01 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-QuestionnaireActivity-013 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ResearchStudy-ResearchStudy-1-002 : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ResearchSubject-ResearchSubject-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition--visit-range : 0 / 2 / 1
@@ -52,6 +56,8 @@ Generated Mon Nov 28 22:15:07 UTC 2022. FHIR version 5.0.0-ballot for ClinicalTr
  /github/workspace/fsh-generated/resources/StructureDefinition-the-research-subject : 0 / 2 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/Questionnaire-QuestionnaireActivity-013-form.html: Unable to read attribute on <div> at line 239 column 71
+ERROR: /github/workspace/output/Questionnaire-QuestionnaireActivity-01-form.html: Unable to read attribute on <div> at line 239 column 71
 ERROR: /github/workspace/output/SoA-Activity-Epoch-Reference.html#/html/body/div/div/div/div/div/center/img at Line 201, column 10: The image source 'SoA-Action.Extesion-EpochId.jpg' cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/div/center/img at Line 190, column 13: The image source 'OvervView.jpg' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -65,6 +71,9 @@ WARNING: ActivityDefinition/343f3656-9ddd-4e10-996f-dba5a64650f2-FHIR2: Activity
 ERROR: ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen: ActivityDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 WARNING: ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen: ActivityDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ActivityDefinition/9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2-ActivityCollectCosen: ActivityDefinition.identifier[0].type.coding[1]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ActivityDefinition-ActivityDefinitionActivity-01.json ==
+ERROR: ActivityDefinition/ActivityDefinitionActivity-01: ActivityDefinition.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: ActivityDefinition/ActivityDefinitionActivity-01: ActivityDefinition.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
 == fsh-generated/resources/ActivityDefinition-c936f630-d853-4933-b743-ae16e1f07820-FHIR2.json ==
 ERROR: ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2: ActivityDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 WARNING: ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2: ActivityDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -91,21 +100,59 @@ WARNING: Group/CohortGroupOver50-ss9s9s9: Group.code.coding[0]: A code with no s
 WARNING: Group/CohortGroupUnder25: Group.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ImplementationGuide-ClinicalTrialExample.json ==
 == fsh-generated/resources/Patient-Patient-1-001.json ==
+== fsh-generated/resources/PlanDefinition-DefinedActivitiesDefinition-001.json ==
+ERROR: PlanDefinition/DefinedActivitiesDefinition-001: PlanDefinition.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: PlanDefinition/DefinedActivitiesDefinition-001: PlanDefinition.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
+WARNING: PlanDefinition/DefinedActivitiesDefinition-001: PlanDefinition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-EPCH-DEF-0002-2.json ==
 == fsh-generated/resources/PlanDefinition-NEW-SOA-UUID-FHIR2.json ==
 ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.identifier[0].type.coding[1]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[0]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[0].timing.ofType(Timing).repeat: Rule tim-9: 'If there's an offset, there must be a when (and not C, CM, CD, CV)' Failed
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[0].timing.ofType(Timing).repeat.bounds.ofType(Range): Rule rng-2: 'If present, low SHALL have a lower value than high' Failed
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[1]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[2]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[3]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[3].timing.ofType(Timing).repeat: Rule tim-9: 'If there's an offset, there must be a when (and not C, CM, CD, CV)' Failed
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[0].action[3].timing.ofType(Timing).repeat.bounds.ofType(Range): Rule rng-2: 'If present, low SHALL have a lower value than high' Failed
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[1].action[0]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[1].action[1]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[2].action[0]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[2].action[0].trigger[0].timing.ofType(Timing).repeat: Rule tim-2: 'if there's a period, there needs to be period units' Failed
+WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[2].action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[2].action[1]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[2].action[1].trigger[0].timing.ofType(Timing).repeat: Rule tim-8: 'If there's a countMax, there must be a count' Failed
+WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[2].action[1].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[3].action[0]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[3].action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[3].action[1]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[3].action[1].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[4].action[0]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[4].action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[4].action[1]: The modifier extension https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/epoch-id is not allowed to be used at this point (allowed = e:EpochDefinition.action; this element is [PlanDefinition.action.action, BackboneElement.action, ])
+WARNING: PlanDefinition/NEW-SOA-UUID-FHIR2: PlanDefinition.action[4].action[1].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-PlatformDefinedActivities-001.json ==
 ERROR: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
 INFORMATION: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
 WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[0].action[0].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[0].action[1].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[0].action[2].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[3].action[0].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[3].action[1].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[3].action[2].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[3].action[3].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[3].action[4].description: value should not start or finish with whitespace 'Must...UI/UX '
+WARNING: PlanDefinition/PlatformDefinedActivities-001: PlanDefinition.action[3].action[5].description: value should not start or finish with whitespace 'Must...UI/UX '
 == fsh-generated/resources/PlanDefinition-Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2.json ==
 WARNING: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 WARNING: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition.identifier[0].type.coding[1]: A code with no system has no defined meaning. A system should be provided
 WARNING: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition.action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PlanDefinition/Visit-V1-9cb4666f-4516-4562-8f93-fd407e42ab6f-FHIR2: PlanDefinition.action[0].action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PlanDefinition-Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2.json ==
 WARNING: PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2: PlanDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: PlanDefinition/Visit-V2-f53a0dfe-9a2e-41f0-8378-d102629473a3-FHIR2: PlanDefinition.identifier[0]: Identifier.system must be an absolute reference, not a local reference
@@ -124,6 +171,12 @@ ERROR: PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2: PlanD
 WARNING: PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2: PlanDefinition.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2: PlanDefinition.identifier[0].type.coding[1]: A code with no system has no defined meaning. A system should be provided
 WARNING: PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2: PlanDefinition.action[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Questionnaire-QuestionnaireActivity-01.json ==
+ERROR: Questionnaire/QuestionnaireActivity-01: Questionnaire.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Questionnaire/QuestionnaireActivity-01: Questionnaire.meta.tag[0]: Code System URI 'Organization/7ad0f876s76dfa7d98a5s67' is unknown so the code cannot be validated
+== fsh-generated/resources/Questionnaire-QuestionnaireActivity-013.json ==
+ERROR: Questionnaire/QuestionnaireActivity-013: Questionnaire.meta.tag[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Questionnaire/QuestionnaireActivity-013: Questionnaire.meta.tag[0]: Code System URI 'ResearchStudy/7ad0f876s76dfa7d97a5s67' is unknown so the code cannot be validated
 == fsh-generated/resources/ResearchStudy-ResearchStudy-1-002.json ==
 WARNING: ResearchStudy/ResearchStudy-1-002: ResearchStudy.comparisonGroup[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: ResearchStudy/ResearchStudy-1-002: ResearchStudy.comparisonGroup[1]: Duplicate id value 's98d706a7d6'

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="ActivityDefinitionActivity-01"/>
+  <meta>
+    <tag>
+      <system value="Organization/7ad0f876s76dfa7d98a5s67"/>
+      <code value="DefinedActivityLibrary"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="ActivityDefinitionActivity-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ActivityDefinition &quot;ActivityDefinitionActivity-01&quot; </p><p style="margin-bottom: 0px">Tag: <span title="{Organization/7ad0f876s76dfa7d98a5s67 Organization/7ad0f876s76dfa7d98a5s67}">Organization/7ad0f876s76dfa7d98a5s67</span></p></div><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/ActivityDefinitionActivity-01</code></p><p><b>version</b>: 1.0.0</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 02:31:35+0000</p><p><b>publisher</b>: ClinicalTrialExample</p></div>
+  </text>
+  <url value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/ActivityDefinitionActivity-01"/>
+  <version value="1.0.0"/>
+  <status value="active"/>
+  <date value="2022-11-29T14:31:35+00:00"/>
+  <publisher value="ClinicalTrialExample"/>
+</ActivityDefinition>

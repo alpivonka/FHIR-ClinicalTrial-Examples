@@ -14,6 +14,12 @@
     "name": "ActivityOID-CollectCosent"
   },
   {
+    "id": "ActivityDefinitionActivity-01",
+    "type": "ActivityDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/ActivityDefinitionActivity-01",
+    "version": "1.0.0"
+  },
+  {
     "id": "c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
     "type": "ActivityDefinition",
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
@@ -54,6 +60,12 @@
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ImplementationGuide/ClinicalTrialExample",
     "version": "1.0.0",
     "name": "ClinicalTrialExampleIG"
+  },
+  {
+    "id": "DefinedActivitiesDefinition-001",
+    "type": "PlanDefinition",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/DefinedActivitiesDefinition-001",
+    "version": "1.0.0"
   },
   {
     "id": "EPCH-DEF-0002-2",
@@ -102,6 +114,18 @@
     "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/PlanDefinition/Visit-V4-c936f630-d853-4933-b743-ae16e1f07820-FHIR2",
     "version": "1.0.0",
     "name": "v2"
+  },
+  {
+    "id": "QuestionnaireActivity-01",
+    "type": "Questionnaire",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Questionnaire/QuestionnaireActivity-01",
+    "version": "1.0.0"
+  },
+  {
+    "id": "QuestionnaireActivity-013",
+    "type": "Questionnaire",
+    "url": "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Questionnaire/QuestionnaireActivity-013",
+    "version": "1.0.0"
   },
   {
     "id": "-visit-range",
