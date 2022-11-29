@@ -82,16 +82,17 @@ Description: "Platform DefinedActivities"
 * action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
 * action[=].action[=].title = "Platform-ActivityDefinition2 title"
 ```
-[Example Defined Activities](PlanDefinition-PlatformDefinedActivities-001.html)
+[Example Platform Defined Activities](PlanDefinition-PlatformDefinedActivities-001.html)
+
 
 <center><img src="PlatformDefinedActivities2.jpg"/></center>
 
 ---
 #### Tenant Library:
 
-Providing tenants with the capabilities to define Tenant specific Defined Activities allows tenants to pick and choose which Platform defined activities to purchase/use along side the tenant's defined activites for use within their given studies.
+Providing tenants with the capabilities to define Tenant specific Defined Activities allows tenants to pick and choose which Platform defined activities to purchase/use along side the tenant's defined activites for use within their given studies (Schedule Of Activites : SoA).
 
-**Example**: A platform Tenant has created their own DefinedActivities which reference available Platform Activities and the activities created/owned by the Tenant. All activites contained within the Tenant Defined Activities are able to be used by any study owned by the Tenant, based on Tenant specific business rules. 
+**Example**: A platform Tenant has created a DefinedActivities which reference available Platform Activities and the activities created/owned by the Tenant. All activites contained within the Tenant Defined Activities are able for used by any study owned by the Tenant, based on Tenant specific business rules. 
   
 
 1. Questionnaires:
@@ -101,7 +102,7 @@ Providing tenants with the capabilities to define Tenant specific Defined Activi
     * Referenced two Platform defined ActivityDefinitions
     * Added/created two teant specific ActivityDefinitions.
  
-
+[FSH-Online](https://fshschool.org/FSHOnline)
 ```
 //HL7 FSH Code
 Instance: Tenant-DefinedActivities
@@ -149,26 +150,39 @@ Description: "Tenant DefinedActivities"
 
 
 
-
-
-
-
-
 ---
 
 ### Defined Activity:
 
-From the defined activity perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), the pattern will re-leverage meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).
+From defined activity perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), the pattern will re-leverage meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).
 
-
+[FSH-Online](https://fshschool.org/FSHOnline)
 ```
 //HL7 FSH Code
-Instance: FHIR-Questionnaire
+Instance: Platform-Questionnaire1
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Example-FHIR Questionnaire"
-Description: "FHIR Questionnaire"
-* status = #active
-* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"
+Title: "Example-Platform Questionnaire1"
+Description: "Platform Questionnaire1"
+
+// Platform Organization Reference . 
+* meta.tag[+].system = "Organization/5b90647f-adbe-4880-a670-bf9da0b3e39d"  
 * meta.tag[=].code = #definedActivityLibrary
+* status = #active
+* id = "eb57023c-1b1d-4777-9430-d9596bdcd52c"
+
+
+
+//HL7 FSH Code
+Instance: Tenant-Questionnaire1
+InstanceOf: Questionnaire
+Usage: #example
+Title: "Example-Tenant Questionnaire1"
+Description: "Tenant Questionnaire1"
+// Tenant Organization Reference . 
+* meta.tag[+].system = "Organization/7faf6345-c323-4107-bd63-e3069ac75a13"  
+* meta.tag[=].code = #definedActivityLibrary
+* status = #active
+* id = "bccff427-22dd-47ec-a292-0965efe34551"
+
 ```
