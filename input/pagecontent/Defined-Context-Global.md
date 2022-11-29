@@ -86,8 +86,18 @@ Description: "Platform DefinedActivities"
 <img src="PlatformDefinedActivities2.jpg"/>
 
 
-#### Tenant Library
+#### Tenant Library:
 
+A platform Tenant has created their own DefinedActivities which reference available Platform Activities and the activities created/owned by the Tenant. All activites contained within the Tenant Defined Activities are able to be used by any study owned by the Tenant, based on Tenant specific business rules. 
+
+The platform tenant has created a tenant specific DefinedActivities:
+1. Questionnaires:
+    * Referenced a Platform defined Questionnaire
+    * Added/created two tenant specific Questionnaires
+2. ActivityDefinition:
+    * Referenced two Platform defined ActivityDefinitions
+    * Added/created two teant specific ActivityDefinitions.
+ 
 
 
 ```
@@ -107,20 +117,25 @@ Description: "Tenant DefinedActivities"
 
 * action[+].type.coding.code = #Questionnaire
 * action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+
+//Reference to available Platform Activities (Questionnaire)
 * action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
 * action[=].action[=].title = "Platform-Questionnair1 title"
+
+// Tenant created two tenant specific Questionnaires
 * action[=].action[+].definitionUri = "Questionnaire/bccff427-22dd-47ec-a292-0965efe34551"
-// Tenant created two tenant specific Questionnairs
 * action[=].action[=].title = "Tenant-Questionnair1 title"
 * action[=].action[+].definitionUri = "Questionnaire/92b1df45-94ec-4c4f-bfe5-430c08dc9496"
 * action[=].action[=].title = "Tenant-Questionnair2 title"
 
 * action[+].type.coding.code = #ActivityDefinition
 * action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+//Reference to available Platform Activities (ActivityDefinition)
 * action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
 * action[=].action[=].title = "Platform-ActivityDefinition1 title"
 * action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
 * action[=].action[=].title = "Platform-ActivityDefinition2 title"
+
 // Tenant created two tenant specific ActivityDefinitions
 * action[=].action[+].definitionUri = "ActivityDefinition/4585d305-06c0-46ed-8bea-23f4cfcb5cc1"
 * action[=].action[=].title = "Tenant-ActivityDefinition1 title"
