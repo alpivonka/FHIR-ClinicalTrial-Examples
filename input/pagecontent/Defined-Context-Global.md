@@ -53,6 +53,7 @@ The Platform-DefinedActivities (PlanDefintion) is associated with the platform's
 Others within the platform are able to obtain the Platform-DefintionActivities and utilize/reference the contained activities for their use based on the platform's business rules. 
 
 ```
+//HL7 FSH Code
 Instance: Platform-DefinedActivities
 InstanceOf: PlanDefinition
 Usage: #example
@@ -85,12 +86,14 @@ Description: "Platform DefinedActivities"
 
 <center><img src="PlatformDefinedActivities2.jpg"/></center>
 
-
+---
 #### Tenant Library:
 
-A platform Tenant has created their own DefinedActivities which reference available Platform Activities and the activities created/owned by the Tenant. All activites contained within the Tenant Defined Activities are able to be used by any study owned by the Tenant, based on Tenant specific business rules. 
+Providing tenants with the capabilities to define Tenant specific Defined Activities allows tenants to pick and choose which Platform defined activities to purchase/use along side the tenant's defined activites for use within their given studies.
 
-The platform tenant has created a tenant specific DefinedActivities:
+**Example**: A platform Tenant has created their own DefinedActivities which reference available Platform Activities and the activities created/owned by the Tenant. All activites contained within the Tenant Defined Activities are able to be used by any study owned by the Tenant, based on Tenant specific business rules. 
+  
+
 1. Questionnaires:
     * Referenced a Platform defined Questionnaire
     * Added/created two tenant specific Questionnaires
@@ -99,8 +102,8 @@ The platform tenant has created a tenant specific DefinedActivities:
     * Added/created two teant specific ActivityDefinitions.
  
 
-
 ```
+//HL7 FSH Code
 Instance: Tenant-DefinedActivities
 InstanceOf: PlanDefinition
 Usage: #example
@@ -109,7 +112,7 @@ Description: "Tenant DefinedActivities"
 * id = "Tenant-DefinedActivities-001"
 * status = #active
 
-//meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+//meta.tag.system : url to the Tenant's Organization
 * meta.tag[+].system = "Organization/7faf6345-c323-4107-bd63-e3069ac75a13"  
 * meta.tag[=].code = #definedActivityLibrary
 
@@ -159,6 +162,7 @@ From the defined activity perspective (resources: Questionnaire, PlanDefinition,
 
 
 ```
+//HL7 FSH Code
 Instance: FHIR-Questionnaire
 InstanceOf: Questionnaire
 Usage: #example
