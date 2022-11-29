@@ -456,6 +456,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ActivityDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ActivityDefinition/ActivityDefinitionActivity-01"
+        },
+        "name": "Example-FHIR ActivityDefinition",
+        "description": "FHIR ActivityDefinition",
+        "isExample": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Group"
           }
         ],
@@ -492,6 +506,20 @@
         },
         "name": "Example CohortGroup",
         "description": "Example CohortGroup",
+        "isExample": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PlanDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PlanDefinition/DefinedActivitiesDefinition-001"
+        },
+        "name": "Example-FHIR DefinedActivities",
+        "description": "FHIR DefinedActivities",
         "isExample": true
       },
       {
@@ -558,6 +586,34 @@
           "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities",
           "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"
         ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/QuestionnaireActivity-01"
+        },
+        "name": "Example-FHIR Questionnaire",
+        "description": "FHIR Questionnaire",
+        "isExample": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/QuestionnaireActivity-013"
+        },
+        "name": "Example-FHIR Questionnaire3",
+        "description": "FHIR Questionnaire3",
+        "isExample": true
       },
       {
         "extension": [

@@ -351,6 +351,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ActivityDefinitionActivity-01"/>
+      </reference>
+      <name value="Example-FHIR ActivityDefinition"/>
+      <description value="FHIR ActivityDefinition"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Group"/>
       </extension>
       <reference>
@@ -380,6 +391,17 @@
       </reference>
       <name value="Example CohortGroup"/>
       <description value="Example CohortGroup"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/DefinedActivitiesDefinition-001"/>
+      </reference>
+      <name value="Example-FHIR DefinedActivities"/>
+      <description value="FHIR DefinedActivities"/>
       <isExample value="true"/>
     </resource>
     <resource>
@@ -428,6 +450,28 @@
       <description value=" Example of use of actions to define a list of defined activities for a given study"/>
       <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
       <profile value="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/StructureDefinition/defined-activities"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/QuestionnaireActivity-01"/>
+      </reference>
+      <name value="Example-FHIR Questionnaire"/>
+      <description value="FHIR Questionnaire"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/QuestionnaireActivity-013"/>
+      </reference>
+      <name value="Example-FHIR Questionnaire3"/>
+      <description value="FHIR Questionnaire3"/>
+      <isExample value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
