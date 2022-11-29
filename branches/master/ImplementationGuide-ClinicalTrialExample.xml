@@ -587,9 +587,9 @@
         <generation value="html"/>
       </page>
       <page>
-        <sourceUrl value="Defined-Activities-Global.html"/>
-        <name value="Defined-Activities-Global.html"/>
-        <title value="Defined Activities Global"/>
+        <sourceUrl value="Defined-Context-Global.html"/>
+        <name value="Defined-Context-Global.html"/>
+        <title value="Defined Context Global"/>
         <generation value="markdown"/>
       </page>
       <page>

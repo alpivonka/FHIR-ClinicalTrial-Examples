@@ -1,17 +1,9 @@
-<!-- get modelType -->
-
-
-
-
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CLINICALTRIALEXAMPLE\Example-FHIR Questionnaire - JSON Representation - FHIR v5.0.0-ballot</title>
+    <title>CLINICALTRIALEXAMPLE\Defined Context Global - FHIR v5.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -55,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.39"}
-    h3,h4,h5,h6{--heading-prefix:"6.39"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -170,7 +162,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example-FHIR Questionnaire</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Defined Context Global</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -182,8 +174,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1 - Local Development build (v1.0.0). See the <a href="https://github.com/alpivonka/FHIR-Base-Clinical-Examples/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Defined Context Global</h2>
   
 
 
@@ -191,86 +191,131 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="Questionnaire-QuestionnaireActivity-01.html">Tree View</a>
-  </li>
-
-
-  <li>
-    <a href="Questionnaire-QuestionnaireActivity-01-form.html">Form</a>
-  </li>
-
-
-  
-    <li>
-      <a href="Questionnaire-QuestionnaireActivity-01.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li class="active">
-      <a href="#">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="Questionnaire-QuestionnaireActivity-01.ttl.html">TTL</a>
-    </li>
-  
 
 
 
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#defined-activities-plandefinition" id="markdown-toc-defined-activities-plandefinition">Defined Activities (PlanDefinition):</a></li>
+  <li><a href="#defined-activity" id="markdown-toc-defined-activity">Defined Activity:</a></li>
 </ul>
 
+</div>
 
-<a name="root"> </a>
-<h2 id="root">Questionnaire: Questionnaire/QuestionnaireActivity-01 - JSON Profile</h2>
+<p><em>Defined activities</em> are the characterization of a kind of activity, i.e. they define “what” an activity is. Most activities included in a study are not completely brand new, rather they are usually common tests or procedures, or they may be composite activities that are composed of several component activities that form a standard treatment strategy or a new treatment strategy used in several different studies. These activities are reusable concepts that essentially form a global library of activities that can be referenced in studies being planned, implemented, executed and evaluated. These activities can be defined once and referenced in many different studies to save the time and effort of re-entering data and, more importantly, to make the semantic connection between an activity being used in two different studies or at two different points in the same study. This notion of activities being defined once and referenced in many studies is the core idea of the defined activity class and its subclasses. This part of the model is what the BRIDG modeling team calls the “Defined Pillar”. For those familiar with HL7 moodCodes, this is somewhat similar to the defined mood. (<em>BRIDG User’s Guide Release 5.3.1 March 2019 Page 19-20</em>)</p>
 
-<p>JSON representation of the QuestionnaireActivity-01 questionnaire.</p>
+<hr />
 
-<p><a href="Questionnaire-QuestionnaireActivity-01.json" no-download="true">Raw json</a> | <a href="Questionnaire-QuestionnaireActivity-01.json" download>Download</a></p>
+<h3 id="defined-activities-plandefinition">Defined Activities (PlanDefinition):</h3>
 
-  <!-- insert intro if present -->
-  
+<p>From the defined activities definition above, keep in mind the “where”, “who” and “what” is being defined for the following libraries:</p>
 
+<ol>
+  <li><strong>Where</strong>: Platform (global library):
+    <ul>
+      <li><strong>Who</strong>: Actor(s): Platform Owner</li>
+      <li><strong>What</strong>: Defined activities are created and referenced/re-used by tenants/sponsors within the platform.</li>
+    </ul>
+  </li>
+  <li><strong>Where</strong>: Tenant/Sponsor (tenant library):
+    <ul>
+      <li><strong>Who</strong>: Actor(s): Tenant Owner</li>
+      <li><strong>What</strong>: Defined activities are created and referenced/re-used by studies owned by the tenant/sponsor.
+        <ul>
+          <li>Able to reference Defined Activities established by the Platform (Global) library.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Where</strong>: Study (study library)
+    <ul>
+      <li><strong>Who</strong>: Actor(s): Study Designer/Coordinator</li>
+      <li><strong>What</strong>: Defined activities are created and reused by the specific study’s scope.
+        <ul>
+          <li>Able to reference Defined Activities established by the Tenant/Sponsor library.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
 
+<p>We want a pattern that is reusable in the different contexts above. FHIR’s <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of <a href="http://build.fhir.org/plandefinition.html">PlanDefinition</a> as an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity from RDBMS</a>, in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).</p>
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
-{
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire">resourceType</a>" : "Questionnaire",
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.id">id</a>" : "QuestionnaireActivity-01",
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.meta">meta</a>" : {
-    "<a href="http://build.fhir.org/resource.html#Meta#Meta.tag">tag</a>" : [
-      {
-        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "Organization/7ad0f876s76dfa7d98a5s67",
-        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "DefinedActivityLibrary"
-      }
-    ]
-  },
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.text">text</a>" : {
-    "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;1\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;The linkId for the item\&quot;&gt;LinkId&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Text for the item\&quot;&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Minimum and Maximum # of times the the itemcan appear in the instance\&quot;&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;The type of the item\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Additional information about the item\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;http://build.fhir.org/help16.png\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_q_root.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;QuestionnaireRoot\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Questionnaire&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Questionnaire/QuestionnaireActivity-01#1.0.0&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;http://build.fhir.org/help16.png\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.url">url</a>" : "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/Questionnaire/QuestionnaireActivity-01",
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.version">version</a>" : "1.0.0",
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.status">status</a>" : "active",
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.date">date</a>" : "2022-11-29T14:39:13+00:00",
-  "<a href="http://build.fhir.org/questionnaire.html#Questionnaire.publisher">publisher</a>" : "ClinicalTrialExample"
-}</code></pre>
+<p>This pattern will leverage PlanDefintion to define a collective list of Defined Activites from each of the “<strong>Where</strong>” scope:</p>
+<ul>
+  <li>An PlanDefinition.meta to establish ownership/parent reference (Platform, Tenant/Sponsor, Study).
+    <ul>
+      <li>system: the uri to the (platform, tenant, study) in which this instance of Defined Activities is associated to.</li>
+      <li>code : #DefinedActivityLibrary (<strong>TBD</strong> need more descriptive code name)</li>
+    </ul>
+  </li>
+  <li>PlanDefinition.type :
+    <ul>
+      <li>provide typing of a Plan Defintion . For example:
+        <ul>
+          <li>#PlatformDefinedActivities</li>
+          <li>#TenantDefinedActivities</li>
+          <li>#StudyDefinedActivities</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>PlanDefinition’s ability to contain hierarchical groups of action definitions and each action’s codable concept provides typing for each grouping of activities.
+    <ul>
+      <li>Leverage the http://hl7.org/fhir/resource-types resource type codes.</li>
+      <li>Each collection of actions contains the association to the concreate activity definition. The DefinedActivities (PlanDefintion) becomes the associative entiry to the “<strong>Where</strong>” (Scope of defintion) and the defined activity.</li>
+    </ul>
+  </li>
+</ul>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: Platform-DefinedActivities
+InstanceOf: PlanDefinition
+Usage: #example
+Title: "Example-FHIR DefinedActivities"
+Description: "FHIR DefinedActivities"
+* id = "DefinedActivitiesDefinition-001"
+* status = #active
 
-  <!-- insert notes if present -->
-  
+# meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"  
+* meta.tag[=].code = #definedActivityLibrary
+
+* type = #PlatformDefinedActivities
+
+* action[+].type.coding.code = #Questionnaire
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
+* action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52d"
+
+* action[+].type.coding.code = #ActivityDefinition
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
+* action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
+</code></pre></div></div>
+<p><a href="PlanDefinition-PlatformDefinedActivities-001.html">Example Defined Activities</a></p>
+
+<p><img src="PlatformDefinedActivities2.jpg" /></p>
+
+<hr />
+
+<h3 id="defined-activity">Defined Activity:</h3>
+
+<p>From the defined activity perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), the pattern will re-leverage meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: FHIR-Questionnaire
+InstanceOf: Questionnaire
+Usage: #example
+Title: "Example-FHIR Questionnaire"
+Description: "FHIR Questionnaire"
+* status = #active
+* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"
+* meta.tag[=].code = #definedActivityLibrary
+</code></pre></div></div>
 
 
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -278,29 +323,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
