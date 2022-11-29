@@ -8,6 +8,7 @@ Description: " Example of use of actions to define a list of defined activities 
 * id = "PlatformDefinedActivities-001"
 * status = #active
 * type = #PlatformDefinedActivities
+
 * action[+].code.coding.code = #ActivityDefinition
 * action[=].code.coding.system = "http://hl7.org/fhir/resource-types"
 
