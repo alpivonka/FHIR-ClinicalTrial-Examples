@@ -23,7 +23,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"c936f630-d853-4933-b743-ae16e1f07820-FHIR2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ActivityDefinition &quot;c936f630-d853-4933-b743-ae16e1f07820-FHIR2&quot; Updated &quot;2022-01-01 10:08:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-soa-activity.html\">SoA Activity</a></p></div><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2</code></p><p><b>identifier</b>: partOf: ?ngen-9? (use: SECONDARY)</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ActivityOID-ActivityStudyPeriod</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 07:32:41+0000</p><p><b>publisher</b>: ClinicalTrialExample</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"c936f630-d853-4933-b743-ae16e1f07820-FHIR2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ActivityDefinition &quot;c936f630-d853-4933-b743-ae16e1f07820-FHIR2&quot; Updated &quot;2022-01-01 10:08:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-soa-activity.html\">SoA Activity</a></p></div><p><b>url</b>: <code>https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2</code></p><p><b>identifier</b>: partOf: ?ngen-9? (use: SECONDARY)</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ActivityOID-ActivityStudyPeriod</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 07:42:29+0000</p><p><b>publisher</b>: ClinicalTrialExample</p></div>"
   ];
   fhir:ActivityDefinition.url [ fhir:value "https://github.com/alpivonka/FHIR-Base-Clinical-Examples/ActivityDefinition/c936f630-d853-4933-b743-ae16e1f07820-FHIR2"];
   fhir:ActivityDefinition.identifier [
@@ -43,7 +43,7 @@
   fhir:ActivityDefinition.version [ fhir:value "1.0.0"];
   fhir:ActivityDefinition.name [ fhir:value "ActivityOID-ActivityStudyPeriod"];
   fhir:ActivityDefinition.status [ fhir:value "active"];
-  fhir:ActivityDefinition.date [ fhir:value "2022-11-29T19:32:41+00:00"^^xsd:dateTime];
+  fhir:ActivityDefinition.date [ fhir:value "2022-11-29T19:42:29+00:00"^^xsd:dateTime];
   fhir:ActivityDefinition.publisher [ fhir:value "ClinicalTrialExample"] .
 
 # - ontology header ------------------------------------------------------------

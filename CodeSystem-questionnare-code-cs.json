@@ -10,7 +10,7 @@
   "name": "QuestionnareCodeCS",
   "title": "CodeSystem: Questionnare Code Cs",
   "status": "active",
-  "date": "2022-11-29T19:32:41+00:00",
+  "date": "2022-11-29T19:42:29+00:00",
   "publisher": "ClinicalTrialExample",
   "description": "specific Codes for Questionnaire",
   "caseSensitive": false,
