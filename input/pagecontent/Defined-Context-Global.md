@@ -11,7 +11,7 @@
 
 ### Defined Activities (PlanDefinition):
 
-From the defined activities definition above, keep in mind the "where", "who" and "what" is being defined for the following libraries:
+From the definition above, there are three distinct contexts to keep in mind. One should define the "where", "who" and "what" of each library based on context.
 
 1. **Where**: Platform (global library):
     *  **Who**: Actor(s): Platform Owner
@@ -29,9 +29,9 @@ From the defined activities definition above, keep in mind the "where", "who" an
 
   
 
-We want a pattern that is reusable in the different contexts above. FHIR's [PlanDefinition](http://build.fhir.org/plandefinition.html) resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of [PlanDefinition](http://build.fhir.org/plandefinition.html) as an [associative entity from RDBMS](https://en.wikipedia.org/wiki/Associative_entity), in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).
+The ideal pattern should be reusable in the different contexts above. FHIR's [PlanDefinition](http://build.fhir.org/plandefinition.html) resource provides a hierarchical grouping capability of referenced resources. In this context, one can think of [PlanDefinition](http://build.fhir.org/plandefinition.html) as an [associative entity from RDBMS](https://en.wikipedia.org/wiki/Associative_entity), in that the PlanDefinition contains the references to the concrete defined activities (differing in resource types).
 
-This pattern will leverage PlanDefintion to define a collective list of Defined Activites from each of the "**Where**" scope:
+This pattern will leverage PlanDefintion to define a collective list of Defined Activites from each of the contexts "**Where**" above:
 * An PlanDefinition.meta to establish ownership/parent reference (Platform, Tenant/Sponsor, Study).
   * system: the uri to the (platform, tenant, study) in which this instance of Defined Activities is associated to.
   * code : #DefinedActivityLibrary (**TBD** need more descriptive code name)
@@ -43,18 +43,26 @@ This pattern will leverage PlanDefintion to define a collective list of Defined 
 * PlanDefinition's ability to contain hierarchical groups of action definitions and each action's codable concept provides typing for each grouping of activities.
   * Leverage the http://hl7.org/fhir/resource-types resource type codes.
   * Each collection of actions contains the association to the concreate activity definition. The DefinedActivities (PlanDefintion) becomes the associative entiry to the "**Where**" (Scope of defintion) and the defined activity. 
-  
+
+
+#### Platform Library
+
+The platform owner has defined two Questionnaires and two Activity Definitions and associated them at the platform level.
+The Platform-DefinedActivities (PlanDefintion) is associated with the platform's organization through the use of the PlanDefinition.meta.tag. The Platform-DefintionActivities is asigned a the type of #PlatformDefinedActivities, which provides a distinguishing search criterion within a planned definition service.
+
+Others within the platform are able to obtain the Platform-DefintionActivities and utilize/reference the contained activities for their use based on the platform's business rules. 
+
 ```
 Instance: Platform-DefinedActivities
 InstanceOf: PlanDefinition
 Usage: #example
-Title: "Example-FHIR DefinedActivities"
-Description: "FHIR DefinedActivities"
-* id = "DefinedActivitiesDefinition-001"
+Title: "Platform-FHIR DefinedActivities"
+Description: "Platform DefinedActivities"
+* id = "Platform-DefinedActivities-001"
 * status = #active
 
-# meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
-* meta.tag[+].system = "Organization/7ad0f876s76dfa7d98a5s67"  
+//meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+* meta.tag[+].system = "Organization/5b90647f-adbe-4880-a670-bf9da0b3e39d"  
 * meta.tag[=].code = #definedActivityLibrary
 
 * type = #PlatformDefinedActivities
@@ -62,16 +70,71 @@ Description: "FHIR DefinedActivities"
 * action[+].type.coding.code = #Questionnaire
 * action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
 * action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
+* action[=].action[=].title = "Platform-Questionnair1 title"
 * action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52d"
+* action[=].action[=].title = "Platform-Questionnair2 title"
 
 * action[+].type.coding.code = #ActivityDefinition
 * action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
 * action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
+* action[=].action[=].title = "Platform-ActivityDefinition1 title"
 * action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
+* action[=].action[=].title = "Platform-ActivityDefinition2 title"
 ```
 [Example Defined Activities](PlanDefinition-PlatformDefinedActivities-001.html)
 
 <img src="PlatformDefinedActivities2.jpg"/>
+
+
+#### Tenant Library
+
+
+
+```
+Instance: Tenant-DefinedActivities
+InstanceOf: PlanDefinition
+Usage: #example
+Title: "Tenant DefinedActivities"
+Description: "Tenant DefinedActivities"
+* id = "Tenant-DefinedActivities-001"
+* status = #active
+
+//meta.tag.system : url to either the Organization (Platform || Tenant) or potential ResearchStudy
+* meta.tag[+].system = "Organization/7faf6345-c323-4107-bd63-e3069ac75a13"  
+* meta.tag[=].code = #definedActivityLibrary
+
+* type = #TenantDefinedActivities
+
+* action[+].type.coding.code = #Questionnaire
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "Questionnaire/eb57023c-1b1d-4777-9430-d9596bdcd52c"
+* action[=].action[=].title = "Platform-Questionnair1 title"
+* action[=].action[+].definitionUri = "Questionnaire/bccff427-22dd-47ec-a292-0965efe34551"
+// Tenant created two tenant specific Questionnairs
+* action[=].action[=].title = "Tenant-Questionnair1 title"
+* action[=].action[+].definitionUri = "Questionnaire/92b1df45-94ec-4c4f-bfe5-430c08dc9496"
+* action[=].action[=].title = "Tenant-Questionnair2 title"
+
+* action[+].type.coding.code = #ActivityDefinition
+* action[=].type.coding.system = "http://hl7.org/fhir/resource-types"
+* action[=].action[+].definitionUri = "ActivityDefinition/32c0f9f2-36bd-42c4-a8e5-f045c2d1bfb0"
+* action[=].action[=].title = "Platform-ActivityDefinition1 title"
+* action[=].action[+].definitionUri = "ActivityDefinition/4deb634a-6119-417f-a3e4-175417a0f5a7"
+* action[=].action[=].title = "Platform-ActivityDefinition2 title"
+// Tenant created two tenant specific ActivityDefinitions
+* action[=].action[+].definitionUri = "ActivityDefinition/4585d305-06c0-46ed-8bea-23f4cfcb5cc1"
+* action[=].action[=].title = "Tenant-ActivityDefinition1 title"
+* action[=].action[+].definitionUri = "ActivityDefinition/035c2a2e-9fd3-4e96-a83c-66eda21cc75d"
+* action[=].action[=].title = "Tenant-ActivityDefinition2 title"
+
+```
+
+
+
+
+
+
+
 
 ---
 
@@ -79,7 +142,6 @@ Description: "FHIR DefinedActivities"
 
 From the defined activity perspective (resources: Questionnaire, PlanDefinition, ActivityDefinition), the pattern will re-leverage meta.tag in each resource to represent ownership/where the activity was defined (Platform, Tenant/Sponsor, Study).
 
-  
 
 ```
 Instance: FHIR-Questionnaire
