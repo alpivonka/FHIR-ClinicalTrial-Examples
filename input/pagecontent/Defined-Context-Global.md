@@ -83,7 +83,7 @@ Description: "Platform DefinedActivities"
 ```
 [Example Defined Activities](PlanDefinition-PlatformDefinedActivities-001.html)
 
-<img src="PlatformDefinedActivities2.jpg"/>
+<center><img src="PlatformDefinedActivities2.jpg"/></center>
 
 
 #### Tenant Library:
